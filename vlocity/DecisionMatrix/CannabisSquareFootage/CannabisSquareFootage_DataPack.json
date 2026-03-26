@@ -1,0 +1,18 @@
+{
+    "CalculationMatrixColumn": "CannabisSquareFootage_CalculationMatrixColumns.json",
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixType": "DecisionMatrix",
+    "Description": "",
+    "GroupKey": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "Name": "CannabisSquareFootage",
+    "Namespace": "",
+    "SubGroupKey": "",
+    "Type": "Standard",
+    "UniqueName": "CannabisSquareFootage",
+    "UsageType": "Bre",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrix",
+    "VlocityRecordSourceKey": "CalculationMatrix/CannabisSquareFootage"
+}

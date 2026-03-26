@@ -1,0 +1,29 @@
+{
+    "ApiName": "Food_Assistance_Income_Limits_V2",
+    "CalculationMatrix.Name": "Food Assistance Income Limits",
+    "CalculationMatrixId": {
+        "Name": "Food Assistance Income Limits",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationMatrix/Food Assistance Income Limits",
+        "VlocityRecordSObjectType": "CalculationMatrix"
+    },
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixDefinitionVerId": "9QOHu00000112K1OAI",
+    "DscnModelNoteExportStatus": "",
+    "EndDateTime": "",
+    "GroupKey": "",
+    "GroupKeyValue": "",
+    "IsLocked": false,
+    "MatrixType": "Standard",
+    "MayEdit": true,
+    "Name": "Food Assistance Income Limits V2",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2023-12-11T17:07:00.000Z",
+    "SubGroupKey": "",
+    "SubGroupKeyValue": "",
+    "VersionNumber": 2,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrixVersion",
+    "VlocityRecordSourceKey": "CalculationMatrixVersion/2/CalculationMatrix/Food Assistance Income Limits"
+}

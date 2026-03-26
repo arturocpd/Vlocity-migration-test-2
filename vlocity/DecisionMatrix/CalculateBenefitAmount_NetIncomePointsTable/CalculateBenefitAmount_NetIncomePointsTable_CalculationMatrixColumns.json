@@ -1,0 +1,71 @@
+[
+    {
+        "ApiName": "HouseholdSize",
+        "CalculationMatrixId": {
+            "Name": "CalculateBenefitAmount_NetIncomePointsTable",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/CalculateBenefitAmount_NetIncomePointsTable",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Input",
+        "CurrencyIsoCode": "USD",
+        "DataType": "Number",
+        "DisplaySequence": 1,
+        "IsLocked": false,
+        "IsWildcardColumn": false,
+        "MayEdit": true,
+        "Name": "HouseholdSize",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated280177361",
+        "WildcardColumnValue": ""
+    },
+    {
+        "ApiName": "ThreePointsLimit",
+        "CalculationMatrixId": {
+            "Name": "CalculateBenefitAmount_NetIncomePointsTable",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/CalculateBenefitAmount_NetIncomePointsTable",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Output",
+        "CurrencyIsoCode": "USD",
+        "DataType": "Currency",
+        "DisplaySequence": 2,
+        "IsLocked": false,
+        "IsWildcardColumn": false,
+        "MayEdit": true,
+        "Name": "ThreePointsLimit",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated-125744653",
+        "WildcardColumnValue": ""
+    },
+    {
+        "ApiName": "TwoPointsLimit",
+        "CalculationMatrixId": {
+            "Name": "CalculateBenefitAmount_NetIncomePointsTable",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/CalculateBenefitAmount_NetIncomePointsTable",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Output",
+        "CurrencyIsoCode": "USD",
+        "DataType": "Currency",
+        "DisplaySequence": 3,
+        "IsLocked": false,
+        "IsWildcardColumn": false,
+        "MayEdit": true,
+        "Name": "TwoPointsLimit",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated554267572",
+        "WildcardColumnValue": ""
+    }
+]

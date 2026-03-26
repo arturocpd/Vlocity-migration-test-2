@@ -1,0 +1,29 @@
+{
+    "%vlocity_namespace%__GlobalKey__c": "CannabisFeeCalculation V1",
+    "CalculationProcedure.Name": "CannabisFeeCalculation",
+    "CalculationProcedureId": {
+        "Name": "CannabisFeeCalculation",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationProcedure/CannabisFeeCalculation",
+        "VlocityRecordSObjectType": "CalculationProcedure"
+    },
+    "Constants": "",
+    "CurrencyIsoCode": "USD",
+    "Description": "",
+    "EndDateTime": "",
+    "IsLocked": false,
+    "IsLoopingEnabled": false,
+    "LastSimulatedVariablesInput": "",
+    "LoopEnd": "",
+    "LoopIncrement": "",
+    "LoopStart": "",
+    "MayEdit": true,
+    "Name": "CannabisFeeCalculation V1",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2022-01-02T20:25:00.000Z",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedureVersion",
+    "VlocityRecordSourceKey": "CalculationProcedureVersion/1/CalculationProcedure/CannabisFeeCalculation"
+}

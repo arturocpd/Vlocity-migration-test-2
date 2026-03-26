@@ -1,0 +1,71 @@
+[
+    {
+        "ApiName": "Level",
+        "CalculationMatrixId": {
+            "Name": "test_mahi_ 2 Nov",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/test_mahi_ 2 Nov",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Input",
+        "CurrencyIsoCode": "USD",
+        "DataType": "Text",
+        "DisplaySequence": 1,
+        "IsLocked": false,
+        "IsWildcardColumn": false,
+        "MayEdit": true,
+        "Name": "Level",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated-735668170",
+        "WildcardColumnValue": ""
+    },
+    {
+        "ApiName": "Level-1",
+        "CalculationMatrixId": {
+            "Name": "test_mahi_ 2 Nov",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/test_mahi_ 2 Nov",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Input",
+        "CurrencyIsoCode": "USD",
+        "DataType": "Text",
+        "DisplaySequence": 2,
+        "IsLocked": false,
+        "IsWildcardColumn": false,
+        "MayEdit": true,
+        "Name": "Level-1",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated-563531555",
+        "WildcardColumnValue": ""
+    },
+    {
+        "ApiName": "Level-2",
+        "CalculationMatrixId": {
+            "Name": "test_mahi_ 2 Nov",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/test_mahi_ 2 Nov",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Output",
+        "CurrencyIsoCode": "USD",
+        "DataType": "Text",
+        "DisplaySequence": 3,
+        "IsLocked": false,
+        "IsWildcardColumn": false,
+        "MayEdit": true,
+        "Name": "Level-2",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated404913757",
+        "WildcardColumnValue": ""
+    }
+]

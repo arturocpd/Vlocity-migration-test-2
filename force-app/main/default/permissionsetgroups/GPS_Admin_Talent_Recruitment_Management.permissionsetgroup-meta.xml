@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>For Admin users to use TRM functionality. Includes App Framework perm sets.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>GPS Admin Talent Recruitment Management</label>
+    <permissionSets>force__ActionPlans</permissionSets>
+    <permissionSets>force__FormFrameworkManager</permissionSets>
+    <permissionSets>force__OmniStudioAdmin</permissionSets>
+    <permissionSets>force__TlntRcrtMgmtSpecialistAccess</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

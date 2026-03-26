@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>For Batch Assign Reviews functionality;  assigned to users who will show up in the &quot;Assign Reviewers&quot; screen flow on Grant IAs as part of the Generic Grantmaking IDO Demo Script.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>GPS Review Application</label>
+    <permissionSets>GPS_Review_Application_User_Perm</permissionSets>
+    <permissionSets>force__GrantmakingExternalReviewer</permissionSets>
+    <permissionSets>force__StageManagementUser</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

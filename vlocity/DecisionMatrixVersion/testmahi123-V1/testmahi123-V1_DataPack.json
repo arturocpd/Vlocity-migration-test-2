@@ -1,0 +1,29 @@
+{
+    "ApiName": "testmahi123_V1",
+    "CalculationMatrix.Name": "testmahi123",
+    "CalculationMatrixId": {
+        "Name": "testmahi123",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationMatrix/testmahi123",
+        "VlocityRecordSObjectType": "CalculationMatrix"
+    },
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixDefinitionVerId": "9QOHu00000112iiOAA",
+    "DscnModelNoteExportStatus": "",
+    "EndDateTime": "",
+    "GroupKey": "",
+    "GroupKeyValue": "",
+    "IsLocked": false,
+    "MatrixType": "Standard",
+    "MayEdit": true,
+    "Name": "testmahi123 V1",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2024-12-12T17:36:11.000Z",
+    "SubGroupKey": "",
+    "SubGroupKeyValue": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrixVersion",
+    "VlocityRecordSourceKey": "CalculationMatrixVersion/1/CalculationMatrix/testmahi123"
+}

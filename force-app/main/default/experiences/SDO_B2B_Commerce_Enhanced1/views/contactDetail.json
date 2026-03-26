@@ -1,0 +1,135 @@
+{
+  "appPageId" : "5a89a6eb-5e46-449a-bfec-8658faff2c53",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "dataProviders" : [ ],
+  "label" : "Contact Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "dxpStyle" : {
+          "margin" : {
+            "bottom" : "60px",
+            "left" : "",
+            "right" : "",
+            "top" : "40px"
+          }
+        },
+        "sectionConfig" : "{\"UUID\":\"6bcf42f1-f965-41d6-9026-dc2cc98d6fd8\",\"columns\":[{\"UUID\":\"b1f9dcc7-dcc8-42ff-8d33-d710d3e37b55\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "6bcf42f1-f965-41d6-9026-dc2cc98d6fd8",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "backgroundColor" : "",
+            "dxpStyle" : { },
+            "paddingHorizontal" : "none",
+            "paddingVertical" : "none",
+            "text" : "User Details",
+            "textAlign" : "left",
+            "textDecoration" : "{}",
+            "textDisplayInfo" : "{\"textStyle\":\"heading-xlarge\",\"headingTag\":\"h1\"}"
+          },
+          "componentName" : "dxp_base:textBlock",
+          "id" : "6b2aaef0-ff8a-402c-87eb-36616ab8ec59",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "backgroundColor" : "",
+            "dxpStyle" : {
+              "margin" : {
+                "bottom" : "20px",
+                "left" : "",
+                "right" : "",
+                "top" : "10px"
+              }
+            },
+            "isLinkable" : false,
+            "linkAssistiveText" : "",
+            "paddingHorizontal" : "none",
+            "paddingVertical" : "none",
+            "text" : "Welcome to the User Detail page, where comprehensive user information awaits. Explore details, updates, and actions taken related to user profiles seamlessly. For questions or assistance, our support team is here to ensure a smooth resolution to your inquiries.",
+            "textAlign" : "left",
+            "textColor" : "rgb(102, 102, 102)",
+            "textDecoration" : "{}",
+            "textDisplayInfo" : "{\"textStyle\":\"body-regular\",\"headingTag\":\"p\"}"
+          },
+          "componentName" : "dxp_base:textBlock",
+          "id" : "2112dcfc-13f7-47d8-a610-b89825022810",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "backgroundColor" : "",
+            "dxpStyle" : { },
+            "layout" : "{!Item._layout}",
+            "mainTitlePaddingHorizontal" : "none",
+            "mainTitlePaddingVertical" : "none",
+            "mainTitleText" : "User",
+            "mainTitleTextDisplayInfo" : "{}",
+            "metadata" : "{!Item._metadata._context}",
+            "recordIdFromDataProvider" : "{!Item.Id}",
+            "showTitle" : false
+          },
+          "componentName" : "dxp_records:detailPanel",
+          "id" : "12da9978-fb21-4d9b-ad1a-d550962ad6e4",
+          "regions" : [ {
+            "components" : [ {
+              "componentAttributes" : {
+                "dxpStyle" : { }
+              },
+              "componentName" : "dxp_page_layout:placeHolder",
+              "id" : "771c485e-2087-4600-bfdc-fe06e57ec640",
+              "renderPriority" : "NEUTRAL",
+              "renditionMap" : { },
+              "type" : "component"
+            } ],
+            "id" : "5ed63490-a3ab-4bbd-94a9-69379c1bbac0",
+            "regionName" : "placeholder",
+            "type" : "region"
+          } ],
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "b1f9dcc7-dcc8-42ff-8d33-d710d3e37b55",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "2a7507ba-a796-4a3c-95cd-220d0f9de197",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "dxpStyle" : { },
+        "pageTitle" : "{!Record._Object}: {!Record._Title}",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "community_builder:seoAssistant",
+      "id" : "1b8e87b8-d27a-48a3-ab46-7d8fce7ae945",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "32b9232f-e809-428f-8eb8-4d314933cb34",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "viewType" : "detail-003"
+}

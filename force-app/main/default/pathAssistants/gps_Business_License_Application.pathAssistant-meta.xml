@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>BusinessLicenseApplication</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Business License Application</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Preliminary review is completed. Go ahead and perform the following tasks&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Complete detailed review of the application&lt;/li&gt;&lt;li&gt;Schedule Inspection&lt;/li&gt;&lt;li&gt;Make sure the right action plan is assigned&lt;/li&gt;&lt;li&gt;Add special instructions for the inspector if any&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Application Accepted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Next review the Violations if there are any and approve the application&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Inspection Completed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Inspection is scheduled.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Inspection Phase</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;The application is submitted by the user. The following checks have to be done before moving the application to the next stage.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Verify Required Attachments&lt;/li&gt;&lt;li&gt;Verify Details&lt;/li&gt;&lt;/ol&gt;</info>
+        <picklistValueName>Submitted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Violations are recorded during the Inspection. Make sure the following are taken care&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Review the Inspection findings&lt;/li&gt;&lt;li&gt;Assign the violation type, compliance due date and priority of the violation&lt;/li&gt;&lt;li&gt;Follow-up with the business owner to make sure the violations are addressed on time&lt;/li&gt;&lt;li&gt;If the violations are not address on time, please take appropriate enforcement actions&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Violations Observed</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>License_or_Permit</recordTypeName>
+</PathAssistant>

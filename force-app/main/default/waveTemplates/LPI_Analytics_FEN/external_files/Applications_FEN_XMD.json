@@ -1,0 +1,1 @@
+{"dates": [], "derivedDimensions": [], "derivedMeasures": [], "dimensions": [{"conditionalFormatting": {}, "customActions": [], "field": "Name", "label": "Application Name", "members": [], "recordDisplayFields": ["Name", "ApplicationType", "Status"], "salesforceActions": []}], "measures": [], "organizations": [], "showDetailsDefaultFields": []}

@@ -1,0 +1,29 @@
+{
+    "%vlocity_namespace%__GlobalKey__c": "Opioid Risk Score V2",
+    "CalculationProcedure.Name": "Opioid Risk Score",
+    "CalculationProcedureId": {
+        "Name": "Opioid Risk Score",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationProcedure/Opioid Risk Score",
+        "VlocityRecordSObjectType": "CalculationProcedure"
+    },
+    "Constants": "",
+    "CurrencyIsoCode": "USD",
+    "Description": "",
+    "EndDateTime": "",
+    "IsLocked": false,
+    "IsLoopingEnabled": false,
+    "LastSimulatedVariablesInput": "",
+    "LoopEnd": "",
+    "LoopIncrement": "",
+    "LoopStart": "",
+    "MayEdit": true,
+    "Name": "Opioid Risk Score V2",
+    "Namespace": "",
+    "Rank": "",
+    "StartDateTime": "2023-01-12T23:09:04.000Z",
+    "VersionNumber": 2,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedureVersion",
+    "VlocityRecordSourceKey": "CalculationProcedureVersion/2/CalculationProcedure/Opioid Risk Score"
+}

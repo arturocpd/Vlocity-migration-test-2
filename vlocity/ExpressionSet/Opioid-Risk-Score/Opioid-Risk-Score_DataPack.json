@@ -1,0 +1,13 @@
+{
+    "CurrencyIsoCode": "USD",
+    "Description": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "MigrationStatus": "Migrated",
+    "Name": "Opioid Risk Score",
+    "Namespace": "",
+    "UniqueName": "Opioid_Risk_Score",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedure",
+    "VlocityRecordSourceKey": "CalculationProcedure/Opioid Risk Score"
+}

@@ -1,0 +1,48 @@
+[
+    {
+        "ApiName": "Fee",
+        "CalculationMatrixId": {
+            "Name": "CMResidenceFee",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/CMResidenceFee",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Output",
+        "CurrencyIsoCode": "USD",
+        "DataType": "Currency",
+        "DisplaySequence": 2,
+        "IsLocked": false,
+        "IsWildcardColumn": false,
+        "MayEdit": true,
+        "Name": "Fee",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated443641096",
+        "WildcardColumnValue": ""
+    },
+    {
+        "ApiName": "SalonInAResidence",
+        "CalculationMatrixId": {
+            "Name": "CMResidenceFee",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/CMResidenceFee",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Input",
+        "CurrencyIsoCode": "USD",
+        "DataType": "Text",
+        "DisplaySequence": 1,
+        "IsLocked": false,
+        "IsWildcardColumn": false,
+        "MayEdit": true,
+        "Name": "SalonInAResidence",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated371283766",
+        "WildcardColumnValue": ""
+    }
+]

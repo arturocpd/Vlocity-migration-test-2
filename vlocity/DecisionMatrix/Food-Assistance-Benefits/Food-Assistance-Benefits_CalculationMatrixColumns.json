@@ -1,0 +1,48 @@
+[
+    {
+        "ApiName": "HouseholdSize",
+        "CalculationMatrixId": {
+            "Name": "Food Assistance Benefits",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/Food Assistance Benefits",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Input",
+        "CurrencyIsoCode": "USD",
+        "DataType": "Number",
+        "DisplaySequence": 1,
+        "IsLocked": false,
+        "IsWildcardColumn": false,
+        "MayEdit": true,
+        "Name": "HouseholdSize",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated-1516226964",
+        "WildcardColumnValue": ""
+    },
+    {
+        "ApiName": "MaximumMonthlyBenefit",
+        "CalculationMatrixId": {
+            "Name": "Food Assistance Benefits",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/Food Assistance Benefits",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Output",
+        "CurrencyIsoCode": "USD",
+        "DataType": "Currency",
+        "DisplaySequence": 2,
+        "IsLocked": false,
+        "IsWildcardColumn": false,
+        "MayEdit": true,
+        "Name": "MaximumMonthlyBenefit",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated500875616",
+        "WildcardColumnValue": ""
+    }
+]

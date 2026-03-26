@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnablementMeasureDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Counts the number of closed won deals with Tandem Solar Cells.</description>
+    <developerName>Tandem_Solar_Cell_Deals</developerName>
+    <masterLabel>Tandem Solar Cell Deals</masterLabel>
+    <sourceMeasureObject>
+        <aggregateFunction>Count</aggregateFunction>
+        <dateFieldApiName>CloseDate</dateFieldApiName>
+        <displayFieldApiName>Name</displayFieldApiName>
+        <objectApiName>Opportunity</objectApiName>
+        <userFieldApiName>OwnerId</userFieldApiName>
+    </sourceMeasureObject>
+    <status>Draft</status>
+</EnablementMeasureDefinition>

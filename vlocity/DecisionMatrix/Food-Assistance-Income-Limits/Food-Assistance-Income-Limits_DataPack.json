@@ -1,0 +1,18 @@
+{
+    "CalculationMatrixColumn": "Food-Assistance-Income-Limits_CalculationMatrixColumns.json",
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixType": "DecisionMatrix",
+    "Description": "",
+    "GroupKey": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "Name": "Food Assistance Income Limits",
+    "Namespace": "",
+    "SubGroupKey": "",
+    "Type": "Standard",
+    "UniqueName": "Food_Assistance_Income_Limits",
+    "UsageType": "Bre",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrix",
+    "VlocityRecordSourceKey": "CalculationMatrix/Food Assistance Income Limits"
+}

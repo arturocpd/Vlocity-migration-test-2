@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assetIcon>/analytics/wave/web/proto/images/app/icons/16.png</assetIcon>
+    <folder>Emergency_Response_Analytics_YYR</folder>
+    <masterLabel>Emergency_Response_Analytics_YYR</masterLabel>
+    <templateOrigin>Emergency_Response_Analytics_YYR</templateOrigin>
+    <templateVersion>1.0</templateVersion>
+</WaveApplication>

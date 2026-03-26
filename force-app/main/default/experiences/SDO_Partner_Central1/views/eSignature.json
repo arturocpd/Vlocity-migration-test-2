@@ -1,0 +1,31 @@
+{
+  "appPageId" : "e0fc7900-a10c-4a56-88d5-3300b25fd224",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "36adad69-9182-4cc4-b2d5-759898b86794",
+  "label" : "E-Signature",
+  "regions" : [ {
+    "id" : "619bdfd7-3abe-43bb-8b27-faa016bdbd8c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "runtime_industries_clm:contractSignatureView",
+      "id" : "aefdfd84-817b-4aca-8201-212edf12bc5c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "26feabbd-d133-44c4-9d00-29bd9b20b0ed",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "9e13567a-86c6-406d-aa54-ecbcff7f194c",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "e-signature"
+}

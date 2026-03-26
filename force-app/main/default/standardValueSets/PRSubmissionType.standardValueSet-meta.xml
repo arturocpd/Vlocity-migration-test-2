@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Invoice</fullName>
+        <default>false</default>
+        <label>Invoice</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Online Submission</fullName>
+        <default>false</default>
+        <label>Online Submission</label>
+    </standardValue>
+</StandardValueSet>

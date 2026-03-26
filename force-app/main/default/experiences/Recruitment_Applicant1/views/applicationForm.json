@@ -1,0 +1,31 @@
+{
+  "appPageId" : "c1857bfa-5ce6-40d8-a9ca-f1a64d399d34",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "f3eff07a-b68e-41b5-94af-2e1812c541fe",
+  "label" : "Application Form",
+  "regions" : [ {
+    "id" : "e12a07f1-1f7e-4fb4-ab38-671186713845",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "industries_service_excellence:omniscriptContainer",
+      "id" : "0ef5df8b-0aea-4af1-a409-90797a8ac107",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1bfc3651-981b-4db8-b44d-b7b1ab0f7ee4",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "c3c6c061-644e-4347-9682-88a81f1b89b1",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "job-application-form"
+}

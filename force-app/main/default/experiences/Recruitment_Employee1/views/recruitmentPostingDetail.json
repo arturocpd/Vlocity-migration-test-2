@@ -1,0 +1,51 @@
+{
+  "appPageId" : "b97b5bc1-b612-4339-b95e-16ab9ce2aff7",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "88b68b2f-64ac-473a-a7f5-f347442a0a17",
+  "label" : "Recruitment Posting Detail",
+  "regions" : [ {
+    "id" : "bc163829-5def-499d-986a-e475a93b1ecb",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "exposedAttributes" : "{\"IsEmployeePortal\": true}",
+        "flexcardName" : "RecruitmentShowPosting",
+        "objectApiName" : "{!objectApiName}",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "runtime_omnistudio:flexcard",
+      "id" : "4fa946d1-3cf8-4fde-8e54-76f8b23e9120",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "68f44922-cad1-472d-abaf-b5119e2b37d8",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "baacbe45-4c18-49eb-a99e-4480779b16f1",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a89acf5c-58e7-4a41-91da-04bee4201990",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "568c6cf3-fe1a-4d48-9277-d16d0fa09cfb",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-18B"
+}

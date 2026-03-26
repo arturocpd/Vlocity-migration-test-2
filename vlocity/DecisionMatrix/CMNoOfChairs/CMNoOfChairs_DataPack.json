@@ -1,0 +1,18 @@
+{
+    "CalculationMatrixColumn": "CMNoOfChairs_CalculationMatrixColumns.json",
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixType": "DecisionMatrix",
+    "Description": "",
+    "GroupKey": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "Name": "CMNoOfChairs",
+    "Namespace": "",
+    "SubGroupKey": "",
+    "Type": "Standard",
+    "UniqueName": "CMNoOfChairs",
+    "UsageType": "Bre",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrix",
+    "VlocityRecordSourceKey": "CalculationMatrix/CMNoOfChairs"
+}

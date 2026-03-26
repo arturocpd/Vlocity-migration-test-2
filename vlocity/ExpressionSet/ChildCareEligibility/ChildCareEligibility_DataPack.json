@@ -1,0 +1,12 @@
+{
+    "CurrencyIsoCode": "USD",
+    "Description": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "Name": "ChildCareEligibility",
+    "Namespace": "",
+    "UniqueName": "ChildCareEligibility",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedure",
+    "VlocityRecordSourceKey": "CalculationProcedure/ChildCareEligibility"
+}

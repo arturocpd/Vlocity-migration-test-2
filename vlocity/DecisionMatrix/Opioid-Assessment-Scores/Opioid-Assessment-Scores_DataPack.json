@@ -1,0 +1,18 @@
+{
+    "CalculationMatrixColumn": "Opioid-Assessment-Scores_CalculationMatrixColumns.json",
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixType": "DecisionMatrix",
+    "Description": "",
+    "GroupKey": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "Name": "Opioid Assessment Scores",
+    "Namespace": "",
+    "SubGroupKey": "",
+    "Type": "Standard",
+    "UniqueName": "Opioid_Assessment_Scores",
+    "UsageType": "Bre",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrix",
+    "VlocityRecordSourceKey": "CalculationMatrix/Opioid Assessment Scores"
+}

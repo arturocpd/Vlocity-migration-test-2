@@ -1,0 +1,29 @@
+{
+    "%vlocity_namespace%__GlobalKey__c": "ChildCareEligibility V1",
+    "CalculationProcedure.Name": "ChildCareEligibility",
+    "CalculationProcedureId": {
+        "Name": "ChildCareEligibility",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationProcedure/ChildCareEligibility",
+        "VlocityRecordSObjectType": "CalculationProcedure"
+    },
+    "Constants": "",
+    "CurrencyIsoCode": "USD",
+    "Description": "",
+    "EndDateTime": "",
+    "IsLocked": false,
+    "IsLoopingEnabled": false,
+    "LastSimulatedVariablesInput": "",
+    "LoopEnd": "",
+    "LoopIncrement": "",
+    "LoopStart": "",
+    "MayEdit": true,
+    "Name": "ChildCareEligibility V1",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2025-04-03T14:23:22.000Z",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedureVersion",
+    "VlocityRecordSourceKey": "CalculationProcedureVersion/1/CalculationProcedure/ChildCareEligibility"
+}

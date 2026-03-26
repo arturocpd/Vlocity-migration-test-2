@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used on the BLA record page to launch screen flow to create a business license from the BLA. Conditional visibility on the lightning record page based on Application Status</description>
+    <flowDefinition>gps_LPI_Create_Business_License_from_Business_License_Application_PLA_to_PL</flowDefinition>
+    <label>📜 Issue License</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

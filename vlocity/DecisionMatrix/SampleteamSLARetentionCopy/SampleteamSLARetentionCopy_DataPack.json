@@ -1,0 +1,18 @@
+{
+    "CalculationMatrixColumn": "SampleteamSLARetentionCopy_CalculationMatrixColumns.json",
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixType": "DecisionMatrix",
+    "Description": "",
+    "GroupKey": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "Name": "SampleteamSLARetentionCopy",
+    "Namespace": "",
+    "SubGroupKey": "",
+    "Type": "Standard",
+    "UniqueName": "SampleteamSLARetentionCopy",
+    "UsageType": "",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrix",
+    "VlocityRecordSourceKey": "CalculationMatrix/SampleteamSLARetentionCopy"
+}

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "6d3b2416-04d6-4371-a356-7a640b5f261f",
+  "appPageId" : "24923cbc-be10-456f-8993-822c2e3bdbe5",
+  "configurationTags" : [ ],
+  "devName" : "Emergency_Supplies_Request__c",
+  "id" : "d77474eb-a9d9-4e1d-adc5-e32bb77b07ab",
+  "label" : "Emergency Supplies Request",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-emergency-supplies-request",
+  "type" : "route",
+  "urlPrefix" : "emergency-supplies-request"
+}

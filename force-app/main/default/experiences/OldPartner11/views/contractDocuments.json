@@ -1,0 +1,31 @@
+{
+  "appPageId" : "e0fc7900-a10c-4a56-88d5-3300b25fd224",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "9ee6c72c-016e-4abc-916a-b2c9136ce185",
+  "label" : "Contract Documents",
+  "regions" : [ {
+    "id" : "74ccc59a-20ec-4aba-af7b-ed2c33277c46",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "runtime_industries_clm:contractDocumentView",
+      "id" : "6adb05c0-3410-4f5f-a3f7-3f6680962fc1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e2589e0d-50c2-4c77-8841-ff4159f326ef",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "3cb22545-2f78-4f71-9402-92f7fbce7ee0",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "contract-documents"
+}

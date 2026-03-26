@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "057bf3a8-1406-4adc-a518-fa826051e16c",
+  "appPageId" : "c1857bfa-5ce6-40d8-a9ca-f1a64d399d34",
+  "configurationTags" : [ ],
+  "devName" : "Recruitment_Application_Profile",
+  "id" : "fa966968-941f-468c-8e94-658a48951a4e",
+  "label" : "Profile",
+  "pageAccess" : "UseParent",
+  "routeType" : "application-profile",
+  "type" : "route",
+  "urlPrefix" : "application-profile"
+}

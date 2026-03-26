@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "cab0b9c9-7f4e-439a-b87f-a1e066dd2658",
+  "appPageId" : "c1857bfa-5ce6-40d8-a9ca-f1a64d399d34",
+  "configurationTags" : [ ],
+  "devName" : "lwcos__c",
+  "id" : "76431711-02d4-4303-86f3-55ccd07885b2",
+  "label" : "lwcos",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-lwcos",
+  "type" : "route",
+  "urlPrefix" : "lwcos"
+}

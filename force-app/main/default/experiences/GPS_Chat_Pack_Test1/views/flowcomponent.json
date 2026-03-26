@@ -1,0 +1,70 @@
+{
+  "appPageId" : "f0a9403a-39ff-443d-aef5-83a9358c6a15",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "3ab719db-96a6-4944-b2b6-b1346f584526",
+  "label" : "flowcomponent",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "c3e9d70a-e245-45b8-919a-e0785cdedfd5",
+          "columns" : [ {
+            "UUID" : "61abfc77-379c-4b32-a0ae-ca9304c96a30",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "c3e9d70a-e245-45b8-919a-e0785cdedfd5",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "flowName" : "{!flowName}"
+          },
+          "componentName" : "c:PSChatBotPackRunFlow",
+          "id" : "29ae9594-2537-4745-9d7b-85c83cd59f91",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "61abfc77-379c-4b32-a0ae-ca9304c96a30",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "05bdabc8-7f39-462b-b1dc-2d148d2c71e3",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "flowcomponent"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "52adc18a-4cb1-48c6-ae5f-0a4f8f5e6196",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7eb83cae-edf5-49fb-8f70-13aa77a53c2d",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "lVQOOTsCi94StTThNMjdj2PjDnW2bp",
+  "type" : "view",
+  "viewType" : "custom-flowcomponent"
+}

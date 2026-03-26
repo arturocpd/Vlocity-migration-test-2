@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Share_Location_Site_Users</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Shares location records with EPM experience cloud site users</description>
+        <label>Share Location Site Users</label>
+        <sharedTo>
+            <allCustomerPortalUsers></allCustomerPortalUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>LocationType</field>
+            <operation>equals</operation>
+            <value>Virtual,Site,Mobile</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingGuestRules>
+        <fullName>Share_Location_Guest_Users</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Shares location records with guest site users for EPM experience cloud site</description>
+        <label>Share Location Guest Users</label>
+        <sharedTo>
+            <guestUser>GPS_EmergencyResponseManagement</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>LocationType</field>
+            <operation>equals</operation>
+            <value>Virtual,Site,Mobile</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

@@ -1,0 +1,48 @@
+[
+    {
+        "ApiName": "SquareFootage",
+        "CalculationMatrixId": {
+            "Name": "CannabisSquareFootage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/CannabisSquareFootage",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Input",
+        "CurrencyIsoCode": "USD",
+        "DataType": "NumberRange",
+        "DisplaySequence": 1,
+        "IsLocked": false,
+        "IsWildcardColumn": false,
+        "MayEdit": true,
+        "Name": "SquareFootage",
+        "Namespace": "",
+        "RangeValues": "1,5000,10000,50000,100000",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated-596341489",
+        "WildcardColumnValue": ""
+    },
+    {
+        "ApiName": "SquareFootageFee",
+        "CalculationMatrixId": {
+            "Name": "CannabisSquareFootage",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/CannabisSquareFootage",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Output",
+        "CurrencyIsoCode": "USD",
+        "DataType": "Currency",
+        "DisplaySequence": 2,
+        "IsLocked": false,
+        "IsWildcardColumn": false,
+        "MayEdit": true,
+        "Name": "SquareFootageFee",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated1958095523",
+        "WildcardColumnValue": ""
+    }
+]

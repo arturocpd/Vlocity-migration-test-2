@@ -1,0 +1,13 @@
+{
+    "CurrencyIsoCode": "USD",
+    "Description": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "MigrationStatus": "Migrated",
+    "Name": "Repair Eligibility",
+    "Namespace": "",
+    "UniqueName": "Repair_Eligibility",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedure",
+    "VlocityRecordSourceKey": "CalculationProcedure/Repair Eligibility"
+}

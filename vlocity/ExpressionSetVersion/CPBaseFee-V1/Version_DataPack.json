@@ -1,0 +1,29 @@
+{
+    "%vlocity_namespace%__GlobalKey__c": "CPBaseFee V1",
+    "CalculationProcedure.Name": "CPBaseFee",
+    "CalculationProcedureId": {
+        "Name": "CPBaseFee",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationProcedure/CPBaseFee",
+        "VlocityRecordSObjectType": "CalculationProcedure"
+    },
+    "Constants": "",
+    "CurrencyIsoCode": "USD",
+    "Description": "",
+    "EndDateTime": "",
+    "IsLocked": false,
+    "IsLoopingEnabled": false,
+    "LastSimulatedVariablesInput": "",
+    "LoopEnd": "",
+    "LoopIncrement": "",
+    "LoopStart": "",
+    "MayEdit": true,
+    "Name": "CPBaseFee V1",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2023-12-05T20:27:15.000Z",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedureVersion",
+    "VlocityRecordSourceKey": "CalculationProcedureVersion/1/CalculationProcedure/CPBaseFee"
+}

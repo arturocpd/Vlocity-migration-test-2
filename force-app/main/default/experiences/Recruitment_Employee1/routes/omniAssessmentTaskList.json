@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "48fce20a-85f1-462d-ab8d-19b3b885061f",
+  "appPageId" : "b97b5bc1-b612-4339-b95e-16ab9ce2aff7",
+  "configurationTags" : [ ],
+  "devName" : "Omni_Assessment_Task_List",
+  "id" : "08fa3c5f-be5e-49fa-bc3e-4817009296f5",
+  "label" : "Omni Assessment Task List",
+  "routeType" : "list-0os",
+  "type" : "route",
+  "urlPrefix" : "omniassessmenttask"
+}

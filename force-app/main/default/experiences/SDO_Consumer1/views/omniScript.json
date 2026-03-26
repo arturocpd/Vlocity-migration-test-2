@@ -1,0 +1,31 @@
+{
+  "appPageId" : "e4bd7437-87f9-492f-bb9b-cca60c9128dd",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "b6b16623-15c4-424b-835a-25e9a456fae8",
+  "label" : "OmniScript",
+  "regions" : [ {
+    "id" : "8c5a94e9-e98b-4599-aa1f-91ad635b25e1",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "industries_service_excellence:omniscriptContainer",
+      "id" : "59edcc6c-0cff-4e9e-8236-d1e2a7fc2606",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9227e3ec-1cbb-4d94-8d38-189ba2e4317a",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "61ec44e5-d4f7-4433-bdb2-93f457a74251",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "omniscript"
+}

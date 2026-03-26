@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExplainabilityMsgTemplate xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <evaluationResult>Failed</evaluationResult>
+    <expressionSetStepType>Condition</expressionSetStepType>
+    <expsSetProcessType xsi:nil="true"/>
+    <isDefault>false</isDefault>
+    <masterLabel>IncomeExceedsLimits</masterLabel>
+    <message>Either your gross household or net income exceed the limits for your household size</message>
+</ExplainabilityMsgTemplate>

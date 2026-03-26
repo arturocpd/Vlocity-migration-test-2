@@ -1,0 +1,13 @@
+{
+    "CurrencyIsoCode": "USD",
+    "Description": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "MigrationStatus": "Migrated",
+    "Name": "PSSExpCloud_MemberBenefitEligibility",
+    "Namespace": "",
+    "UniqueName": "PSSExpCloud_MemberBenefitEligibility",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedure",
+    "VlocityRecordSourceKey": "CalculationProcedure/PSSExpCloud_MemberBenefitEligibility"
+}

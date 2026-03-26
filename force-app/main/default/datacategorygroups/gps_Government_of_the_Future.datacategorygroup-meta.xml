@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Disability Services</label>
+            <name>Disability_Services</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Elderly Services</label>
+            <name>Elderly_Services</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Foster Care</label>
+            <name>Foster_Care</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Adoption Assistance</label>
+            <name>Adoption_Assistance</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Cash Assistance</label>
+            <name>Cash_Assistance</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Education Assistance</label>
+            <name>Education_Assistance</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Housing Assistance</label>
+            <name>Housing_Assistance</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Jobs &amp; Unemployment</label>
+            <name>Jobs_Unemployment</name>
+        </dataCategory>
+        <dataCategory>
+            <dataCategory>
+                <label>General Preparedness</label>
+                <name>General_Preparedness</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Floods</label>
+                <name>Floods</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Fires</label>
+                <name>Fires</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Earthquakes</label>
+                <name>Earthquakes</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Tornado/Hurricane</label>
+                <name>Tornado_Hurricane</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Severe Winter Weather</label>
+                <name>Severe_Winter_Weather</name>
+            </dataCategory>
+            <dataCategory>
+                <label>High Surf</label>
+                <name>High_Surf</name>
+            </dataCategory>
+            <dataCategory>
+                <label>Business Grants</label>
+                <name>Business_Grants</name>
+            </dataCategory>
+            <label>Disasters &amp; Emergencies</label>
+            <name>Disasters_Emergencies</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Grants &amp; Loans</label>
+            <name>Grants_Loans</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Medical Assistance</label>
+            <name>Medical_Assistance</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Food Assistance</label>
+            <name>Food_Assistance</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Services &amp; Benefits</label>
+            <name>Services_Benefits</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Starting a Business</label>
+            <name>Starting_a_Business</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Paying Taxes</label>
+            <name>Paying_Taxes</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Reporting Issues</label>
+            <name>Reporting_Issues</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Government Jobs</label>
+            <name>Government_Jobs</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <description>Default category for gps</description>
+    <label>Government of the Future</label>
+    <objectUsage>
+        <object>SvcCatalogItemDef</object>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

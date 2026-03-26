@@ -1,0 +1,39 @@
+{
+  "appPageId" : "b97b5bc1-b612-4339-b95e-16ab9ce2aff7",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "57896731-9a44-44bc-9aee-98546a636903",
+  "label" : "Recruitment Requisition Related List",
+  "regions" : [ {
+    "id" : "25ce89fd-ef19-4877-9379-33f7cc3773b8",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customTitle" : "",
+        "parentRecordId" : "{!recordId}",
+        "relatedListName" : "{!relationshipApiName}",
+        "showBreadCrumbs" : true,
+        "showCustomTitle" : false,
+        "showManualRefreshButton" : true,
+        "showRowNumbers" : true
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "690f7910-09f4-4811-99b8-1b233a01acb5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "67e3f40d-4bfa-4114-90f0-0d19d4358d05",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "47c93fa8-d559-4749-a45f-5dee494695bd",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-18A"
+}

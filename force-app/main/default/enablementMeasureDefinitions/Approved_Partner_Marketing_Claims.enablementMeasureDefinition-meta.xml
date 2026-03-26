@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnablementMeasureDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Counts the number of approved partner marketing claims.</description>
+    <developerName>Approved_Partner_Marketing_Claims</developerName>
+    <masterLabel>Approved Partner Marketing Claims</masterLabel>
+    <sourceMeasureObject>
+        <aggregateFunction>Count</aggregateFunction>
+        <dateFieldApiName>LastModifiedDate</dateFieldApiName>
+        <displayFieldApiName>Title</displayFieldApiName>
+        <filters>
+            <fieldApiName>Status</fieldApiName>
+            <fieldValue>Approved</fieldValue>
+            <operator>Equals</operator>
+            <sequenceNumber>1</sequenceNumber>
+        </filters>
+        <objectApiName>PartnerFundClaim</objectApiName>
+        <userFieldApiName>OwnerId</userFieldApiName>
+    </sourceMeasureObject>
+    <status>Draft</status>
+</EnablementMeasureDefinition>

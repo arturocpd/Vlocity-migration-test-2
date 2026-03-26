@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnablementMeasureDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Counts the number of leads registered by a partner user.</description>
+    <developerName>Number_of_Registered_Leads</developerName>
+    <masterLabel>Number of Registered Leads</masterLabel>
+    <sourceMeasureObject>
+        <aggregateFunction>Count</aggregateFunction>
+        <dateFieldApiName>CreatedDate</dateFieldApiName>
+        <displayFieldApiName>Name</displayFieldApiName>
+        <objectApiName>Lead</objectApiName>
+        <userFieldApiName>OwnerId</userFieldApiName>
+    </sourceMeasureObject>
+    <status>Draft</status>
+</EnablementMeasureDefinition>

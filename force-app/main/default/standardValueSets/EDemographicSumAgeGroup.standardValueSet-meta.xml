@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>&lt; 30 years</fullName>
+        <default>false</default>
+        <label>&lt; 30 years</label>
+    </standardValue>
+    <standardValue>
+        <fullName>30-50 years</fullName>
+        <default>false</default>
+        <label>30-50 years</label>
+    </standardValue>
+    <standardValue>
+        <fullName>&gt; 50 years</fullName>
+        <default>false</default>
+        <label>&gt; 50 years</label>
+    </standardValue>
+</StandardValueSet>

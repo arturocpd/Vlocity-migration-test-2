@@ -1,0 +1,13 @@
+{
+    "CurrencyIsoCode": "USD",
+    "Description": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "MigrationStatus": "Migrated",
+    "Name": "CPResidenceFee",
+    "Namespace": "",
+    "UniqueName": "CPResidenceFee",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedure",
+    "VlocityRecordSourceKey": "CalculationProcedure/CPResidenceFee"
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnablementMeasureDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Counts the number of opportunities converted from leads.</description>
+    <developerName>Converted_Opportunities_from_Leads</developerName>
+    <masterLabel>Converted Opportunities from Leads</masterLabel>
+    <sourceMeasureObject>
+        <aggregateFunction>Count</aggregateFunction>
+        <dateFieldApiName>ConvertedDate</dateFieldApiName>
+        <displayFieldApiName>Name</displayFieldApiName>
+        <filters>
+            <fieldApiName>IsConverted</fieldApiName>
+            <fieldValue>true</fieldValue>
+            <operator>Equals</operator>
+            <sequenceNumber>1</sequenceNumber>
+        </filters>
+        <objectApiName>Lead</objectApiName>
+        <userFieldApiName>OwnerId</userFieldApiName>
+    </sourceMeasureObject>
+    <status>Draft</status>
+</EnablementMeasureDefinition>

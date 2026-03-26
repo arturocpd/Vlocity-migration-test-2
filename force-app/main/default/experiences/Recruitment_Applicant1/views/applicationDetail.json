@@ -1,0 +1,217 @@
+{
+  "appPageId" : "c1857bfa-5ce6-40d8-a9ca-f1a64d399d34",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "434ea92a-207d-4591-897c-cf969ccfcb86",
+  "label" : "Application Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "f47e2800-c9eb-472e-a7c3-cf424e6820b9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5f58c1a8-2c91-4f3b-a024-4b18d0a92e2c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "d91951b7-c054-4bd2-b772-e97c32736da3",
+          "activeTab" : "tab1",
+          "tabs" : [ {
+            "UUID" : "69531029-fb63-42e1-903d-d1f4c60df349",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "f5e52",
+            "tabName" : "Application Overview"
+          }, {
+            "UUID" : "46ca6c21-4413-46a2-a5d7-e2a0e9124584",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "flexcardName" : "RecruitmentShowJobApplicationForReview",
+                "sfdc:identifier" : "job_application_review"
+              },
+              "fqn" : "runtime_omnistudio:flexcard"
+            } ],
+            "tabKey" : "app-details",
+            "tabName" : "Details"
+          }, {
+            "UUID" : "d4b32873-3e1f-44fe-a3b2-64e5d0eecd6c",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "customTitle" : "Documents",
+                "parentRecordId" : "{!recordId}",
+                "relatedListName" : "DocumentChecklistItemPR",
+                "showBreadCrumbs" : "false",
+                "showCustomTitle" : "true",
+                "showRowNumbers" : "false"
+              },
+              "fqn" : "forceCommunity:relatedList"
+            } ],
+            "tabKey" : "app-documents",
+            "tabName" : "Documents"
+          }, {
+            "UUID" : "6330bb6d-78c1-4759-8de3-f03ad360a0c3",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "a0eba",
+            "tabName" : "Resume Upload"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabLayout",
+      "id" : "d91951b7-c054-4bd2-b772-e97c32736da3",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "formSectionConfiguration" : "IntakeFormSection",
+            "formSectionsPath" : "Id.ReferenceRecordId",
+            "groupRequiredSections" : true,
+            "indicateRequiredOptionalSection" : true,
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "runtime_industries_application:formOverview",
+          "id" : "a9f87a42-9f20-486d-819d-8e20c69b9d5d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "69531029-fb63-42e1-903d-d1f4c60df349",
+        "regionLabel" : "Application Overview",
+        "regionName" : "f5e52",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "flexcardName" : "GPSRecruitmentApplicationTracking",
+            "objectApiName" : "{!objectApiName}",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "runtime_omnistudio:flexcard",
+          "id" : "7e6a334e-11cd-4475-bf30-0659f8c809c2",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "46ca6c21-4413-46a2-a5d7-e2a0e9124584",
+        "regionLabel" : "Details",
+        "regionName" : "app-details",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "customTitle" : "Documents",
+            "parentRecordId" : "{!recordId}",
+            "relatedListName" : "DocumentChecklistItemPR",
+            "showBreadCrumbs" : false,
+            "showCustomTitle" : true,
+            "showManualRefreshButton" : true,
+            "showRowNumbers" : false
+          },
+          "componentName" : "forceCommunity:relatedList",
+          "id" : "aecab4c6-0408-44f0-8f40-a1a897876d6d",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "d4b32873-3e1f-44fe-a3b2-64e5d0eecd6c",
+        "regionLabel" : "Documents",
+        "regionName" : "app-documents",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "direction" : "ltr",
+            "display" : "Display OmniScript on page",
+            "inlineVariant" : "brand",
+            "language" : "English",
+            "subType" : "ResumeUpload",
+            "theme" : "lightning",
+            "type" : "GPS"
+          },
+          "componentName" : "runtime_omnistudio:omniscript",
+          "id" : "990f0e32-73a3-4f4f-9d0f-2c7862fe9a89",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "6330bb6d-78c1-4759-8de3-f03ad360a0c3",
+        "regionLabel" : "Resume Upload",
+        "regionName" : "a0eba",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "86f406bc-d8c4-4e84-8efe-e300f8f617b9",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "OPEN",
+        "layout" : "COMPACT",
+        "pageSize" : 5,
+        "scope" : "Task",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "f89fbd38-6334-4cc4-8cc9-cb595d796b72",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "de34e4f6-aa62-4011-9cbd-3e76fb8ef489",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "addd5387-b414-465b-9108-5904c8871285",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "357ec261-16be-4535-9b48-9e9388792d02",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "45cb1a9f-7812-471e-aff1-98f57b36833c",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-13X"
+}

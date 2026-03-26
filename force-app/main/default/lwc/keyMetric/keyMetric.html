@@ -1,0 +1,34 @@
+<template>
+    <div class="metric-card slds-box slds-var-p-around_medium slds-text-align_center">
+        <!-- large formatted metric -->
+        <div class="metric-value">
+            <template lwc:if={metricFormatCurrency}>
+                {metricCurrencyValue}
+            </template>
+            <template lwc:elseif={metricFormatNumber}>
+                <template lwc:if={metricDecimal}>
+                    {metricNumberValue}
+                </template>
+                <template lwc:else>
+                    <lightning-formatted-number value={value} format-style={metricFormat} maximum-fraction-digits={metricMaximumDigits}></lightning-formatted-number>
+                </template>
+            </template>
+            <template lwc:elseif={metricFormatDate}>
+                <template lwc:if={metricIncludeWeekday}>
+                    <lightning-formatted-date-time value={value} year={metricYearOption} month={metricMonthOption} day={metricDayOption} weekday={metricWeekdayOption}></lightning-formatted-date-time>
+                </template>
+                <template lwc:else>
+                    <lightning-formatted-date-time value={value} year={metricYearOption} month={metricMonthOption} day={metricDayOption}></lightning-formatted-date-time>
+                </template>
+            </template>
+            <template lwc:else>
+                <lightning-formatted-rich-text value={value}></lightning-formatted-rich-text>
+            </template>
+        </div>
+
+        <!-- smaller display text -->
+        <div class="metric-label">
+            {metric.label}
+        </div>
+    </div>
+</template>

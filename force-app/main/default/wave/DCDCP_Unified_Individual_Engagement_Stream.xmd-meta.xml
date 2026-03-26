@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>DCDCP_Unified_Individual_Engagement_Stream</dataset>
+    <dates>
+        <alias>EngagementDateTime</alias>
+        <dateFieldDay>EngagementDateTime_Day</dateFieldDay>
+        <dateFieldEpochDay>EngagementDateTime_day_epoch</dateFieldEpochDay>
+        <dateFieldEpochSecond>EngagementDateTime_sec_epoch</dateFieldEpochSecond>
+        <dateFieldHour>EngagementDateTime_Hour</dateFieldHour>
+        <dateFieldMinute>EngagementDateTime_Minute</dateFieldMinute>
+        <dateFieldMonth>EngagementDateTime_Month</dateFieldMonth>
+        <dateFieldQuarter>EngagementDateTime_Quarter</dateFieldQuarter>
+        <dateFieldSecond>EngagementDateTime_Second</dateFieldSecond>
+        <dateFieldWeek>EngagementDateTime_Week</dateFieldWeek>
+        <dateFieldYear>EngagementDateTime_Year</dateFieldYear>
+        <firstDayOfWeek>-1</firstDayOfWeek>
+        <fiscalMonthOffset>0</fiscalMonthOffset>
+        <label>Engagement Date</label>
+        <sortIndex>0</sortIndex>
+        <type>O</type>
+    </dates>
+    <dimensions>
+        <field>EngagementChannelAction</field>
+        <isDerived>false</isDerived>
+        <label>Engagement Channel Action</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>EngagementChannel</field>
+        <isDerived>false</isDerived>
+        <label>Engagement Channel</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>EngagementChannelType</field>
+        <isDerived>false</isDerived>
+        <label>Engagement Channel Type</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>IndividualFirstName</field>
+        <isDerived>false</isDerived>
+        <label>First Name</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>IndividualLastName</field>
+        <isDerived>false</isDerived>
+        <label>Last Name</label>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>ReferrerMedium</field>
+        <isDerived>false</isDerived>
+        <label>Referrer Medium</label>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+</WaveXmd>

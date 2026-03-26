@@ -1,0 +1,142 @@
+.THIS .banner-container-outer {
+     width:100%;
+}
+
+.THIS .banner-container-inner {
+    background:#0b6448;
+    border-radius:4px 4px 0 0;
+    padding:10px;
+    text-align:left;
+}
+
+.THIS .banner-welcome-outer {
+    float:left;
+    /* position:relative; */
+}
+
+.THIS .banner-welcome-inner {
+    width:100%;
+    /* position:absolute;
+    top:10%;
+    transform:translateY(10%); */
+}
+
+.THIS .banner-welcome-text {
+    float:left;
+    margin-left:10px;
+}
+
+.THIS .banner-metrics {
+    float:right;
+}
+
+.THIS .metric-container {
+    float:left;
+    margin-left:20px;
+}
+
+.THIS .customer-image-container {
+    position: relative;
+    display: inline-block;
+    margin-top: -35px;
+}
+
+.THIS .customer-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.THIS .metric-number {
+    color:#ffffff;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.THIS .metric-label {
+    color:#ffffff;
+    font-size:16px;
+}
+
+.THIS .banner-actions {
+    /* background:#064932; */
+    border-radius:0 0 4px 4px;
+    padding:10px;
+    text-align:left;
+}
+
+.THIS .toggle-container {
+    float:left;
+}
+
+.THIS .banner-actions .button-container {
+    float:right;
+}
+
+.THIS .action-bar-min-height {
+    min-height:40px;
+}
+
+.THIS .banner-actions .slds-button_brand {
+    /*
+     * background-color: #ffffff;
+     * border-color:#ffffff;
+     * color:#064932;
+    */
+    background-color: var(--buttonbackgroundcolor);
+    border-color: var(--buttonbordercolor);
+    color: var(--buttontextcolor);
+}
+
+.THIS .toggle-container .slds-form-element__label {
+    color: var(--toggletextcolor);
+}
+
+.THIS .toggle-container .slds-checkbox_on {
+    color: var(--toggletextcolor);
+}
+                                        
+.THIS .toggle-container .slds-checkbox_off {
+    color: var(--toggletextcolor);
+}
+
+.THIS .slds-welcome-mat__info {
+	padding-bottom:10px;
+    background-image: var(--appinfo-left-backgroundimage);
+	background-color: var(--appinfo-left-backgroundcolor);
+}
+
+.THIS .slds-welcome-mat__tiles {
+    background-color: var(--appinfo-right-backgroundcolor);
+}
+
+
+
+/* *************** */
+/* Small devices (portrait/landscape phones, less than 768px) original used 828px*/
+@media only screen and (max-width: 1500px){
+    .THIS .welcome-banner-outer {
+        clear:right;
+        width:100%;
+        margin-bottom:10px;
+    }
+    
+    .THIS .banner-metrics {
+        float:none;
+        clear:both;
+    }
+    
+    .THIS .metric-container {
+        float:left;
+        margin-left:0;
+        margin-right:5px;
+    }
+    
+    .THIS .banner-actions .button-container {
+        float:none;
+    }
+    
+    /* .THIS .button-container .slds-button__icon {
+        display:none;
+    } */
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Safety</fullName>
+        <default>false</default>
+        <label>Safety</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Theft</fullName>
+        <default>false</default>
+        <label>Theft</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Neglect</fullName>
+        <default>false</default>
+        <label>Neglect</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Advising, Selling and Arranging</fullName>
+        <default>false</default>
+        <label>Advising, Selling and Arranging</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Information, Charges, or Product Performance</fullName>
+        <default>false</default>
+        <label>Information, Charges, or Product Performance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Admin/ Customer Service</fullName>
+        <default>false</default>
+        <label>General Admin/ Customer Service</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Transaction Related</fullName>
+        <default>false</default>
+        <label>Transaction Related</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Digital or Technology</fullName>
+        <default>false</default>
+        <label>Digital or Technology</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing or Corporate Communications</fullName>
+        <default>false</default>
+        <label>Marketing or Corporate Communications</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Accessibility Issues</fullName>
+        <default>false</default>
+        <label>Accessibility Issues</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Financial Hardship or Collections</fullName>
+        <default>false</default>
+        <label>Financial Hardship or Collections</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lending / Credit</fullName>
+        <default>false</default>
+        <label>Lending / Credit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </standardValue>
+</StandardValueSet>

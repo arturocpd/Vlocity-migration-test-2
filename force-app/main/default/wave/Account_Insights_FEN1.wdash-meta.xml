@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>LPI_Analytics_FEN</application>
+    <dateVersion>1</dateVersion>
+    <description>Get insights into the applications, licenses, complaints, inspections, and violations of accounts by embedding this dashboard on the account record page.</description>
+    <masterLabel>Account Insights</masterLabel>
+    <templateAssetSourceName>Account_Insights_FEN</templateAssetSourceName>
+</WaveDashboard>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>42.0</apiVersion>
+    <description>Basic grid-based extensible stylesheet used for communities.
+
+Add extends=&quot;CommuntiySectionLayout&quot; to any page for simple and quick layouts.
+
+Breakpoint for single column layout @ 1024px</description>
+</AuraDefinitionBundle>

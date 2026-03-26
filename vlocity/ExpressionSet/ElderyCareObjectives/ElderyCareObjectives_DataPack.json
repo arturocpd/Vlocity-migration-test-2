@@ -1,0 +1,13 @@
+{
+    "CurrencyIsoCode": "USD",
+    "Description": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "MigrationStatus": "Migrated",
+    "Name": "ElderyCareObjectives",
+    "Namespace": "",
+    "UniqueName": "ElderyCareObjectives",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedure",
+    "VlocityRecordSourceKey": "CalculationProcedure/ElderyCareObjectives"
+}

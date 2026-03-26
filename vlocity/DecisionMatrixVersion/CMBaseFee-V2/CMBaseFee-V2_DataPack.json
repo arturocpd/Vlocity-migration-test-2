@@ -1,0 +1,29 @@
+{
+    "ApiName": "CMBaseFee_V2",
+    "CalculationMatrix.Name": "CMBaseFee",
+    "CalculationMatrixId": {
+        "Name": "CMBaseFee",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationMatrix/CMBaseFee",
+        "VlocityRecordSObjectType": "CalculationMatrix"
+    },
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixDefinitionVerId": "9QOHu00000112JzOAI",
+    "DscnModelNoteExportStatus": "",
+    "EndDateTime": "",
+    "GroupKey": "",
+    "GroupKeyValue": "",
+    "IsLocked": false,
+    "MatrixType": "Standard",
+    "MayEdit": true,
+    "Name": "CMBaseFee V2",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2023-12-11T16:18:00.000Z",
+    "SubGroupKey": "",
+    "SubGroupKeyValue": "",
+    "VersionNumber": 2,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrixVersion",
+    "VlocityRecordSourceKey": "CalculationMatrixVersion/2/CalculationMatrix/CMBaseFee"
+}

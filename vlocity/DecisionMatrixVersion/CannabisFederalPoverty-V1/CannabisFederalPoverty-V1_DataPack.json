@@ -1,0 +1,29 @@
+{
+    "ApiName": "CannabisFederalPoverty_V1",
+    "CalculationMatrix.Name": "CannabisFederalPoverty",
+    "CalculationMatrixId": {
+        "Name": "CannabisFederalPoverty",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationMatrix/CannabisFederalPoverty",
+        "VlocityRecordSObjectType": "CalculationMatrix"
+    },
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixDefinitionVerId": "9QOHu00000112JrOAI",
+    "DscnModelNoteExportStatus": "",
+    "EndDateTime": "",
+    "GroupKey": "",
+    "GroupKeyValue": "",
+    "IsLocked": false,
+    "MatrixType": "Standard",
+    "MayEdit": true,
+    "Name": "CannabisFederalPoverty V1",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2023-12-04T21:29:36.000Z",
+    "SubGroupKey": "",
+    "SubGroupKeyValue": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrixVersion",
+    "VlocityRecordSourceKey": "CalculationMatrixVersion/1/CalculationMatrix/CannabisFederalPoverty"
+}

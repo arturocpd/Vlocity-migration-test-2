@@ -1,0 +1,30 @@
+{
+  "forgotPasswordRouteId" : "c3bdb4c1-af83-41f9-85b6-d30a130a87e3",
+  "isAvailableToGuests" : false,
+  "isFilteredComponentsView" : false,
+  "isProgressiveRenderingEnabled" : false,
+  "loginAppPageId" : "8dd46aca-96fc-49f4-978d-2865be2b58f2",
+  "mainAppPageId" : "f0a9403a-39ff-443d-aef5-83a9358c6a15",
+  "preferredDomain" : "none",
+  "selfRegistrationRouteId" : "ceec2acf-0672-4138-817f-2bbb4a7c002e",
+  "trustedSitesForScript" : [ {
+    "id" : "1a0b53ef-1583-412d-823e-9c25a375e3f7",
+    "isActive" : true,
+    "trustedSiteName" : "Chat",
+    "trustedSiteUrl" : "https://*.salesforceliveagent.com",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "04b462b0-99f9-49c4-8482-bb876cf3bddc",
+    "isActive" : true,
+    "trustedSiteName" : "Snippet",
+    "trustedSiteUrl" : "https://*.my.site.com/",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "86eec59c-e53e-499b-9779-725df0faeb63",
+    "isActive" : true,
+    "trustedSiteName" : "ArcGIS",
+    "trustedSiteUrl" : "https://server.arcgisonline.com",
+    "type" : "trustedSitesForScripts"
+  } ],
+  "type" : "site"
+}

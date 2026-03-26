@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Account Support</fullName>
+        <default>false</default>
+        <label>Account Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General</fullName>
+        <default>false</default>
+        <label>General</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Issue</fullName>
+        <default>false</default>
+        <label>Technical Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Appointment</fullName>
+        <default>false</default>
+        <label>Appointment</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business</fullName>
+        <default>false</default>
+        <label>Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Complaint</fullName>
+        <default>false</default>
+        <label>Complaint</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HR</fullName>
+        <default>false</default>
+        <label>HR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IT</fullName>
+        <default>false</default>
+        <label>IT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Policy</fullName>
+        <default>false</default>
+        <label>Policy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Issue</fullName>
+        <default>false</default>
+        <label>Service Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Services &amp; Benefits</fullName>
+        <default>false</default>
+        <label>Services &amp; Benefits</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Establishment License</fullName>
+        <default>false</default>
+        <label>Establishment License</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Youth Theft</fullName>
+        <default>false</default>
+        <label>Youth Theft</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Court Case</fullName>
+        <default>false</default>
+        <label>Court Case</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Safety</fullName>
+        <default>false</default>
+        <label>Safety</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Investigation</fullName>
+        <default>false</default>
+        <label>Investigation</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,48 @@
+[
+    {
+        "ApiName": "AnnualIncomeLimit",
+        "CalculationMatrixId": {
+            "Name": "PrescreeningForBenefits_PovertyGuideline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/PrescreeningForBenefits_PovertyGuideline",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Output",
+        "CurrencyIsoCode": "USD",
+        "DataType": "Currency",
+        "DisplaySequence": 2,
+        "IsLocked": false,
+        "IsWildcardColumn": false,
+        "MayEdit": true,
+        "Name": "AnnualIncomeLimit",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated-789570926",
+        "WildcardColumnValue": ""
+    },
+    {
+        "ApiName": "NumberOfHouseholdMembers",
+        "CalculationMatrixId": {
+            "Name": "PrescreeningForBenefits_PovertyGuideline",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "CalculationMatrix/PrescreeningForBenefits_PovertyGuideline",
+            "VlocityRecordSObjectType": "CalculationMatrix"
+        },
+        "ColumnType": "Input",
+        "CurrencyIsoCode": "USD",
+        "DataType": "Number",
+        "DisplaySequence": 1,
+        "IsLocked": false,
+        "IsWildcardColumn": false,
+        "MayEdit": true,
+        "Name": "NumberOfHouseholdMembers",
+        "Namespace": "",
+        "RangeValues": "",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "CalculationMatrixColumn",
+        "VlocityRecordSourceKey": "CalculationMatrixColumn/Generated1369976596",
+        "WildcardColumnValue": ""
+    }
+]

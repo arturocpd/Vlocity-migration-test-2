@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>BusinessLicense_FEN</dataset>
+    <dimensions>
+        <field>Name</field>
+        <isDerived>false</isDerived>
+        <label>License Name</label>
+        <recordDisplayFields>
+            <recordDisplayField>Name</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordDisplayFields>
+            <recordDisplayField>Identifier</recordDisplayField>
+            <sortIndex>1</sortIndex>
+        </recordDisplayFields>
+        <recordDisplayFields>
+            <recordDisplayField>Status</recordDisplayField>
+            <sortIndex>2</sortIndex>
+        </recordDisplayFields>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Identifier</field>
+        <isDerived>false</isDerived>
+        <label>License ID</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+</WaveXmd>

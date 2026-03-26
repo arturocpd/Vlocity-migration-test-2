@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExplainabilityMsgTemplate xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <evaluationResult>Passed</evaluationResult>
+    <expressionSetStepType>Calculation</expressionSetStepType>
+    <expsSetProcessType xsi:nil="true"/>
+    <isDefault>false</isDefault>
+    <masterLabel>BenefitAmountBasedOnNetIncomeAndHouseholdSize</masterLabel>
+    <message>The benefit amount you are eligible for is based on your household size and your net income</message>
+</ExplainabilityMsgTemplate>

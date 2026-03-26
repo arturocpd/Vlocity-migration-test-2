@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnablementMeasureDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Counts the number of fund requests a partner has submitted.</description>
+    <developerName>Submitted_Partner_Fund_Requests</developerName>
+    <masterLabel>Submitted Partner Fund Requests</masterLabel>
+    <sourceMeasureObject>
+        <aggregateFunction>Count</aggregateFunction>
+        <dateFieldApiName>CreatedDate</dateFieldApiName>
+        <displayFieldApiName>Title</displayFieldApiName>
+        <objectApiName>PartnerFundRequest</objectApiName>
+        <userFieldApiName>OwnerId</userFieldApiName>
+    </sourceMeasureObject>
+    <status>Draft</status>
+</EnablementMeasureDefinition>

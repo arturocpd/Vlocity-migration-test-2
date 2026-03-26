@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchableObjDataSyncInfo xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataSyncActive>false</dataSyncActive>
+    <dataSyncJob>GPS_Aggregate_Job_Posting_Details_for_Search</dataSyncJob>
+    <lookupMappings>
+        <inputObject>JobPostingSearchableField</inputObject>
+        <mappingFields>
+            <inputField>RecruitmentPostingId</inputField>
+            <outputField>RecruitmentPostingName</outputField>
+        </mappingFields>
+        <outputObject>JobPostingSearchableField</outputObject>
+    </lookupMappings>
+    <masterLabel>Job Posting Searchable Object</masterLabel>
+    <searchableObject>JobPostingSearchableField</searchableObject>
+</SearchableObjDataSyncInfo>

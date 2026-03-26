@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>IndividualApplication</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Grants - IA</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;ul&gt;&lt;li&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;Fill out Strategies for each Funding Section&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;Create or Upload All Planned Activities&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;Create Project Funding Records &amp;amp; Requirements&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;Set Initial Outcome Measures&lt;/strong&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>In Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AppliedDate</fieldNames>
+        <fieldNames>FundingOpportunityId</fieldNames>
+        <fieldNames>RequestedAmount</fieldNames>
+        <picklistValueName>Submitted</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Grantmaking</recordTypeName>
+</PathAssistant>

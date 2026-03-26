@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>Grantmaking.Featured:Block Grants</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Block Grants</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Grantmaking.Featured:Community Grants</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Community Grants</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Grantmaking.Featured:Education Grants</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Education Grants</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Grantmaking.Featured:Eligibility</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Eligibility</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Grantmaking.Featured:Grants</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Grants</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Grantmaking.Featured:Healthcare</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Healthcare</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Grantmaking.Featured:Loans</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Loans</name>
+        <parentName></parentName>
+        <position>6</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+</ManagedTopics>

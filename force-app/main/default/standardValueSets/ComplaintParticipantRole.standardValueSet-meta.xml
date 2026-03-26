@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Victim</fullName>
+        <default>false</default>
+        <label>Victim</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Observer</fullName>
+        <default>false</default>
+        <label>Observer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Perpetrator</fullName>
+        <default>false</default>
+        <label>Perpetrator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reporter</fullName>
+        <default>false</default>
+        <label>Reporter</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Suspect</fullName>
+        <default>false</default>
+        <label>Suspect</label>
+    </standardValue>
+</StandardValueSet>

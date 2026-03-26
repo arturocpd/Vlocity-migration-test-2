@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalDocStorageConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <documentPath>Contracts/ContractLifecycleManagement</documentPath>
+    <externalDocStorageIdentifier>PlaceHolder_Value</externalDocStorageIdentifier>
+    <masterLabel>Contract_Contract_Lifecycle_Management</masterLabel>
+    <namedCredential>Q_Branch_Demo</namedCredential>
+    <recordType>ContractLifecycleManagement</recordType>
+    <storageDriveType>MicrosoftOneDrive</storageDriveType>
+    <targetObject>Contract</targetObject>
+</ExternalDocStorageConfig>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>admin</profile>
+            <profile>gps-service</profile>
+            <profile>servicecloud</profile>
+        </profiles>
+    </assignments>
+    <label>Web Support</label>
+</Skill>

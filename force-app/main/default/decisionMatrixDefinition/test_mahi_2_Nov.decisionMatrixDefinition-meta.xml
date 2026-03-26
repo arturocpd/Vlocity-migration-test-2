@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecisionMatrixDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>test_mahi_ 2 Nov</label>
+    <processType>Bre</processType>
+    <type>Standard</type>
+    <versions>
+        <fullName>test_mahi_2_Nov_V1</fullName>
+        <columns>
+            <columnType>Input</columnType>
+            <dataType>Text</dataType>
+            <displaySequence>1</displaySequence>
+            <isWildcardColumn>false</isWildcardColumn>
+            <name>Level</name>
+        </columns>
+        <columns>
+            <columnType>Input</columnType>
+            <dataType>Text</dataType>
+            <displaySequence>2</displaySequence>
+            <isWildcardColumn>false</isWildcardColumn>
+            <name>Level-1</name>
+        </columns>
+        <columns>
+            <columnType>Output</columnType>
+            <dataType>Text</dataType>
+            <displaySequence>3</displaySequence>
+            <isWildcardColumn>false</isWildcardColumn>
+            <name>Level-2</name>
+        </columns>
+        <decisionMatrixDefinition>test_mahi_2_Nov</decisionMatrixDefinition>
+        <label>test_mahi_ 2 Nov V1</label>
+        <rank>1</rank>
+        <startDate>2024-01-05T10:45:33.000Z</startDate>
+        <status>Draft</status>
+        <versionNumber>1</versionNumber>
+    </versions>
+</DecisionMatrixDefinition>

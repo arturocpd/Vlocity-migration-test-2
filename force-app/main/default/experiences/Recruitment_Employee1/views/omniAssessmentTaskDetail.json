@@ -1,0 +1,56 @@
+{
+  "appPageId" : "b97b5bc1-b612-4339-b95e-16ab9ce2aff7",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "1d3c6132-df45-4100-8e75-8848a882d4ce",
+  "label" : "Omni Assessment Task Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "04eb5a23-2978-442d-905f-4416d861c6de",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1957bb7d-6f88-4f9e-a3fe-0c21f0ddb7ae",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "runtime_industries_publicsector:omniAssessmentRuntime",
+      "id" : "fc5c5c09-18f6-4af3-80bd-c3a3add9d957",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "932a743e-5eb0-4893-97a7-ffa81b577189",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "ccf422b9-d085-438b-94ce-8dbcceb24ef2",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "36dd1ef3-b414-4e6f-968b-bb8f242c1ee2",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6ca0628e-403d-44ca-888a-53db472de306",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-0os"
+}

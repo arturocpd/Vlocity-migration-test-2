@@ -1,0 +1,146 @@
+{
+  "appPageId" : "38bcf566-44b0-467f-b5f7-ef790aada3e9",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "dataProviders" : [ ],
+  "label" : "Saved Payment Methods",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "dxpStyle" : { },
+        "sectionConfig" : "{\"UUID\":\"cfc8233e-16d9-4d2f-91b8-06bf793ad1d1\",\"columns\":[{\"UUID\":\"a0b6d3bd-7098-49dc-81be-1f26ed0b968f\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "cfc8233e-16d9-4d2f-91b8-06bf793ad1d1",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "backgroundColor" : "",
+            "dxpStyle" : { },
+            "paddingHorizontal" : "small",
+            "paddingVertical" : "xx-small",
+            "text" : "Saved Payment Methods",
+            "textAlign" : "left",
+            "textDecoration" : "{\"bold\": true}",
+            "textDisplayInfo" : "{\"textStyle\": \"heading-medium\", \"headingTag\": \"h2\"}"
+          },
+          "componentName" : "dxp_base:textBlock",
+          "id" : "b2ccb24a-f6c0-455e-862a-d7eb76ddae79",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "a0b6d3bd-7098-49dc-81be-1f26ed0b968f",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "dxpStyle" : { },
+        "sectionConfig" : "{\"UUID\":\"0ecc9c57-793f-40dd-a4c9-ca9db9ac64f5\",\"columns\":[{\"UUID\":\"0a7b347e-271d-432e-b4ef-88b8f670240f\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"2\",\"seedComponents\":null},{\"UUID\":\"d1dd354c-f97b-410a-8249-2c6d6f7b22cc\",\"columnName\":\"Column 2\",\"columnKey\":\"fce3c\",\"columnWidth\":\"10\",\"seedComponents\":[]}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "0ecc9c57-793f-40dd-a4c9-ca9db9ac64f5",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "dxpStyle" : { },
+            "navItemSpacing" : "small",
+            "navigationLinkSetDevName" : "D2C_Main_My_Account_Menu"
+          },
+          "componentName" : "commerce_my_account:navigationMenuItemList",
+          "id" : "6f8d5318-2455-4242-ba78-5d759a388297",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "0a7b347e-271d-432e-b4ef-88b8f670240f",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "cardDefaultBadgeColor" : "rgb(201,201,201)",
+            "cardDefaultBorderRadius" : "50",
+            "cardDefaultLabel" : "Default",
+            "cardExpiredBadgeColor" : "rgb(254, 147, 57)",
+            "cardExpiredBorderRadius" : "50",
+            "cardExpiredLabel" : "Expired",
+            "dxpStyle" : { },
+            "footerDefaultLabel" : "Default",
+            "footerDeleteLabel" : "Delete",
+            "itemSpacing" : "small",
+            "itemsPerPage" : "10",
+            "paymentMethodSetId" : "All-Payments",
+            "previewState" : "No Saved Info state",
+            "showMoreButtonAlign" : "center",
+            "showMoreButtonLabel" : "Show More",
+            "showMoreButtonSize" : "standard",
+            "showMoreButtonStyle" : "secondary",
+            "showMoreButtonWidth" : "standard"
+          },
+          "componentName" : "commerce_builder:paymentSavedPaymentMethodsGrid",
+          "id" : "7f0d51ed-0527-4eee-a6a6-f19742635672",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "alignment" : "center",
+            "dxpStyle" : { },
+            "size" : "standard",
+            "stretch" : "standard",
+            "text" : "Add Payment Method",
+            "type" : "primary",
+            "url" : "{\"linkInfo\":{\"pageReference\":{\"type\":\"comm__namedPage\",\"attributes\":{\"name\":\"AddPaymentMethods\"}}}}"
+          },
+          "componentName" : "dxp_base:button",
+          "id" : "36a4c424-910e-4add-a14e-f17035ebc0af",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "d1dd354c-f97b-410a-8249-2c6d6f7b22cc",
+        "regionLabel" : "Column 2",
+        "regionName" : "fce3c",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "05b1cd48-109d-44f8-bb7f-f321aab71608",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "dxpStyle" : { },
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "community_builder:seoAssistant",
+      "id" : "344c9263-c342-4b51-a0e3-1a6cf8cd57b7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "46261932-666b-4713-8e1a-5bcbb2b98b67",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "viewType" : "my-payment-methods"
+}

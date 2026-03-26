@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "88881fcc-c062-49ee-b06b-7083143c83ff",
+  "appPageId" : "24923cbc-be10-456f-8993-822c2e3bdbe5",
+  "configurationTags" : [ ],
+  "devName" : "Community_Discussions__c",
+  "id" : "288a9d88-050e-4dcb-a5c6-f432c26986a0",
+  "label" : "Community Discussions",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-community-discussions",
+  "type" : "route",
+  "urlPrefix" : "community-discussions"
+}

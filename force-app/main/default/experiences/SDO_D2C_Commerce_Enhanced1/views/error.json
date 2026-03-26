@@ -1,0 +1,116 @@
+{
+  "appPageId" : "38bcf566-44b0-467f-b5f7-ef790aada3e9",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "dataProviders" : [ ],
+  "label" : "Error",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "dxpStyle" : {
+          "margin" : {
+            "bottom" : "60px",
+            "left" : "",
+            "right" : "",
+            "top" : "40px"
+          }
+        },
+        "sectionConfig" : "{\"UUID\":\"ce233244-999f-4561-af79-b0a170a510ae\",\"columns\":[{\"UUID\":\"2f6d0bc7-240f-4072-92ca-22da41770be1\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"4\",\"seedComponents\":null},{\"UUID\":\"0b59274a-70ca-4586-a20e-c7e411f83aab\",\"columnName\":\"Column 2\",\"columnKey\":\"84185\",\"columnWidth\":\"8\",\"seedComponents\":[]}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "ce233244-999f-4561-af79-b0a170a510ae",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "alignment" : "center",
+            "dxpStyle" : {
+              "margin" : {
+                "bottom" : "",
+                "left" : "",
+                "right" : "",
+                "top" : ""
+              }
+            },
+            "fit" : "contain",
+            "height" : 350,
+            "imageInfo" : "{\"imageInfoV1\":{\"url\":\"https://sfdc-ckz-b2b.s3.amazonaws.com/SDO/w24-product/error_image.png\",\"altText\":\"\",\"contentKey\":\"\",\"contentType\":null}}",
+            "overlayColor" : "",
+            "position" : "center center",
+            "width" : 100
+          },
+          "componentName" : "dxp_base:image",
+          "id" : "0c416dd9-ab13-4ab4-9ddb-1f063171c601",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "2f6d0bc7-240f-4072-92ca-22da41770be1",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "backgroundColor" : "",
+            "dxpStyle" : { },
+            "paddingHorizontal" : "none",
+            "paddingVertical" : "small",
+            "text" : "Unleashing the Power of Glitches!",
+            "textAlign" : "left",
+            "textDecoration" : "{}",
+            "textDisplayInfo" : "{\"textStyle\":\"heading-xlarge\",\"headingTag\":\"h1\"}"
+          },
+          "componentName" : "dxp_base:textBlock",
+          "id" : "c3f37038-e78c-4eec-bec3-5cf1668277f1",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "dxpStyle" : { },
+            "richTextValue" : "<p>Oops! It looks like our energy elves are taking a coffee break. We'll have our power wizards fix this glitch in a jiffy. Please try again later.</p>"
+          },
+          "componentName" : "community_builder:richTextEditor",
+          "id" : "f1e42a3d-b227-4510-ac5f-62e89f6fc2ec",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "0b59274a-70ca-4586-a20e-c7e411f83aab",
+        "regionLabel" : "Column 2",
+        "regionName" : "84185",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "52aa347c-bb5e-41d8-a3ce-e70ca4e7a5ab",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "dxpStyle" : { },
+        "pageTitle" : "Error",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "community_builder:seoAssistant",
+      "id" : "f19ab51b-258b-4e5c-bfe9-12cd12df4620",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "400fb64e-a866-4ff3-8e87-15dfe7bd9f61",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "viewType" : "error"
+}

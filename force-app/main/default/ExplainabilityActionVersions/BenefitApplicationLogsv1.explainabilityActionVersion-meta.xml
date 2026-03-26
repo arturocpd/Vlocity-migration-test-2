@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExplainabilityActionVersion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionSpecification>{}</actionSpecification>
+    <active>true</active>
+    <definitionVersion>1</definitionVersion>
+    <explainabilityActionDef>BenefitApplicationLogs</explainabilityActionDef>
+    <masterLabel>BenefitApplicationLogsv1</masterLabel>
+</ExplainabilityActionVersion>

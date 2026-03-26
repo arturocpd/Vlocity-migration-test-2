@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "0ae15631-5f29-46bc-b2db-b502481a524c",
+  "appPageId" : "cb61e488-b558-462b-8399-d2034d023e47",
+  "configurationTags" : [ ],
+  "devName" : "Report_a_Crime__c",
+  "id" : "b4aa0144-bba0-48ca-9f8f-ee8af3a610d3",
+  "label" : "Report a Crime",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-report-a-crime",
+  "type" : "route",
+  "urlPrefix" : "report-a-crime"
+}

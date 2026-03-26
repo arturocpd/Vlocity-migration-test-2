@@ -1,0 +1,29 @@
+{
+    "ApiName": "CMNoOfChairs_V2",
+    "CalculationMatrix.Name": "CMNoOfChairs",
+    "CalculationMatrixId": {
+        "Name": "CMNoOfChairs",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationMatrix/CMNoOfChairs",
+        "VlocityRecordSObjectType": "CalculationMatrix"
+    },
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixDefinitionVerId": "9QOHu00000112JtOAI",
+    "DscnModelNoteExportStatus": "",
+    "EndDateTime": "",
+    "GroupKey": "",
+    "GroupKeyValue": "",
+    "IsLocked": false,
+    "MatrixType": "Standard",
+    "MayEdit": true,
+    "Name": "CMNoOfChairs V2",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2023-12-11T15:19:00.000Z",
+    "SubGroupKey": "",
+    "SubGroupKeyValue": "",
+    "VersionNumber": 2,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrixVersion",
+    "VlocityRecordSourceKey": "CalculationMatrixVersion/2/CalculationMatrix/CMNoOfChairs"
+}

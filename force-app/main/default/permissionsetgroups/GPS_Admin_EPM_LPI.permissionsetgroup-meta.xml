@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Emergency Program Management &amp; LPI</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>GPS_Admin_EPM_LPI</label>
+    <permissionSets>GPS_EmergencyProgramManagement</permissionSets>
+    <permissionSets>PSCommFooter</permissionSets>
+    <permissionSets>force__ActionPlans</permissionSets>
+    <permissionSets>force__DocumentChecklist</permissionSets>
+    <permissionSets>force__DynamicAssessmentPsl</permissionSets>
+    <permissionSets>force__EmergencyResponseMgmt</permissionSets>
+    <permissionSets>force__IndustriesVisit</permissionSets>
+    <permissionSets>gps_LPI_Admin</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

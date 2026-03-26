@@ -1,0 +1,54 @@
+{
+  "appPageId" : "c1857bfa-5ce6-40d8-a9ca-f1a64d399d34",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "cab0b9c9-7f4e-439a-b87f-a1e066dd2658",
+  "label" : "lwcos",
+  "regions" : [ {
+    "id" : "bb3264a9-3b95-49fc-b743-606d27715fe4",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "direction" : "ltr",
+        "display" : "Display OmniScript on page",
+        "inlineVariant" : "brand",
+        "language" : "",
+        "subType" : "",
+        "theme" : "",
+        "type" : ""
+      },
+      "componentName" : "runtime_omnistudio:omniscriptExperienceCloud",
+      "id" : "dd38b6af-46b2-4aed-a659-889364ec4bec",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9f08d20b-aac1-4ffd-8f3b-2f64a8eec9b6",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "f4cf7023-bef8-47d2-8242-b08d6b20208f",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "lwcos"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0ad3670a-9c01-4b06-8ee5-ad20da6a979c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d1193ab0-acbe-4ff4-9949-82e2497a3ed9",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-lwcos"
+}

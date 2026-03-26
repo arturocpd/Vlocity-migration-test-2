@@ -1,0 +1,116 @@
+{
+  "appPageId" : "b97b5bc1-b612-4339-b95e-16ab9ce2aff7",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "456e60d6-a466-4389-81ff-3d3d107d764b",
+  "label" : "Application Form Evaluation Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "73bc5c2c-011c-4845-a4f9-122bc7512260",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "06952f9c-22c4-40a6-803f-47966a355fc6",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "cabae84b-4d2f-4769-90a5-27be204a885f",
+          "activeTab" : "details-tab",
+          "tabs" : [ {
+            "UUID" : "49661024-d60f-400b-b2d0-6d2226287258",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : { },
+              "fqn" : "forceCommunity:recordDetail"
+            } ],
+            "tabKey" : "details-tab",
+            "tabName" : "Details"
+          }, {
+            "UUID" : "3841cb2f-5f5b-47ae-a8fd-076c1fe9a2e1",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : { },
+              "fqn" : "runtime_industries_publicsector:assessmentsTabContainer"
+            } ],
+            "tabKey" : "Assessments",
+            "tabName" : "Assessments"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabLayout",
+      "id" : "cabae84b-4d2f-4769-90a5-27be204a885f",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "6804cf31-e65e-4362-9349-7b2f0f66ee45",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "49661024-d60f-400b-b2d0-6d2226287258",
+        "regionLabel" : "Details",
+        "regionName" : "details-tab",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "runtime_industries_publicsector:assessmentsTabContainer",
+          "id" : "8a0414de-37f8-496c-be35-4e7807289e5a",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "3841cb2f-5f5b-47ae-a8fd-076c1fe9a2e1",
+        "regionLabel" : "Assessments",
+        "regionName" : "Assessments",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d16cbdd6-19d2-4b7d-ac30-878672b76ff1",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "ad25b13c-c8e8-47b1-aa93-7f5e7bb8c368",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "667ec7f7-46c6-4e40-903a-76c7e36b1595",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5e3ce7a6-9c42-4f77-bde8-eb2cc95de287",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-16e"
+}

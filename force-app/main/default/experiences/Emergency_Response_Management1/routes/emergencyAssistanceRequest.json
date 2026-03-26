@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "fbd7de4a-c4d1-463d-a987-fa6192ac60a6",
+  "appPageId" : "24923cbc-be10-456f-8993-822c2e3bdbe5",
+  "configurationTags" : [ ],
+  "devName" : "Emergency_Assistance_Request__c",
+  "id" : "cf2ea9f4-d35f-4f2c-99c9-b17b6eaedf4c",
+  "label" : "Emergency Assistance Request",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-emergency-assistance-request",
+  "type" : "route",
+  "urlPrefix" : "emergency-assistance-request"
+}

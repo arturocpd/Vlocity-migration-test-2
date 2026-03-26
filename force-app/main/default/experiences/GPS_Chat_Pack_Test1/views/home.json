@@ -1,0 +1,79 @@
+{
+  "appPageId" : "f0a9403a-39ff-443d-aef5-83a9358c6a15",
+  "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+  "dataProviders" : [ ],
+  "id" : "5f1784ef-8dbc-4891-bea9-ba14dc5c68c1",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><span style=\"font-size: 22px; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);\">GPS Chat Pack Test Site</span></p><p style=\"text-align: center;\"><br></p><p><span style=\"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);\">This is a test site for you to explore the GPS LWC Chat Pack.&nbsp;&nbsp;</span><strong style=\"background-color: rgb(255, 255, 255); color: rgb(230, 0, 0);\">It is not meant to demo directly to customers.</strong></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "582a613e-ad80-4acb-9782-9595189445d8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "96c9f50d-e693-4e6c-a45f-0707c21615c3",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "81d08255-f6f9-4900-91b7-ea28b586fb3d",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1><strong style=\"color: rgb(230, 0, 0); font-size: 18px;\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.AstroTrailheadXSmall.1}\">GPS SEs: START HERE</strong></h1>\n<p><strong>To Test the GPS Chat Pack:</strong></p>\n<ol>\n <li>Follow the <a href=\"https://salesforce.quip.com/ue5fAXAcoqb4#temp:C:TeM0a4638d7df7042d19dcf8981c\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>Public Sector IDO Post Spin-Up Instructions</strong></a></li>\n <li><strong style=\"color: rgb(230, 0, 0);\">Important:</strong> Confirm that you have re-selected the \"GPS_ChatPack\" Deployment for the Channel Menu component, which is near the footer at the very bottom of this page.</li>\n <li>Publish</li>\n <li>Follow instructions in the <a href=\"https://salesforce.quip.com/flv4AwcU8UuV\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 102, 204);\"><u>GPS IDO - GPS LWC Chat Pack Quip Doc</u></a></li>\n <li><strong><em>Questions? </em></strong>Post in the #help-gps-ido slack channel!</li>\n</ol>\n<p>&nbsp;</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "be58c4fc-390d-4ec3-8663-713c3c58a48b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e55d1746-93d6-4912-bb63-0d38b6c86bf4",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "7c98abfb-fbbe-49fc-b7f3-b49cfce7a2f0",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "height" : 550,
+        "showTabs" : false,
+        "showToolbar" : false,
+        "vizUrl" : "https://public.tableau.com/views/V2_1_KPITracking/KPIDashboard?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link"
+      },
+      "componentName" : "tab:tableauViz",
+      "id" : "fd3fe405-b379-42f9-8588-115de7abc5eb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d00f442d-1f38-4a8e-9acc-2f61e060658c",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ca4a064b-3b9e-4326-a4fc-573d2607a179",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6d584624-c3d4-4508-b00a-8c24261fef35",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

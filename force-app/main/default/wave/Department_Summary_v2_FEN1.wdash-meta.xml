@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>LPI_Analytics_FEN</application>
+    <dateVersion>1</dateVersion>
+    <description>Monitor your department’s performance, identify applications and inspections that need attention, and improve your workflow efficiency.</description>
+    <masterLabel>Department Summary</masterLabel>
+    <templateAssetSourceName>Department_Summary_v2_FEN</templateAssetSourceName>
+</WaveDashboard>

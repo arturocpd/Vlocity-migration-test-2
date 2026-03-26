@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>Access Benefits</container>
+    <containerType>Network</containerType>
+    <label>Program Tiles</label>
+    <navigationMenuItem>
+        <label>Cash Assistance</label>
+        <position>1</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>http://www.salesforce.com</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Child Care Assistance</label>
+        <position>2</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>http://www.salesforce.com</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Disability Services*</label>
+        <position>3</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/disability-services</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Change of Circumstances</label>
+        <position>4</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/change-of-circumstances</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Disasters &amp; Emergencies</label>
+        <position>5</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>salesforce.com</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Education Services</label>
+        <position>6</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>salesforce.com</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Elderly Services*</label>
+        <position>7</position>
+        <publiclyAvailable>false</publiclyAvailable>
+        <target>/elderly-services</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Food Assistance</label>
+        <position>8</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>salesforce.com</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Foster Care*</label>
+        <position>9</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/foster-care</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Housing Assistance</label>
+        <position>10</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>salesforce.com</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Job &amp; Employment  Services</label>
+        <position>11</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>salesforce.com</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Medical Services</label>
+        <position>12</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>salesforce.com</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Transportation</label>
+        <position>13</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>http://salesforce.com</target>
+        <type>ExternalLink</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>File a Claim</label>
+        <position>14</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <target>/file-claim</target>
+        <type>InternalLink</type>
+    </navigationMenuItem>
+</NavigationMenu>

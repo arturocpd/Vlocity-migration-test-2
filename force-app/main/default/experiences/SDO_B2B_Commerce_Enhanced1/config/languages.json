@@ -1,0 +1,17 @@
+{
+  "defaultCode" : "en_US",
+  "defaultLabel" : "English (US)",
+  "languages" : [ {
+    "countryCode" : null,
+    "fallbackLanguageId" : null,
+    "isActive" : true,
+    "label" : "French",
+    "languageCode" : "fr"
+  }, {
+    "countryCode" : null,
+    "fallbackLanguageId" : null,
+    "isActive" : true,
+    "label" : "Spanish",
+    "languageCode" : "es"
+  } ]
+}

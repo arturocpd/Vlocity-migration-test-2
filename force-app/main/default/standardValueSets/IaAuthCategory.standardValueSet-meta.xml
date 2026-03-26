@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Food Assistance</fullName>
+        <default>false</default>
+        <label>Food Assistance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Debris Removal</fullName>
+        <default>false</default>
+        <label>Debris Removal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Welfare Check</fullName>
+        <default>false</default>
+        <label>Welfare Check</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Grant Application</fullName>
+        <default>false</default>
+        <label>Grant Application</label>
+    </standardValue>
+    <standardValue>
+        <fullName>License</fullName>
+        <default>false</default>
+        <label>License</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Benefit</fullName>
+        <default>false</default>
+        <label>Benefit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Temporary Housing</fullName>
+        <default>false</default>
+        <label>Temporary Housing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Home Health Services</fullName>
+        <default>false</default>
+        <label>Home Health Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Permit</fullName>
+        <default>false</default>
+        <label>Permit</label>
+    </standardValue>
+</StandardValueSet>

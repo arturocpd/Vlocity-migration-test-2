@@ -1,0 +1,9 @@
+{
+  "authenticationType" : "AUTHENTICATED_WITH_PUBLIC_ACCESS_ENABLED",
+  "forgotPasswordRouteId" : null,
+  "isFilteredComponentsView" : false,
+  "isProgressiveRenderingEnabled" : false,
+  "mainAppPageId" : "30fae858-a89a-42c7-93fd-4df96ee38629",
+  "preferredDomain" : "none",
+  "selfRegistrationRouteId" : null
+}

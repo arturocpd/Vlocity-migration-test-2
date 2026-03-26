@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "dd28b833-94e0-4091-a613-e60622cbf448",
+  "appPageId" : "cb61e488-b558-462b-8399-d2034d023e47",
+  "configurationTags" : [ ],
+  "devName" : "My_Dashboard__c",
+  "id" : "76a075c1-e909-4c39-b5e3-be79c7f134fb",
+  "label" : "My Dashboard",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-my-dashboard",
+  "type" : "route",
+  "urlPrefix" : "my-dashboard"
+}

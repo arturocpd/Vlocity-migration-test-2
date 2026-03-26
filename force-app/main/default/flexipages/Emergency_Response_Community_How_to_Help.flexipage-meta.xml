@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>6a49caae-3607-4280-887f-e6deb9bfa7e9</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>1</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>facet-indirection-409b4f70-8e06-43c2-b1dc-870bd26a584e</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;h1&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;Do you have emergency supplies to donate?﻿&lt;/span&gt;&lt;/h1&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:richTextInline</componentName>
+                <identifier>forceCommunity_richTextInline</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div style=&quot;border: 1px solid #CFCFCF;&quot; class=&quot;slds-grid slds-grid_vertical imagePreview&quot; &gt;    
+    &lt;div class=&quot;slds-col&quot;&gt;  
+        &lt;div  title=&quot;Food and Essentials&quot;  style=&quot;font-weight: normal;text-align: center;font-size:1rem;margin-top : 1rem;&quot; tabindex=&quot;-1&quot; &gt;
+            If you have items to donate, submit a donation form and we&apos;ll get the supplies to where they&apos;re needed most  
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;slds-col&quot;&gt;
+    &lt;span&gt;&amp;nbsp;&lt;/span&gt;
+      &lt;/div&gt;
+     
+    &lt;div class=&quot;slds-col&quot; &gt;  
+       &lt;div class=&quot;ctaButtons slds-grid slds-float--center slds-align_absolute-center&quot; width=&quot;50%&quot;&gt;&lt;a class=&quot;ctaBtnOne slds-button slds-truncate&quot; href=&quot;form-for-donation&quot; style=&quot;border-color: rgba(10, 50, 198, 0);
+    background-color: #0879C9;
+    display: inline-block;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px 24px;
+    min-width: 135px;
+    transition: all .2s;
+    color: #ffffff;
+    text-decoration: none; &quot;&gt;Submit a Donation
+
+&lt;/a&gt;&lt;/div&gt;
+      &lt;div class=&quot;slds-col&quot; style=&quot;margin-top: 5px;&quot;&gt;
+    	&lt;span&gt;&amp;nbsp;&lt;/span&gt;
+      &lt;/div&gt;
+       
+    &lt;/div&gt;
+    
+ &lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>6a49caae-3607-4280-887f-e6deb9bfa7e9</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>background</name>
+                    <value>background: rgba(0,0,0,0)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>backgroundOverlay</name>
+                    <value>rgba(0,0,0,0.5)</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>contentAreaWidth</name>
+                    <value>87</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>regions</name>
+                    <value>facet-indirection-409b4f70-8e06-43c2-b1dc-870bd26a584e</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionConfig</name>
+                    <value>{&quot;UUID&quot;:&quot;409b4f70-8e06-43c2-b1dc-870bd26a584e&quot;,&quot;columns&quot;:[{&quot;UUID&quot;:&quot;6a49caae-3607-4280-887f-e6deb9bfa7e9&quot;,&quot;columnName&quot;:&quot;Column 1&quot;,&quot;columnKey&quot;:&quot;1&quot;,&quot;columnWidth&quot;:&quot;12&quot;,&quot;seedComponents&quot;:[]}]}</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sectionHeight</name>
+                    <value>214</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:section</componentName>
+                <identifier>forceCommunity_section</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>description</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>metaTags</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>How to Help</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>How to Help</masterLabel>
+    <template>
+        <name>siteforce:dynamicLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

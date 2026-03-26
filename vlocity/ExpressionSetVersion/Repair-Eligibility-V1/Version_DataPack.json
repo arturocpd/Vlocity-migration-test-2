@@ -1,0 +1,29 @@
+{
+    "%vlocity_namespace%__GlobalKey__c": "Repair Eligibility V1",
+    "CalculationProcedure.Name": "Repair Eligibility",
+    "CalculationProcedureId": {
+        "Name": "Repair Eligibility",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationProcedure/Repair Eligibility",
+        "VlocityRecordSObjectType": "CalculationProcedure"
+    },
+    "Constants": "",
+    "CurrencyIsoCode": "USD",
+    "Description": "",
+    "EndDateTime": "",
+    "IsLocked": false,
+    "IsLoopingEnabled": false,
+    "LastSimulatedVariablesInput": "",
+    "LoopEnd": "",
+    "LoopIncrement": "",
+    "LoopStart": "",
+    "MayEdit": true,
+    "Name": "Repair Eligibility V1",
+    "Namespace": "",
+    "Rank": "",
+    "StartDateTime": "2024-06-05T13:15:37.000Z",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedureVersion",
+    "VlocityRecordSourceKey": "CalculationProcedureVersion/1/CalculationProcedure/Repair Eligibility"
+}

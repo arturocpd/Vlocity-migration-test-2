@@ -1,0 +1,29 @@
+{
+    "ApiName": "Food_Assistance_Benefits_V2",
+    "CalculationMatrix.Name": "Food Assistance Benefits",
+    "CalculationMatrixId": {
+        "Name": "Food Assistance Benefits",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationMatrix/Food Assistance Benefits",
+        "VlocityRecordSObjectType": "CalculationMatrix"
+    },
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixDefinitionVerId": "9QOHu00000112JxOAI",
+    "DscnModelNoteExportStatus": "",
+    "EndDateTime": "",
+    "GroupKey": "",
+    "GroupKeyValue": "",
+    "IsLocked": false,
+    "MatrixType": "Standard",
+    "MayEdit": true,
+    "Name": "Food Assistance Benefits V2",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2023-12-11T16:26:00.000Z",
+    "SubGroupKey": "",
+    "SubGroupKeyValue": "",
+    "VersionNumber": 2,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrixVersion",
+    "VlocityRecordSourceKey": "CalculationMatrixVersion/2/CalculationMatrix/Food Assistance Benefits"
+}

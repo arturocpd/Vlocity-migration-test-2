@@ -1,0 +1,63 @@
+<template>
+  <template if:true={enableAddressAutocomplete}>
+    <div>
+      <div class="slds-p-bottom_xx-small">
+        <lightning-input
+          label="Search"
+          type="search"
+          value={searchValue}
+          onchange={handleSearchChange}
+          variant="label-hidden"
+          placeholder={searchPlaceholder}
+        ></lightning-input>
+      </div>
+      <template if:true={addressSuggestions}>
+        <div
+          class="slds-dropdown slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open slds-dropdown_left"
+        >
+          <template for:each={addressSuggestions} for:item="addr">
+            <div
+              key={addr.magicKey}
+              data-item={addr.magicKey}
+              style="cursor: pointer"
+              onclick={handleSuggestionSelect}
+              class="slds-m-around_medium"
+            >
+              {addr.text}
+            </div>
+          </template>
+        </div>
+      </template>
+    </div>
+  </template>
+  <div class="slds-theme_default mapContainer">
+    <template lwc:if={locAddress}>
+      <div class="addressDiv" align="center">
+        <a onclick={saveLocation}>{locAddress}</a>
+      </div>
+    </template>
+
+    <div class="controlDiv">
+      <template lwc:if={currPos}>
+        <div>
+          <img
+            src={gpsImage}
+            height="25"
+            width="25"
+            onclick={centerOnLocation}
+          />
+        </div>
+      </template>
+      <template lwc:if={recPos}>
+        <div class="slds-p-top_xxx-small">
+          <img
+            src={recordGpsImage}
+            height="25"
+            width="25"
+            onclick={centerOnRecord}
+          />
+        </div>
+      </template>
+    </div>
+  </div>
+</template>

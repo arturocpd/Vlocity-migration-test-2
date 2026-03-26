@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "19b6afcf-b070-4ac4-b2dd-5c894bb72b84",
+  "appPageId" : "b97b5bc1-b612-4339-b95e-16ab9ce2aff7",
+  "configurationTags" : [ ],
+  "devName" : "Recruitment_Posting_Related_List",
+  "id" : "fc043b4e-d305-4c30-a431-f81f126af184",
+  "label" : "Recruitment Posting Related List",
+  "routeType" : "relatedlist-18B",
+  "type" : "route",
+  "urlPrefix" : "recruitmentposting"
+}

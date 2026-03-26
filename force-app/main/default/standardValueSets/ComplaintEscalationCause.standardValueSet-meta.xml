@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Alleged UDAAP Violation</fullName>
+        <default>false</default>
+        <label>Alleged UDAAP Violation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Alleged Discrimination</fullName>
+        <default>false</default>
+        <label>Alleged Discrimination</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Alleged ADA Violation</fullName>
+        <default>false</default>
+        <label>Alleged ADA Violation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Alleged SCRA Violation</fullName>
+        <default>false</default>
+        <label>Alleged SCRA Violation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Alleged MLA Violation</fullName>
+        <default>false</default>
+        <label>Alleged MLA Violation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Media Involvement</fullName>
+        <default>false</default>
+        <label>Media Involvement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lawsuit Filed</fullName>
+        <default>false</default>
+        <label>Lawsuit Filed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consumer Protection Agency Involvement</fullName>
+        <default>false</default>
+        <label>Consumer Protection Agency Involvement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Received by Executive Leadership</fullName>
+        <default>false</default>
+        <label>Received by Executive Leadership</label>
+    </standardValue>
+    <standardValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </standardValue>
+</StandardValueSet>

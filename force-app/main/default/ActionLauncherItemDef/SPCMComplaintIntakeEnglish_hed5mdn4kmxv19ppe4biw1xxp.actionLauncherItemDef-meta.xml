@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionLauncherItemDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identifier>_hed5mdn4kmxv19ppe4biw1xxp</identifier>
+    <itemActionType>Omniscript</itemActionType>
+    <itemCategory>dbBased</itemCategory>
+    <itemLanguage>English</itemLanguage>
+    <masterLabel>SPCM/ComplaintIntake/English</masterLabel>
+    <subType>ComplaintIntake</subType>
+    <type>SPCM</type>
+</ActionLauncherItemDef>

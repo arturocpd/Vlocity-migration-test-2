@@ -1,0 +1,9 @@
+{
+  "activeViewId" : "48d3c961-31e7-4508-8c36-940d163c5088",
+  "appPageId" : "38bcf566-44b0-467f-b5f7-ef790aada3e9",
+  "configurationTags" : [ ],
+  "devName" : "MyPaymentMethods_List",
+  "label" : "Saved Payment Methods",
+  "routeType" : "my-payment-methods",
+  "urlPrefix" : "my-payment-methods"
+}

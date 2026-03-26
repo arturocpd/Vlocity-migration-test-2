@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "10903941-9413-40dc-a31c-5cc7489fc240",
+  "appPageId" : "b97b5bc1-b612-4339-b95e-16ab9ce2aff7",
+  "configurationTags" : [ ],
+  "devName" : "Recruitment_Requisition_List",
+  "id" : "2f7c33d7-54b6-43d0-9329-1d8e63742005",
+  "label" : "Recruitment Requisition List",
+  "routeType" : "list-18A",
+  "type" : "route",
+  "urlPrefix" : "recruitmentrequisition"
+}

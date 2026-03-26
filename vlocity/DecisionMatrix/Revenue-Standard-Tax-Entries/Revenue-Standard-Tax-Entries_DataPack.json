@@ -1,0 +1,17 @@
+{
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixType": "DecisionTable",
+    "Description": "Gets the applicable tax rates for tax calculation.",
+    "GroupKey": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "Name": "Revenue Standard Tax Entries",
+    "Namespace": "",
+    "SubGroupKey": "",
+    "Type": "",
+    "UniqueName": "Revenue Standard Tax Entries",
+    "UsageType": "RevenueStandardTax",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrix",
+    "VlocityRecordSourceKey": "CalculationMatrix/Revenue Standard Tax Entries"
+}

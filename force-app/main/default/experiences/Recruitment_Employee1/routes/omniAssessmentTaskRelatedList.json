@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "344b3ab5-16a7-4c05-90aa-e0ea0d2b9a33",
+  "appPageId" : "b97b5bc1-b612-4339-b95e-16ab9ce2aff7",
+  "configurationTags" : [ ],
+  "devName" : "Omni_Assessment_Task_Related_List",
+  "id" : "c5d4c70d-cd2d-4abc-8fed-d972a205d8a1",
+  "label" : "Omni Assessment Task Related List",
+  "routeType" : "relatedlist-0os",
+  "type" : "route",
+  "urlPrefix" : "omniassessmenttask"
+}

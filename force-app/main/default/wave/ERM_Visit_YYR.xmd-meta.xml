@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>ERM_Visit_YYR</dataset>
+    <dimensions>
+        <field>Name</field>
+        <isDerived>false</isDerived>
+        <label>Name</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Actual_Visit_End_Time_Formatted</field>
+        <isDerived>false</isDerived>
+        <label>Actual Visit End Date</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Actual_Visit_Start_Time_Formatted</field>
+        <isDerived>false</isDerived>
+        <label>Actual Visit Start Date</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Planned_Visit_End_Time_Formatted</field>
+        <isDerived>false</isDerived>
+        <label>Planned Visit End Date</label>
+        <sortIndex>3</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Planned_Visit_Start_Time_Formatted</field>
+        <isDerived>false</isDerived>
+        <label>Planned Visit Start Date</label>
+        <sortIndex>4</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>Status</field>
+        <isDerived>false</isDerived>
+        <label>Visit Status</label>
+        <sortIndex>5</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>VisitName</field>
+        <isDerived>false</isDerived>
+        <recordDisplayFields>
+            <recordDisplayField>Id</recordDisplayField>
+            <sortIndex>0</sortIndex>
+        </recordDisplayFields>
+        <recordDisplayFields>
+            <recordDisplayField>VisitName</recordDisplayField>
+            <sortIndex>1</sortIndex>
+        </recordDisplayFields>
+        <sortIndex>6</sortIndex>
+    </dimensions>
+</WaveXmd>

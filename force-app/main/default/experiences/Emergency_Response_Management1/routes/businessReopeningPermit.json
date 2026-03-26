@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "64c121eb-74f2-48fd-8ff7-5d0f1af222a0",
+  "appPageId" : "24923cbc-be10-456f-8993-822c2e3bdbe5",
+  "configurationTags" : [ ],
+  "devName" : "Business_Reopening_permit__c",
+  "id" : "2770592b-7b62-4686-bdaa-12830ea9d74a",
+  "label" : "Business Reopening Permit",
+  "pageAccess" : "RequiresLogin",
+  "routeType" : "custom-business-reopening-permit",
+  "type" : "route",
+  "urlPrefix" : "business-reopening-permit"
+}

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Fire Safety</fullName>
+        <default>false</default>
+        <label>Fire Safety</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Heavy Machinery</fullName>
+        <default>false</default>
+        <label>Heavy Machinery</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unsuitable Advice</fullName>
+        <default>false</default>
+        <label>Unsuitable Advice</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unclear Guidance</fullName>
+        <default>false</default>
+        <label>Unclear Guidance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unclear Arrangement</fullName>
+        <default>false</default>
+        <label>Unclear Arrangement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dispute Over Charges</fullName>
+        <default>false</default>
+        <label>Dispute Over Charges</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Performance</fullName>
+        <default>false</default>
+        <label>Product Performance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Features</fullName>
+        <default>false</default>
+        <label>Product Features</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Disclosure Information</fullName>
+        <default>false</default>
+        <label>Product Disclosure Information</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Instructions Not Followed</fullName>
+        <default>false</default>
+        <label>Instructions Not Followed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service Request Delay</fullName>
+        <default>false</default>
+        <label>Service Request Delay</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other Customer Service</fullName>
+        <default>false</default>
+        <label>Other Customer Service</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other General Admin</fullName>
+        <default>false</default>
+        <label>Other General Admin</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Opening</fullName>
+        <default>false</default>
+        <label>Account Opening</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Account Closure</fullName>
+        <default>false</default>
+        <label>Account Closure</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unauthorised Transaction(s)</fullName>
+        <default>false</default>
+        <label>Unauthorised Transaction(s)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fraud Handling</fullName>
+        <default>false</default>
+        <label>Fraud Handling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Payment Related Issue</fullName>
+        <default>false</default>
+        <label>Payment Related Issue</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Auto Debit Mandate</fullName>
+        <default>false</default>
+        <label>Auto Debit Mandate</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cash not Dispensed</fullName>
+        <default>false</default>
+        <label>Cash not Dispensed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Online Banking - Features or Functionality</fullName>
+        <default>false</default>
+        <label>Online Banking - Features or Functionality</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mobile Banking - Features or Functionality</fullName>
+        <default>false</default>
+        <label>Mobile Banking - Features or Functionality</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Misleading Advertising</fullName>
+        <default>false</default>
+        <label>Misleading Advertising</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inaccessible ATMs</fullName>
+        <default>false</default>
+        <label>Inaccessible ATMs</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inaccessible Branch Entrances</fullName>
+        <default>false</default>
+        <label>Inaccessible Branch Entrances</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inaccessible Website</fullName>
+        <default>false</default>
+        <label>Inaccessible Website</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inaccessible Mobile banking features</fullName>
+        <default>false</default>
+        <label>Inaccessible Mobile banking features</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unacknowledged Debt Collection Attempt</fullName>
+        <default>false</default>
+        <label>Unacknowledged Debt Collection Attempt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Communication Tactics</fullName>
+        <default>false</default>
+        <label>Communication Tactics</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Missing Debt Notification</fullName>
+        <default>false</default>
+        <label>Missing Debt Notification</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit Limit Changed</fullName>
+        <default>false</default>
+        <label>Credit Limit Changed</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit Report</fullName>
+        <default>false</default>
+        <label>Credit Report</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Credit Score</fullName>
+        <default>false</default>
+        <label>Credit Score</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </standardValue>
+</StandardValueSet>

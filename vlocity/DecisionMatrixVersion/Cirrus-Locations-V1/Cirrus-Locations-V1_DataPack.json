@@ -1,0 +1,29 @@
+{
+    "ApiName": "SDO_Service_Cirrus_Locations_V1",
+    "CalculationMatrix.Name": "Cirrus Locations",
+    "CalculationMatrixId": {
+        "Name": "Cirrus Locations",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationMatrix/Cirrus Locations",
+        "VlocityRecordSObjectType": "CalculationMatrix"
+    },
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixDefinitionVerId": "9QOHu00000112K5OAI",
+    "DscnModelNoteExportStatus": "",
+    "EndDateTime": "",
+    "GroupKey": "",
+    "GroupKeyValue": "",
+    "IsLocked": false,
+    "MatrixType": "Standard",
+    "MayEdit": true,
+    "Name": "Cirrus Locations V1",
+    "Namespace": "",
+    "Rank": "",
+    "StartDateTime": "2024-06-05T13:11:17.000Z",
+    "SubGroupKey": "",
+    "SubGroupKeyValue": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrixVersion",
+    "VlocityRecordSourceKey": "CalculationMatrixVersion/1/CalculationMatrix/Cirrus Locations"
+}

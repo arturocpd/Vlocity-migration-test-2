@@ -1,0 +1,11 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "f57cb33d-c5cb-4cd2-9598-bdab511f4658",
+  "headMarkup" : null,
+  "id" : "c1857bfa-5ce6-40d8-a9ca-f1a64d399d34",
+  "isLockerServiceEnabled" : true,
+  "isRelaxedCSPLevel" : false,
+  "label" : "main",
+  "templateName" : "Recruit Applicant Portal Template",
+  "type" : "appPage"
+}

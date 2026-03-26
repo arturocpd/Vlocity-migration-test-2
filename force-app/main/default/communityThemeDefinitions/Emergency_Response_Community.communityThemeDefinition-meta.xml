@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommunityThemeDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customThemeLayoutType>
+        <label>DxCVuODCtOKNGxTgS3bnQRPuv5igZ5</label>
+    </customThemeLayoutType>
+    <defaultBrandingSet>Emergency_Response_Community</defaultBrandingSet>
+    <enableExtendedCleanUpOnDelete>true</enableExtendedCleanUpOnDelete>
+    <masterLabel>Emergency_Response_Community</masterLabel>
+    <publisher>Salesforce</publisher>
+    <themeSetting>
+        <themeLayout>Emergency_Response_Community_themeLayout_Default</themeLayout>
+        <themeLayoutType>Inner</themeLayoutType>
+    </themeSetting>
+    <themeSetting>
+        <customThemeLayoutType>DxCVuODCtOKNGxTgS3bnQRPuv5igZ5</customThemeLayoutType>
+        <themeLayout>Emergency_Response_Community_themeLayout_HomePage</themeLayout>
+    </themeSetting>
+    <themeSetting>
+        <themeLayout>Emergency_Response_Community_themeLayout_Login</themeLayout>
+        <themeLayoutType>Login</themeLayoutType>
+    </themeSetting>
+</CommunityThemeDefinition>

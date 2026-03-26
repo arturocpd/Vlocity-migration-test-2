@@ -1,0 +1,150 @@
+{
+  "appPageId" : "d457460e-ba94-4537-9186-af9e755155f0",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "238bc1d9-19c4-4d7b-8013-283516e3a310",
+  "label" : "BenefitSession Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "19fc1487-9d3c-46c8-83bd-9857363e158e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "20a09fac-fb70-4ecd-9246-085855357018",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "28591fa4-64e0-4f6e-afcc-d6109740273a",
+          "activeTab" : "details-tab",
+          "tabs" : [ {
+            "UUID" : "65123473-d2fe-497a-9de3-9eda78cd495d",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : { },
+              "fqn" : "forceCommunity:recordDetail"
+            } ],
+            "tabKey" : "details-tab",
+            "tabName" : "{!$Label.ProviderPortalTemplate.RecordDetailPageDetailsTab}"
+          }, {
+            "UUID" : "fb1b7497-1bad-4d22-8b47-7899a5dba9a2",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : { },
+              "fqn" : "forceCommunity:relatedRecords"
+            } ],
+            "tabKey" : "related-tab",
+            "tabName" : "{!$Label.ProviderPortalTemplate.RecordDetailPageRelatedTab}"
+          }, {
+            "UUID" : "6306beb2-a3e0-4a36-9843-9befbe8aa1c2",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : { },
+              "fqn" : "runtime_industries_program_mgmt:attendanceListView"
+            } ],
+            "tabKey" : "Attendance",
+            "tabName" : "{!$Label.ProviderPortalTemplate.BenefitSessionDetailPageAttendanceTab}"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "28591fa4-64e0-4f6e-afcc-d6109740273a",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "2b62e293-d88c-47b0-b3a8-257652135ebd",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "65123473-d2fe-497a-9de3-9eda78cd495d",
+        "regionLabel" : "{!$Label.ProviderPortalTemplate.RecordDetailPageDetailsTab}",
+        "regionName" : "details-tab",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:relatedRecords",
+          "id" : "3ed9dee4-054f-49d6-8a58-3a4725904fa9",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "fb1b7497-1bad-4d22-8b47-7899a5dba9a2",
+        "regionLabel" : "{!$Label.ProviderPortalTemplate.RecordDetailPageRelatedTab}",
+        "regionName" : "related-tab",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "runtime_industries_program_mgmt:attendanceListView",
+          "id" : "a11ec677-b481-4dc9-9513-3644d83f3f0f",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "6306beb2-a3e0-4a36-9843-9befbe8aa1c2",
+        "regionLabel" : "{!$Label.ProviderPortalTemplate.BenefitSessionDetailPageAttendanceTab}",
+        "regionName" : "Attendance",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6ad13a20-b01a-45aa-893d-6bdd15734996",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "forceChatter:recordFeedContainer",
+      "id" : "2039eae8-0d75-428f-ab93-d53edfbfb7fe",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6bc6b683-1e43-4be0-b8f3-3dbf7c2fc48c",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "d788f410-3f75-4ee0-b0d3-519e374f9438",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "cce960a4-a89b-47dc-8769-bc6001d4dce8",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "bcbcc8bd-9096-4d88-b172-06bda2c12ebd",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-2Bs"
+}

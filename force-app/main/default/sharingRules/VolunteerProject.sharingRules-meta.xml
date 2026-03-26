@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Share_Volunteer_Projects_Site_Users</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Shares Volunteer Project records with site users for EPM experience cloud site</description>
+        <label>Share Volunteer Projects Site Users</label>
+        <sharedTo>
+            <allCustomerPortalUsers></allCustomerPortalUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>IsPublishedOnWeb</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingGuestRules>
+        <fullName>Share_Volunteer_Projects_Guest_Users</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Shares volunteer project records with guest users for EPM experience site</description>
+        <label>Share Volunteer Projects Guest Users</label>
+        <sharedTo>
+            <guestUser>GPS_EmergencyResponseManagement</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>IsPublishedOnWeb</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

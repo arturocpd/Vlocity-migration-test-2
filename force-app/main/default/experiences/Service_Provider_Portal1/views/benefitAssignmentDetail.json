@@ -1,0 +1,155 @@
+{
+  "appPageId" : "d457460e-ba94-4537-9186-af9e755155f0",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "0a96024c-08c0-47a3-9dc0-c37740609009",
+  "label" : "Benefit Assignment Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "7a40c18c-4fb3-4a96-b43e-c1f4f3442a9a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "535576ee-a69c-44c8-a1bd-c6ffbb4214cb",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "686ee222-72bb-4f5e-9a48-e2b01bdc2912",
+          "activeTab" : "details-tab",
+          "tabs" : [ {
+            "UUID" : "09ab79db-b047-4dcf-94a3-bd4a1287188d",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : { },
+              "fqn" : "forceCommunity:recordDetail"
+            } ],
+            "tabKey" : "details-tab",
+            "tabName" : "{!$Label.ProviderPortalTemplate.RecordDetailPageDetailsTab}"
+          }, {
+            "UUID" : "579795aa-b29b-4afd-b4ff-8b5262dd9258",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : { },
+              "fqn" : "forceCommunity:relatedRecords"
+            } ],
+            "tabKey" : "related-tab",
+            "tabName" : "{!$Label.ProviderPortalTemplate.RecordDetailPageRelatedTab}"
+          }, {
+            "UUID" : "8cfc3478-4b3e-4220-af24-8a01a2eacae7",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ {
+              "attributes" : {
+                "recordId" : "{!recordId}"
+              },
+              "fqn" : "spcm_industries_publicsector:benefitSessionsView"
+            } ],
+            "tabKey" : "benefit-disbursement-tab",
+            "tabName" : "{!$Label.ProviderPortalTemplate.BenefitAssignmentDetailPageBenefitDisbursementTab}"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabLayout",
+      "id" : "686ee222-72bb-4f5e-9a48-e2b01bdc2912",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "8d096be1-eaf1-41b7-93f6-44017bdd6495",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "09ab79db-b047-4dcf-94a3-bd4a1287188d",
+        "regionLabel" : "{!$Label.ProviderPortalTemplate.RecordDetailPageDetailsTab}",
+        "regionName" : "details-tab",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}",
+            "width" : "MEDIUM"
+          },
+          "componentName" : "forceCommunity:relatedRecords",
+          "id" : "0e1c92bc-bd29-4f11-a5a4-50d1c9680cb6",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "579795aa-b29b-4afd-b4ff-8b5262dd9258",
+        "regionLabel" : "{!$Label.ProviderPortalTemplate.RecordDetailPageRelatedTab}",
+        "regionName" : "related-tab",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "spcm_industries_publicsector:benefitSessionsView",
+          "id" : "8ad9d952-4689-43f1-bf5b-79a05d00541f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "8cfc3478-4b3e-4220-af24-8a01a2eacae7",
+        "regionLabel" : "{!$Label.ProviderPortalTemplate.BenefitAssignmentDetailPageBenefitDisbursementTab}",
+        "regionName" : "benefit-disbursement-tab",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "43459b46-e4c1-4178-987a-fa4db7f45fdc",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "forceChatter:recordFeedContainer",
+      "id" : "f4cf519f-4bcc-4d4a-9abd-66eb578fb22b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "011c2d57-f942-4068-8075-cc9c4b755723",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "21f79136-088b-4ec3-b3bf-41beee8bb8de",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "34e5ca20-b272-4198-8229-84c44d1ea93b",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "80dc5ff3-8a15-45b5-ba13-4d4845441e88",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-0nD"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnablementMeasureDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Counts the number of closed won opportunities with a related product called &quot;Tandem Solar Cells&quot;.</description>
+    <developerName>Tandem_Solar_Cell_Deals_Won</developerName>
+    <masterLabel>Tandem Solar Cell Deals Won</masterLabel>
+    <sourceMeasureObject>
+        <aggregateFunction>Count</aggregateFunction>
+        <dateFieldApiName>CloseDate</dateFieldApiName>
+        <displayFieldApiName>Name</displayFieldApiName>
+        <filters>
+            <fieldApiName>StageName</fieldApiName>
+            <fieldValue>Closed Won</fieldValue>
+            <operator>Equals</operator>
+            <sequenceNumber>1</sequenceNumber>
+        </filters>
+        <objectApiName>Opportunity</objectApiName>
+        <relatedMeasureObjects>
+            <filters>
+                <fieldApiName>Name</fieldApiName>
+                <fieldValue>Tandem Solar Cells</fieldValue>
+                <operator>Equals</operator>
+                <sequenceNumber>1</sequenceNumber>
+            </filters>
+            <idFieldApiName>OpportunityId</idFieldApiName>
+            <objectApiName>OpportunityLineItem</objectApiName>
+        </relatedMeasureObjects>
+        <userFieldApiName>OwnerId</userFieldApiName>
+    </sourceMeasureObject>
+    <status>Published</status>
+</EnablementMeasureDefinition>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div style=&quot;background-color:#E6F9F6;font-size:1rem;&quot; class=&quot;CovidBanner&quot;&gt;
+    For all latest information on COVID-19: &lt;a style=&quot;color:#0867AA;padding-left:5px;&quot; href=&quot;https://www.google.com&quot;&gt; Click here&lt;/a&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>header</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;slds-grid slds-wrap&quot; &gt;
+    &lt;div class=&quot;slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-3 slds-large-size_1-of-4&quot;&gt;  
+        &lt;div class=&quot;slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small tileBorder1&quot;&gt;
+            &lt;div class=&quot;slds-image uiMenuItem forceCommunityTileMenuItem tileHomeHeader&quot; &gt;
+                &lt;a style=&quot;text-decoration: none;&quot; class=&quot;navTileLink&quot; href=&quot;resources-for-individuals-and-families&quot;&gt;
+                &lt;div class=&quot;slds-align--absolute-center imagePreview&quot;&gt; &lt;img src=&quot;{!contentAsset.Person.1}&quot; alt=&quot;&quot;/&gt;&lt;/div&gt;
+                &lt;div class=&quot;tileLabel tileName1&quot; &gt;Resources for Individuals &amp; Families&lt;/div&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-3 slds-large-size_1-of-4&quot;&gt;  
+        &lt;div class=&quot;slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small tileBorder1&quot;&gt;
+            &lt;div class=&quot;slds-image uiMenuItem forceCommunityTileMenuItem tileHomeHeader&quot;&gt;
+                &lt;a style=&quot;text-decoration: none;&quot; class=&quot;navTileLink&quot; href=&quot;resources-for-business&quot;&gt;
+                &lt;div class=&quot;slds-align--absolute-center imagePreview&quot;&gt; &lt;img src=&quot;{!contentAsset.Businesspng.1}&quot; alt=&quot;&quot;/&gt;&lt;/div&gt;
+                &lt;div class=&quot;tileLabel tileName1&quot; &gt;Resources for Business&lt;/div&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-3 slds-large-size_1-of-4&quot;&gt;  
+        &lt;div class=&quot;slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small tileBorder1&quot; &gt;
+            &lt;div class=&quot;slds-image uiMenuItem forceCommunityTileMenuItem tileHomeHeader&quot;&gt;
+                &lt;a style=&quot;text-decoration: none;&quot; class=&quot;navTileLink&quot; href=&quot;volunteer-projects&quot;&gt;
+                &lt;div class=&quot;slds-align--absolute-center imagePreview&quot;&gt; &lt;img src=&quot;{!contentAsset.Hand.1}&quot; alt=&quot;&quot;/&gt;&lt;/div&gt;
+                &lt;div class=&quot;tileLabel tileName1&quot;&gt;Volunteer Projects&lt;/div&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;slds-grid slds-wrap&quot; style=&quot;align-items: center; margin: 0 35px;&quot;&gt;
+&lt;div class=&quot;slds-size_1-of-12 slds-small-size_1-of-5 slds-medium-size_2-of-5 slds-large-size_3-of-8 hr1&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;slds-size_10-of-12 slds-small-size_3-of-5 slds-medium-size_1-of-5 slds-large-size_2-of-8&quot; style=&quot;text-align: center;font-size:1.333rem;font-family:&apos;Lato&apos;;&quot;&gt;
+        Other Resources 
+    &lt;/div&gt;
+    &lt;div class=&quot;slds-size_1-of-12 slds-small-size_1-of-5 slds-medium-size_2-of-5 slds-large-size_3-of-8 hr2&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;div class=&quot;slds-grid slds-wrap&quot;&gt;
+	&lt;div class=&quot;slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-3 slds-large-size_1-of-4&quot;&gt;  
+		&lt;div class=&quot;slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small tileBorder1&quot;&gt;
+			&lt;div  title=&quot;Food &amp; Essentials&quot;  class=&quot; foodessentialhtml&quot;&gt;
+				   &lt;a href=&quot;resources-for-individuals-and-families&quot; style=&quot; text-decoration: none;&quot; tabindex=&quot;-1&quot;&gt;Food &amp; Essentials&lt;/a&gt;  
+			&lt;/div&gt;
+		&lt;/div&gt;	
+    &lt;/div&gt;
+    &lt;div class=&quot;slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-3 slds-large-size_1-of-4&quot;&gt;  
+		&lt;div class=&quot;slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small tileBorder1&quot;&gt;
+			&lt;div title=&quot;Senior Well-Being&quot; class=&quot; foodessentialhtml&quot;&gt;
+			   &lt;a href=&quot;resources-for-individuals-and-families&quot; style=&quot; text-decoration: none;&quot; tabindex=&quot;-1&quot;&gt;Senior Well-Being&lt;/a&gt; 
+			&lt;/div&gt; 
+        &lt;/div&gt;			
+    &lt;/div&gt;
+    &lt;div class=&quot;slds-size_1-of-1 slds-small-size_1-of-2 slds-medium-size_1-of-3 slds-large-size_1-of-4&quot;&gt; 
+		&lt;div class=&quot;slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small tileBorder1&quot;&gt;
+			&lt;div class=&quot; foodessentialhtml&quot;  title=&quot;Consumer &amp; Employee Protection&quot;&gt;
+				&lt;a href=&quot;resources-for-individuals-and-families&quot; style=&quot; text-decoration: none;&quot; tabindex=&quot;-1&quot;&gt; Consumer &amp; Employee Protection &lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;	
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--slds-truncate ---&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>content</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>buttonAlignment</name>
+                    <value>center</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonBgColor</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonBgHoverColor</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonBorderColor</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonMaxWidth</name>
+                    <value>100</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonRadius</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonTextColor</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>buttonTextHoverColor</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>confirmationMessage</name>
+                    <value>Got it!</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>followUpPromptLabel</name>
+                    <value>Can we close your question?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>isAskFollowPromptEnabled</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>isIncludeArticlesEnabled</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>isIncludeDiscussionsEnabled</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>isInitialSatisfactionPromptEnabled</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>isPublisherDeflectionEnabled</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Ask a Question</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>maxSuggestions</name>
+                    <value>5</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>satisfactionPromptLabel</name>
+                    <value>Did we help to answer your question?</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showDetails</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showTopics</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>uneditableTopics</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:askCommunity</componentName>
+                <identifier>forceCommunity_askCommunity</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>featured</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p style=&quot;color:#dce1e5&quot;&gt;&lt;center&gt; © City &amp; County of Hillwood, 1996 - 2019 &lt;/center&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:htmlBlock</componentName>
+                <identifier>forceCommunity_htmlBlock6</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>footer</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>description</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>metaTags</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Home</value>
+                </componentInstanceProperties>
+                <componentName>forceCommunity:seoAssistant</componentName>
+                <identifier>forceCommunity_seoAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>sfdcHiddenRegion</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>sidebar</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <appendable>enabled</appendable>
+        <name>sidebarAlt</name>
+        <prependable>enabled</prependable>
+        <replaceable>enabled</replaceable>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Home</masterLabel>
+    <template>
+        <name>siteforce:sldsOneColLayout</name>
+    </template>
+    <type>CommAppPage</type>
+</FlexiPage>

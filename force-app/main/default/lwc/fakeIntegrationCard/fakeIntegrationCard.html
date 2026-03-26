@@ -1,0 +1,54 @@
+<template>
+    <div class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <div class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <lightning-icon icon-name="standard:partner_fund_request" alternative-text="Initiate Disbursement icon" size="small"></lightning-icon>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title slds-text-heading_small">
+                        <span>Initiate Disbursement</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slds-card__body slds-card__body_inner body-section">
+            <p if:true={displayText} class="slds-text-body_regular">This process sends a disbursement request to the accounting system, if the recipient is eligible. Once a disbursement is initiated, a record of the transaction will be saved here in Salesforce.</p>
+
+            <lightning-spinner if:true={displaySpinner} alternative-text="Processing" size="medium" variant="brand"></lightning-spinner>
+            
+            <div if:true={displayProcessingSection} class="slds-m-left_x-large slds-m-top_large" style="min-height:100px;">
+
+                <p if:true={displayProcessingMessage} class="slds-text-body_regular">
+                    <strong>Processing...</strong>
+                </p>
+                <p if:true={displayCompletionMessage} class="slds-text-body_regular"><strong>Processing completed!</strong></p>
+                
+                <ul class="slds-m-top_small">
+                    <template for:each={listItems} for:item="item">
+                        <li key={item.id} class="slds-list_horizontal slds-m-bottom_small">
+                        <code>{item.text}</code>
+                        <lightning-dynamic-icon if:false={item.showSuccess} type="eq" option="play" size="x-small" alternative-text="Processing icon" class="slds-m-left_small"></lightning-dynamic-icon>
+                        <lightning-icon if:true={item.showSuccess} icon-name="utility:success" variant="success" size="x-small" alternative-text="Success" class="slds-m-left_small"></lightning-icon>
+                        </li>
+                    </template>
+                </ul>
+                
+            </div>
+
+            <div class="slds-m-vertical_large slds-align_absolute-center">
+                <lightning-button if:true={displayStartButton} label={buttonLabel} onclick={startIntegration} class="slds-m-top_small" variant="brand"></lightning-button>
+                <lightning-button if:true={displayRecordButton} label="View Disbursement" onclick={handleRecordButtonClick} class="slds-m-top_small" variant="brand"></lightning-button>
+            </div>
+
+        </div>
+        <div class="slds-card__footer">
+            <p class="slds-text-body_regular" style="color:#706e6b;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="slds-m-right_x-small" fill="#706e6b">;
+                    <use xlink:href={mulesoftIcon}></use>
+                </svg>
+                Integration powered by MuleSoft</p>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Misleading advertisement or documentation</fullName>
+        <default>false</default>
+        <label>Misleading advertisement or documentation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hidden fees/charges</fullName>
+        <default>false</default>
+        <label>Hidden fees/charges</label>
+    </standardValue>
+    <standardValue>
+        <fullName>payment / clearing delays</fullName>
+        <default>false</default>
+        <label>payment / clearing delays</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Service hours</fullName>
+        <default>false</default>
+        <label>Service hours</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Staff behaviour</fullName>
+        <default>false</default>
+        <label>Staff behaviour</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Long wait times</fullName>
+        <default>false</default>
+        <label>Long wait times</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data security breach</fullName>
+        <default>false</default>
+        <label>Data security breach</label>
+    </standardValue>
+    <standardValue>
+        <fullName>App / Website bug</fullName>
+        <default>false</default>
+        <label>App / Website bug</label>
+    </standardValue>
+    <standardValue>
+        <fullName>User training</fullName>
+        <default>false</default>
+        <label>User training</label>
+    </standardValue>
+</StandardValueSet>

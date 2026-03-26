@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>User</object>
+        <objectField>Account</objectField>
+        <userField>Account</userField>
+    </accessMappings>
+    <description>Share setting for the Compliance data sharing in grantmaking</description>
+    <name>Users</name>
+    <profiles>customer community login user</profiles>
+    <profiles>customer community plus user</profiles>
+    <profiles>customer community user</profiles>
+    <profiles>customer portal manager standard</profiles>
+    <profiles>customermanager</profiles>
+    <profiles>customeruser</profiles>
+</SharingSet>

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "f3eff07a-b68e-41b5-94af-2e1812c541fe",
+  "appPageId" : "c1857bfa-5ce6-40d8-a9ca-f1a64d399d34",
+  "configurationTags" : [ ],
+  "devName" : "Recruitment_Application_Form",
+  "id" : "41d10029-e70f-44ec-99c4-de471908b45f",
+  "label" : "Application Form",
+  "pageAccess" : "UseParent",
+  "routeType" : "job-application-form",
+  "type" : "route",
+  "urlPrefix" : "job-application-form"
+}

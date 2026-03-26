@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "260550f2-1240-4b0a-ac15-bdb89e019020",
+  "appPageId" : "c1857bfa-5ce6-40d8-a9ca-f1a64d399d34",
+  "configurationTags" : [ ],
+  "devName" : "Recruitment_Posting_Detail",
+  "id" : "395212b2-779c-461c-9d47-1875cc8a2460",
+  "label" : "Recruitment Posting Detail",
+  "routeType" : "detail-18B",
+  "type" : "route",
+  "urlPrefix" : "recruitmentposting"
+}

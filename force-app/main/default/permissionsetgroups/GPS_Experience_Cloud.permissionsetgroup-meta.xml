@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>For GPS experience cloud users</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>GPS Experience Cloud</label>
+    <permissionSets>Compliant_Data_Sharing_User</permissionSets>
+    <permissionSets>GPS_Business_Rules_Engine_Runtime_for_Communities</permissionSets>
+    <permissionSets>GPS_Decision_Explainer_Runtime_Site_User</permissionSets>
+    <permissionSets>GPS_DocGen_Runtime_Community_User</permissionSets>
+    <permissionSets>GPS_Exp_Cloud_Grantmaking</permissionSets>
+    <permissionSets>GPS_ExperienceCloud_lpiepm</permissionSets>
+    <permissionSets>GPS_Experience_Cloud_Benefits</permissionSets>
+    <permissionSets>GPS_Grantmaking_External_Reviewer</permissionSets>
+    <permissionSets>GPS_Knowledge_Community_Access</permissionSets>
+    <permissionSets>GPS_Lightning_Scheduler</permissionSets>
+    <permissionSets>GPS_OmniStudio_Digital_Experience_Objects_and_Apex</permissionSets>
+    <permissionSets>GPS_OmniStudio_Digital_Experience_User</permissionSets>
+    <permissionSets>GPS_PBU_IDO_Lightning_Experience_Scheduler_Outbound_Permission_Set</permissionSets>
+    <permissionSets>GPS_TRM_Experience_Cloud_Applicant_Additions</permissionSets>
+    <permissionSets>GPS_TalentManagementAdditions</permissionSets>
+    <permissionSets>PSCommFooter</permissionSets>
+    <permissionSets>force__ActionPlans</permissionSets>
+    <permissionSets>force__BRECmtyRuntime</permissionSets>
+    <permissionSets>force__BRERuntime</permissionSets>
+    <permissionSets>force__BenefitAssistanceForCmtyPsl</permissionSets>
+    <permissionSets>force__ComposableCaseManagementForCmtyPsl</permissionSets>
+    <permissionSets>force__CriteriaBasedSearchFilterExpCloudPsl</permissionSets>
+    <permissionSets>force__DocumentChecklist</permissionSets>
+    <permissionSets>force__EinsteinGPTPromptTemplateUser</permissionSets>
+    <permissionSets>force__ExperienceCloudForGrantmaking</permissionSets>
+    <permissionSets>force__FormFrameworkForExperienceCloud</permissionSets>
+    <permissionSets>force__OmniStudioExecution</permissionSets>
+    <permissionSets>force__OmniStudioUser</permissionSets>
+    <permissionSets>force__PublicSectorAccessPSL</permissionSets>
+    <permissionSets>force__TlntRcrtMgmtApplicantAccess</permissionSets>
+    <permissionSets>gps_Recruitment_Posting_Community_User_Access</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

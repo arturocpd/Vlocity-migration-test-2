@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "c60c1c95-8120-4a7d-a30b-03db3e814799",
+  "appPageId" : "e0fc7900-a10c-4a56-88d5-3300b25fd224",
+  "configurationTags" : [ ],
+  "devName" : "Contract_Documents",
+  "id" : "d19ef230-138b-4c63-8c6e-83860056575b",
+  "label" : "Contract Documents",
+  "routeType" : "contract-documents",
+  "type" : "route",
+  "urlPrefix" : "contractdocuments"
+}

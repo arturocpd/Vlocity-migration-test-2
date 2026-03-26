@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>GPS_SocialInsuranceIA</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>GPS-SocialInsuranceIA</label>
+        <sharedTo>
+            <group>GPS_Social_Insurance_Respond</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>ApplicationType</field>
+            <operation>equals</operation>
+            <value>Filed Claim</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

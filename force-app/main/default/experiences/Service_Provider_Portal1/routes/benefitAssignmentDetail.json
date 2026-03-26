@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "0a96024c-08c0-47a3-9dc0-c37740609009",
+  "appPageId" : "d457460e-ba94-4537-9186-af9e755155f0",
+  "configurationTags" : [ ],
+  "devName" : "BenefitAssignment_Detail",
+  "id" : "6ee9bcf7-90d0-4e51-8fe4-2a852b0bf5bd",
+  "label" : "Benefit Assignment Detail",
+  "routeType" : "detail-0nD",
+  "type" : "route",
+  "urlPrefix" : "benefitassignment"
+}

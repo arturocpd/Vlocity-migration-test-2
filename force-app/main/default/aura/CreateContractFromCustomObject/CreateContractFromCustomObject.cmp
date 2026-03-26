@@ -1,0 +1,17 @@
+<aura:component controller="CreateContractController" implements="force:lightningQuickAction,force:hasRecordId">
+<aura:html tag="style">
+    .modal-body.spinnerHeight{
+    height: 25%
+    }
+</aura:html>
+<aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+<aura:attribute name="recordId" type="String" description="stores the record id"/>
+<lightning:navigation aura:id="navLink"/>
+<aura:attribute name="Spinner" type="boolean" default="true"/>
+    <aura:if isTrue="{!v.Spinner}">
+    <div style="height:6rem;position:relative">
+            <lightning:spinner variant="brand" alternativeText="Loading..." size="large"/>
+    </div>
+    </aura:if>
+
+</aura:component>

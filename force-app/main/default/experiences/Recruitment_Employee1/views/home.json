@@ -1,0 +1,34 @@
+{
+  "appPageId" : "b97b5bc1-b612-4339-b95e-16ab9ce2aff7",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "da056d42-a88f-4233-b4df-5bbd4dd9e4d4",
+  "label" : "Home",
+  "regions" : [ {
+    "id" : "f46e8827-5212-4b09-a569-95a7b68d7c55",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "2a7d571d-404f-4e43-aadd-c2b547b3a76f",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0990cca6-903e-4986-8b8b-b096a5490d7c",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "76705fc0-c842-41c1-97b5-8201e4561a50",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

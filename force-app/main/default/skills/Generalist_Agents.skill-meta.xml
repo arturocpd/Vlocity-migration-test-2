@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skill xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <profiles>
+            <profile>admin</profile>
+            <profile>gps-service</profile>
+        </profiles>
+        <users>
+            <user>ar@copado.com.ido-public</user>
+            <user>stevenservice042025142012726489.dmlyahqvuq6k.mr1hco3h03dt@copado.com.ido-public</user>
+        </users>
+    </assignments>
+    <label>Generalist Agents</label>
+</Skill>

@@ -1,0 +1,10 @@
+{
+  "activeViewId" : "04038e35-41f4-483c-8b54-5f4f9ae3f111",
+  "appPageId" : "5a89a6eb-5e46-449a-bfec-8658faff2c53",
+  "configurationTags" : [ ],
+  "devName" : "Invoice_Related_List__c",
+  "label" : "Invoice Related List",
+  "objectApiName" : "SDO_Sales_Invoice_Example__c",
+  "routeType" : "relatedlist-a1S",
+  "urlPrefix" : "sdo-sales-invoice-example"
+}

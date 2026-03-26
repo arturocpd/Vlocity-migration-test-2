@@ -1,0 +1,29 @@
+{
+    "ApiName": "SDO_Service_Third_Party_Repair_Locations_V1",
+    "CalculationMatrix.Name": "Third Party Repair Locations",
+    "CalculationMatrixId": {
+        "Name": "Third Party Repair Locations",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationMatrix/Third Party Repair Locations",
+        "VlocityRecordSObjectType": "CalculationMatrix"
+    },
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixDefinitionVerId": "9QOHu00000112K6OAI",
+    "DscnModelNoteExportStatus": "",
+    "EndDateTime": "",
+    "GroupKey": "",
+    "GroupKeyValue": "",
+    "IsLocked": false,
+    "MatrixType": "Standard",
+    "MayEdit": true,
+    "Name": "Third Party Repair Locations V1",
+    "Namespace": "",
+    "Rank": "",
+    "StartDateTime": "2024-06-05T06:06:09.000Z",
+    "SubGroupKey": "",
+    "SubGroupKeyValue": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrixVersion",
+    "VlocityRecordSourceKey": "CalculationMatrixVersion/1/CalculationMatrix/Third Party Repair Locations"
+}

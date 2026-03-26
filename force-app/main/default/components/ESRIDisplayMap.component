@@ -1,0 +1,500 @@
+<apex:component Controller="ESRIDisplayMapController">
+    
+     <html>
+        <head>
+            <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+            <style type="text/css">
+                html { height: 100%; width: 100%; margin: 0; padding: 0 }
+                body { height: 100%; width: 100%; margin: 0; padding: 0 }
+                #wrapper { height: 100%; width: 100%; margin: 0; padding: 0; position: relative; z-index: 0 }
+                #mapDiv { 
+                    height: 100%; 
+                    width: 100%; 
+                    margin: 0; 
+                    padding: 0; 
+                    z-index: 0; 
+                    float:'none'; 
+                }
+                #addressDiv {height: 1em; width: 100%; opacity: 0.7; position: absolute; bottom: 0; right: 0; 
+                z-index: 100; background-color: #c9e6f2; padding: 10px; text-align: center; font-size: 2em}
+                .invisible { display: none }
+                
+                .gisIcon {
+                    background-position: center;
+                    background-repeat: no-repeat;   
+                    height: 30px;
+                    width: 30px;
+                    background-color: transparent;
+                    border: none;
+                }
+                .gisPointIcon {
+                    background-image:  url({!$Resource.GISPoint});
+                }   
+                .gisLineIcon {
+                    background-image:  url({!$Resource.GISLine});
+                }
+                .gisPolygonIcon {
+                    background-image:  url({!$Resource.GISPolygon});
+                }
+                .gisRectangleIcon {
+                    background-image:  url({!$Resource.GISRectangle});
+                }
+                .gisCircleIcon {
+                    background-image:  url({!$Resource.GISCircle});
+                }
+            </style>
+            <link rel="stylesheet" href="//js.arcgis.com/3.21/esri/css/esri.css"/>
+            <script>
+                var dojoConfig = {
+                    async:false
+                };
+            </script>
+            <script src="//js.arcgis.com/3.21/"></script> 
+            <apex:includeScript value="/support/console/33.0/integration.js"/>
+            <script>
+                var DEBUG = false;
+                var aoiLat = 0;
+                var aoiLng = 0;
+                var map;
+                var kml;
+                var toolbar;
+                var polygonGraphic = null;
+                var screenPoint;
+                var MapAdapter = {
+                    init: function() {
+                    },
+                    drawMap: function(pCenterLat, pCenterLon, pZoom, pMapLoaded) {
+                        showObject = false;
+                        
+                        require(["esri/map", "esri/geometry/webMercatorUtils", "esri/geometry/Point", "dojo/query", "dojo/parser"], 
+                                function(Map, webMercatorUtils, Point, query, parser) {
+                                    parser.parse();
+
+                                    map = new Map("mapDiv", {
+                                        basemap: "satellite",
+                                        center: [pCenterLon, pCenterLat],
+                                        zoom: pZoom
+                                    }); 
+                                    popup = map.infoWindow;
+                                    map.on('click', function(event) {
+
+                                        if (event.graphic && event.graphic.click) {
+                                            MapAdapter.showHighlightLayer(event);
+                                            showObject = true;
+                                        } else {
+                                            if (showObject == true) {
+                                                // hide the layer
+                                                MapAdapter.hideHighlightLayer(event);
+                                                showObject = false;
+                                            }
+                                        }
+                                    });
+
+                                    //click handler for the draw tool buttons
+                                    query(".gisPointIcon").on("click", function(){
+                                        MapAdapter.activateToolBar('POINT');
+                                    });
+                                    query(".gisPolygonIcon").on("click", function(){
+                                        MapAdapter.activateToolBar('POLYGON');
+                                    });
+                                    query(".gisRectangleIcon").on("click", function(){
+                                        MapAdapter.activateToolBar('RECTANGLE');
+                                    });
+                                    query(".gisLineIcon").on("click", function(){
+                                        MapAdapter.activateToolBar('LINE');
+                                    });
+                                    query(".gisCircleIcon").on("click", function(){
+                                        MapAdapter.activateToolBar('CIRCLE');
+                                    });
+
+                                    map.on("mouse-up", function(evt) {
+                                        console.dir('map.on - CLICK: [' + evt.screenPoint + ']'); 
+                                        screenPoint = evt.screenPoint;
+                                        if (event.graphic && event.graphic.click) {
+                                            console.dir('map.on - event.graphic');
+                                        }
+                                       
+                                    });                                                                        
+
+                                    if (pMapLoaded) {
+                                        map.on("load", pMapLoaded);
+                                    }
+                                });
+                    },
+                    mapPanEvent: function(pPanEventCallback) {
+                        //this.panEventCallback = pPanEventCallback;
+                    },
+                    centerMap: function(pLat, pLon) {
+                        centerAt([pLon, pLat]);
+                    },
+                    geocodeLocation: function(pId, pLat, pLon, pAddressCallback) {
+                        require(["esri/tasks/locator", "esri/geometry/Point"], function(Locator, Point) {
+                            if (locator == null) {
+                                locator = new Locator("https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer");           
+                            }
+                            var location = new Point(pLon, pLat);
+                            locator.locationToAddress(location, 100, function(pResponse) {
+                                if (pResponse.address) {
+                                    var address = pResponse.address.Match_addr;
+                                    var lat = pResponse.location.y;
+                                    var lon = pResponse.location.x;
+                                    pAddressCallback(pId, address, lat, lon);
+                                }
+                            });
+                        });
+                    },
+                    geocodeAddress: function(pId, pAddress, pLocationCallback) {
+                        var params = { address: {"SingleLine": pAddress }, maxLocations: 1, outFields: ["Loc_name"] };
+                        require(["esri/tasks/locator"], function(Locator) {
+                            //if (locator == null) {
+                                locator = new Locator("https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer");           
+                            //}
+                            locator.addressToLocations(params, function(pResult) {
+                                if (pResult.length > 0) {
+                                    var address  = pResult[0].address;
+                                    var lat = pResult[0].location.getLatitude();
+                                    var lon = pResult[0].location.getLongitude();
+                                    //console.log("lat is " + lat + " lon is " + lon);
+                                    pLocationCallback(pId, address, lat, lon);
+                                }
+                            });
+                        });
+                    },          
+                    addDropPin: function(pLat, pLon, pIconURL, pHtml) {                   
+                        
+                        require(["esri/geometry/Point", "esri/symbols/PictureMarkerSymbol", "esri/InfoTemplate", "esri/graphic"], 
+                                function(Point, PictureMarkerSymbol, InfoTemplate, Graphic) {
+                                    var marker = new PictureMarkerSymbol(pIconURL, 16, 32);
+                                    var point = new Point(pLon, pLat);
+                                    var attr = {"Xcoord":pLon,"Ycoord":pLat,"Plant":"Mesa Mint"};
+                                    var infoTemplate = new InfoTemplate("Test");
+                                    var graphic = new Graphic(point, marker, attr, infoTemplate);
+
+                                    // map.graphics.add(graphic);
+                                    map.graphics.add(graphic);
+                                    
+                                    if (pHtml) {
+                                        graphic.click = function() {
+                                            popup.setContent(pHtml);
+                                            popup.show(point);
+                                        }
+                                    } // endif
+                                });
+                    },
+                    showLayer: function(pUrl) {
+                        console.dir('pUrl: [' + pUrl + ']');
+                        require(["esri/layers/KMLLayer"], function(KMLLayer) {
+                            if (kml != null) {
+                                map.removeLayer(kml);
+                            } // endif
+                            kml = new KMLLayer(pUrl); 
+                            map.addLayer(kml);      
+                        });
+                    },
+                    addToolBar: function() {
+                        console.dir('addToolBar');
+                        require(["esri/toolbars/draw"], function(Draw) {
+                            toolbar = new Draw(map);
+                            toolbar.on("draw-end", MapAdapter.addToMap);            
+                        });
+                    },      
+                    activateToolBar: function(tool) {
+                        console.dir('activateToolBar');
+                        require(["esri/toolbars/draw"], function(Draw) {
+                            toolbar.activate(Draw[tool]);
+                            map.hideZoomSlider();
+                        });
+                    }, 
+                    addToMap: function(evt) {
+                        console.dir('activateToolBar');
+                        require(["esri/toolbars/draw","esri/symbols/SimpleMarkerSymbol","esri/symbols/SimpleLineSymbol","esri/symbols/SimpleFillSymbol","esri/graphic", "esri/geometry", "esri/geometry/webMercatorUtils"], function(Draw, SimpleMarkerSymbol, SimpleLineSymbol, SimpleFillSymbol, Graphic, Geometry, webMercatorUtils) {
+                            var symbol;
+                            toolbar.deactivate();
+                            map.showZoomSlider();
+                            switch (evt.geometry.type) {
+                                case "point":
+                                case "multipoint":
+                                    symbol = new SimpleMarkerSymbol();
+                                    break;
+                                case "polyline":
+                                    symbol = new SimpleLineSymbol();
+                                    break;
+                                default:
+                                    // fill the new drawing with fill color
+                                    symbol = new SimpleFillSymbol(esri.symbol.SimpleFillSymbol.STYLE_SOLID, new esri.symbol.SimpleLineSymbol(esri.symbol.SimpleLineSymbol.STYLE_SOLID, new dojo.Color([255,0,0]), 2), new dojo.Color([0,255,0,0.25]));
+                                    break;
+                            }
+                            var graphic = new Graphic(evt.geometry, symbol);
+                            var r = evt.geometry.rings[0];      // get array of coordinates                          
+                            if(DEBUG) {
+                                console.dir('evt.geometry: [' + evt.geometry + ']');  
+                                console.dir('evt.geometry.rings[0]: [' + evt.geometry.rings[0] + ']'); 
+                                console.dir('evt.geometry.toJson: [' + evt.geometry.toJson() + ']'); 
+                                console.dir('evt.geometry.toJson: [' + JSON.stringify(evt.geometry.toJson()) + ']');
+                            }
+                            map.graphics.on('graphic-add',MapAdapter.initAddDialog);
+                            map.graphics.add(graphic);
+
+                            // get acres created by new drawing
+                            var geographicGeometries = [];
+                            var areaGeo = 0;
+                            geographicGeometries.push(esri.geometry.webMercatorToGeographic(evt.geometry));  
+                            areaGeo = esri.geometry.geodesicAreas(geographicGeometries, esri.Units.ACRES);
+                            
+                            // add acre to pop up
+                            document.getElementById('areaAcres').value = areaGeo;
+                            var gstr = JSON.stringify(evt.geometry.toJson());
+                            var tmp = JSON.parse(gstr);
+                            document.getElementById('areaPoly').value = '[' + tmp["rings"] + ']';
+                            if(DEBUG){
+                                console.log('gstr: [' + gstr + ']');
+                                console.log('tmp : [' + tmp["rings"] + ']');
+                                console.log('r : [' + r + ']');
+                            }
+                            // now that we have he coordinates in ESRI we want Lat Long, so lets build the
+                            //  poly info as XY
+                            var geoLayer = '[';
+                            var geoLayerCompoment = '[';
+                            for(var x = 0; x < r.length; x++) {
+                                var geoLayerCompomentFlag = false;
+                                var normalizedVal = webMercatorUtils.xyToLngLat(r[x][0], r[x][1]);
+                                geoLayer = geoLayer + '[' + normalizedVal + ']';
+                                
+                                if(aoiLng == 0 && aoiLat == 0) {
+                                    aoiLat = normalizedVal[0];
+                                    aoiLng = normalizedVal[1];
+                                }
+                                
+                                // since we have a different map on the community, we need the Lat Long in reverse order in another 
+                                //  field for use in that component
+                                if(x + 1 < r.length) {
+                                    geoLayerCompoment = geoLayerCompoment + '[' + normalizedVal[1] + ',' + normalizedVal[0] + ']';
+                                    geoLayerCompomentFlag = true;
+                                    if(x + 2 < r.length) {
+                                        geoLayerCompoment = geoLayerCompoment + ',';   
+                                    }
+                                }
+                                
+                                // need to add a comma between each pair
+                                if(x + 1 < r.length) {
+                                    geoLayer = geoLayer + ',';                                    
+                                }    
+
+                            }
+                            geoLayer = geoLayer + ']';
+                            geoLayerCompoment = geoLayerCompoment + ']';
+                            document.getElementById('areaPoly').value = geoLayer;
+                            document.getElementById('areaPolyComponent').value = '[' + geoLayerCompoment + ']';
+                            
+                            console.dir('areaGeo: [' + areaGeo + ']');                             
+
+                        });
+                    },   
+                    initAddDialog: function(evt) {
+                        console.dir('initAddDialog '); 
+                        require(["esri/map"], function() {
+                            // create and display popup to capture new drawing info
+                            var title, content, graphicAttributes;
+
+                            console.dir('evt.screenPoint: [' + evt.screenPoint + ']'); 
+                            console.dir('screenPoint: [' + screenPoint + ']'); 
+
+                            graphicAttributes = evt.graphic.attributes;
+                            title = 'Select Area';
+                            content = "<b>Area Size: </b><input id='areaAcres' name='areaAcres' size='20' type='text' value='' readonly='true'/><br/>" 
+                                        + "<br/><input id='areaPoly' name='areaPoly' size='20' type='hidden' value='' readonly='true'/><br/>" 
+                                        + "<br/><input id='areaPolyComponent' name='areaPolyComponent' size='20' type='hidden' value='' readonly='true'/><br/>" 
+                                        + "<br/><input type='button' value='Add Area' onClick='MapAdapter.addArea()'/>"
+                                        + "<input type='button' value='Cancel' onClick='MapAdapter.closeAddArea()'/>";
+
+                            console.dir('initAddDialog - title: [' + title + ']'); 
+                            console.dir('initAddDialog - title set - content: [' + content + ']'); 
+                            console.dir('initAddDialog - content set - lets show');
+                            map.infoWindow.setTitle(title);
+                            map.infoWindow.setContent(content); 
+                            
+                            map.infoWindow.show(screenPoint, map.getInfoWindowAnchor(screenPoint));                            
+                            console.dir('Content should be shown!'); 
+                        });
+                    }, 
+                    addArea: function() {
+                        
+                        //Not doing anything with Add in this Map so just close it
+                        MapAdapter.closeAddArea();
+
+                        
+                        
+
+                    },
+                    closeAddArea: function(result) {
+                        map.infoWindow.hide();  
+                    },
+                    msgFailed: function(error) {
+                        console.log("An error has occurred " + error);                           
+                    },    
+                    showHighlightLayer: function(evt) {
+                        console.dir('event: [' + evt + ']');
+                        require(["esri/map", "esri/tasks/geometry","esri/geometry/webMercatorUtils", "esri/InfoTemplate", "esri/geometry/Point"], function() {
+                            // create an overlay layer with a new color and border - red line and green fll
+                            var clickFillPoly = new esri.symbol.SimpleFillSymbol(esri.symbol.SimpleFillSymbol.STYLE_SOLID, new esri.symbol.SimpleLineSymbol(esri.symbol.SimpleLineSymbol.STYLE_SOLID, new dojo.Color([255,0,0]), 2), new dojo.Color([0,255,0,0.25]));
+                            var infoTemplate = evt.graphic.infoTemplate;                            
+                            var clickGraphic = new esri.Graphic(evt.graphic.geometry, clickFillPoly, '', infoTemplate);
+                            map.graphics.add(clickGraphic);
+
+                            // check the Land Details check box
+                            var it = evt.graphic.infoTemplate;
+                            document.getElementById(it.title).checked = true;
+                            
+                            //set the value of the check box to the hidden value to be sent 
+                            document.getElementById('{!$Component.farmLoc}').value = document.getElementById(it.title).value;
+                        });
+                    },                    
+                    hideHighlightLayer: function(evt) {
+                        console.dir('event hide: [' + evt + ']');
+                        require(["esri/map", "esri/tasks/geometry","esri/geometry/webMercatorUtils", "esri/InfoTemplate", "esri/geometry/Point"], function() {
+                            // hide the layer
+                            evt.graphic.hide();
+                            
+                            // uncheck the Land Details check box
+                            var it = evt.graphic.infoTemplate
+                            document.getElementById(it.title).checked = false;
+                            
+                        });
+                    }, 
+                    getLabelPoints: function(geos, txt) {
+                        require(["esri/tasks/geometryService","esri/symbols/Font",
+                                 "esri/symbols/TextSymbol"], function(geometryService, Font, TextSymbol) {
+                            
+                            var geometryService = new GeometryService("https://utility.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer");
+
+                            geometryService.labelPoints(geos, function(labelPoints) { // callback                                
+                                var font = new Font("20px", Font.STYLE_NORMAL, Font.VARIANT_NORMAL, Font.WEIGHT_BOLDER);
+                                array.forEach(labelPoints, function(labelPoint) {
+                                    // create a text symbol
+                                    var textSymbol = new TextSymbol(txt,font, new Color([0, 0, 0]));
+                                    
+                                    var labelPointGraphic = new Graphic(labelPoint, textSymbol);
+                                    
+                                    // add the label point graphic to the map
+                                    map.graphics.add(labelPointGraphic);
+                                });
+                            }); 
+                        });
+                    },
+                    showPolygons: function() {
+                        console.dir('showPolygons');
+                        require(["esri/InfoTemplate","esri/map","esri/geometry/Point","esri/geometry/webMercatorUtils","esri/symbols/Font",
+                                 "esri/symbols/TextSymbol","esri/tasks/geometry", "esri/tasks/GeometryService"
+                                 ], function(Font,TextSymbol) {
+                         <apex:outputPanel id="esriLayer" rendered="true" layout="none">
+                            var polygon = new esri.geometry.Polygon(new esri.SpatialReference({wkid:4326}));                                                            
+                            
+                             polygon.addRing({!PolygonCoordinates});
+                            
+                            var infoTemplate;
+
+                            infoTemplate = new esri.InfoTemplate("{!AccountName}","Type of Work: {!TypeofWork} <br/> Work Entity: {!WorkEntity}");
+                      
+                            var symbol;
+
+                            symbol = new esri.symbol.SimpleFillSymbol(esri.symbol.SimpleFillSymbol.STYLE_SOLID, new esri.symbol.SimpleLineSymbol(esri.symbol.SimpleLineSymbol.STYLE_SOLID, new dojo.Color([0,0,0]), 2), new dojo.Color([128,128,0,0.50]));                             
+
+                                                                                          
+                            polygonGraphic = new esri.Graphic(polygon, symbol, '', infoTemplate); ///***  convert the polygon geometry *******////  
+                            map.graphics.add(polygonGraphic);
+                            
+                            polygonGraphic.click = function(evt) {
+                                console.log('polygonGraphic.click');
+                                console.log('polygonGraphic.evt: [' + evt + ']');
+                                //var clickGraphic = new esri.Graphic(evt.graphic.geometry, clickFillPoly);
+                                //map.graphics.add(clickGraphic);
+                            }
+                            
+
+                            </apex:outputPanel> 
+                        });
+                    }
+                };
+            </script>            
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        </head>
+        <script>
+            // WDC: lat 38.89510, lng: -77.03670
+            // These values are just used if an address for the center coordinates cannot be found.
+            var lat = 39.2804680000;  
+            var lng = -77.4633800000;
+            var zoom = 19;
+            var latitude;
+            var longitude;
+            
+            function geocodeLocationCallback(pId, address, latvalue, lonvalue) {
+                //console.log("in geocodeLocationCallBack");
+                //Moved to get center points of the map
+                lat = latvalue;
+                lng = lonvalue;
+                MapServer.init();
+            }
+            
+            //Get the Center coordinates based on an address
+            function getCenter() {
+                var Address = '{!CenterAddress}';
+                
+                console.log("Address from Apex is " + Address);
+                MapAdapter.geocodeAddress('123', Address, geocodeLocationCallback);
+            }
+            
+            
+            
+           
+            
+            function mapLoadComplete() {
+                //parent.mapLoadComplete(MapServer, MapAdapter);
+                //MapAdapter.addDropPin(lat, lng,'https://www.google.com/mapfiles/marker.png'); - removed pin point
+                MapAdapter.showPolygons();
+            }
+            var MapServer = {
+                init: function() {
+                    console.log('Init');
+                    MapAdapter.init();
+                    console.log('drawMap');
+                   
+                    MapAdapter.drawMap(lat, lng, zoom, mapLoadComplete);
+                    MapAdapter.addToolBar();
+                },
+                showAddressBar: function(pAddress) {
+                    $('#address').text(pAddress);
+                    $('#addressDiv').removeClass('invisible');
+                },
+                hideAddressBar: function() {
+                    $('#addressDiv').addClass('invisible');
+                }
+            };
+            window.onload = function() {
+                getCenter();
+                //MapServer.init();
+            }
+            </script>        
+        <body>
+            <div id="wrapper">
+                
+                <div id="mapDiv" style="height: 550px;position: relative;">
+                    <div id="header" style="width:100%;float: right;z-index: 10;position: absolute;top: 0;left: 40%;">      
+                        <button type="button" class="gisIcon gisPointIcon" id="pointBtn" alt="Draw Point"/>
+                        <button type="button" class="gisIcon gisLineIcon" id="lineBtn" alt="Draw Point"/>
+                        <button type="button" class="gisIcon gisPolygonIcon" id="polygonBtn" alt="Draw Point"/>
+                        <button type="button" class="gisIcon gisRectangleIcon" id="rectangleBtn" alt="Draw Point"/>
+                        <button type="button" class="gisIcon gisCircleIcon" id="circleBtn" alt="Draw Point"/>                   
+                    </div>
+                </div>
+            </div>
+        </body>
+        <!--
+            NEEDS TO BE AT THE END FOR THE COMMUNITY
+            Very last thing on the page
+        //-->
+        <script type="text/javascript">
+            var __sfdcSessionId = '{!GETSESSIONID()}';
+        </script>        
+        <script src="../../soap/ajax/29.0/connection.js"></script>
+    </html>
+</apex:component>

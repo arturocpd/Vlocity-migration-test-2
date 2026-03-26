@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>Business Licensing</label>
+            <name>Business_Licensing</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Professional Licensing</label>
+            <name>Professional_Licensing</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Vocational Licensing</label>
+            <name>Vocational_Licensing</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Specialty Licenses</label>
+            <name>Specialty_Licenses</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Economic Development</label>
+            <name>Economic_Development</name>
+        </dataCategory>
+        <dataCategory>
+            <label>Grants &amp; Loans</label>
+            <name>Grants_Loans</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <description>For Licensing and Permitting articles</description>
+    <label>LPI</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+        <object>SvcCatalogItemDef</object>
+    </objectUsage>
+</DataCategoryGroup>

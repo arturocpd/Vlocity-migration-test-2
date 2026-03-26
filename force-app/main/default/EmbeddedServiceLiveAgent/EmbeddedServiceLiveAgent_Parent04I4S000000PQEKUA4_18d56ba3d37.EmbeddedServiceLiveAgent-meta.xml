@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmbeddedServiceLiveAgent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <avatarImg>https://pbs.twimg.com/profile_images/965675287949135872/umHLeyAh_400x400.jpg</avatarImg>
+    <embeddedServiceConfig>GPS_Access_Benefits_Management</embeddedServiceConfig>
+    <embeddedServiceQuickActions>
+        <embeddedServiceLiveAgent>EmbeddedServiceLiveAgent_Parent04I4S000000PQEKUA4_18d56ba3d37</embeddedServiceLiveAgent>
+        <order>1</order>
+        <quickActionDefinition>Snapins_Contact_PrechatQuickAction_08h4S000000PGCR_1706557194861</quickActionDefinition>
+        <quickActionType>Prechat</quickActionType>
+    </embeddedServiceQuickActions>
+    <enabled>true</enabled>
+    <fontSize>Medium</fontSize>
+    <isOfflineCaseEnabled>false</isOfflineCaseEnabled>
+    <isQueuePositionEnabled>true</isQueuePositionEnabled>
+    <liveChatButton>Communities_Chat</liveChatButton>
+    <liveChatDeployment>Default_Deployment</liveChatDeployment>
+    <masterLabel>EmbeddedServiceLiveAgent_Parent04I4S000000PQEKUA4_18d56ba3d37</masterLabel>
+    <prechatEnabled>true</prechatEnabled>
+    <scenario>Basic</scenario>
+</EmbeddedServiceLiveAgent>

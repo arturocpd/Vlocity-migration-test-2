@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StageDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <masterLabel>Individual Application Tracking</masterLabel>
+    <referenceObject>IndividualApplication</referenceObject>
+    <referenceObjectField>Status</referenceObjectField>
+    <referenceObjectRecordType>IndividualApplication.Grantmaking</referenceObjectRecordType>
+    <stageTransition>
+        <fromStageValue>Interest</fromStageValue>
+        <toStageValue>In Progress</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <fromStageValue>Complete</fromStageValue>
+        <toStageValue>In Review</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <fromStageValue>Interest</fromStageValue>
+        <toStageValue>Closed</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <criteria>
+            <condition>
+                <operator>NotEqualTo</operator>
+                <sequenceNumber>1</sequenceNumber>
+                <sourceField>IndividualApplication.RequestedAmount</sourceField>
+                <value>0</value>
+            </condition>
+            <criteriaType>AND</criteriaType>
+            <executionType>CONDITION</executionType>
+            <isChildObject>false</isChildObject>
+            <logicalExpression>1</logicalExpression>
+            <targetObject>IndividualApplication</targetObject>
+        </criteria>
+        <fromStageValue>Interest</fromStageValue>
+        <stepGroup>
+            <name>Interest-Submitted</name>
+            <step>
+                <apiName>gps_Verify_Letter_of_Intent_includes_a_Requested_Amount</apiName>
+                <assignedToUser>ar@copado.com.ido-public.omni20</assignedToUser>
+                <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+                <name>Verify Letter of Intent includes a Requested Amount</name>
+                <stepType>ManualTask</stepType>
+            </step>
+        </stepGroup>
+        <toStageValue>Submitted</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <fromStageValue>Submitted</fromStageValue>
+        <toStageValue>Closed</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <criteria>
+            <condition>
+                <operator>Equals</operator>
+                <sequenceNumber>1</sequenceNumber>
+                <sourceField>ApplicationReview.ApplicationRecommendation</sourceField>
+                <value>Deny</value>
+            </condition>
+            <criteriaType>AND</criteriaType>
+            <executionType>CONDITION</executionType>
+            <isChildObject>true</isChildObject>
+            <logicalExpression>1</logicalExpression>
+            <targetFieldName>ApplicationId</targetFieldName>
+            <targetObject>ApplicationReview</targetObject>
+        </criteria>
+        <criteria>
+            <condition>
+                <operator>Equals</operator>
+                <sequenceNumber>1</sequenceNumber>
+                <sourceField>ApplicationDecision.ApplicationDecision</sourceField>
+                <value>Deny</value>
+            </condition>
+            <criteriaType>AND</criteriaType>
+            <executionType>CONDITION</executionType>
+            <isChildObject>true</isChildObject>
+            <logicalExpression>1</logicalExpression>
+            <targetFieldName>ApplicationId</targetFieldName>
+            <targetObject>ApplicationDecision</targetObject>
+        </criteria>
+        <fromStageValue>In Review</fromStageValue>
+        <toStageValue>Closed</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <fromStageValue>In Progress</fromStageValue>
+        <toStageValue>Interest</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <criteria>
+            <condition>
+                <operator>NotEqualTo</operator>
+                <sequenceNumber>1</sequenceNumber>
+                <sourceField>IndividualApplication.RequestedAmount</sourceField>
+                <value>0</value>
+            </condition>
+            <criteriaType>AND</criteriaType>
+            <executionType>CONDITION</executionType>
+            <isChildObject>false</isChildObject>
+            <logicalExpression>1</logicalExpression>
+            <targetObject>IndividualApplication</targetObject>
+        </criteria>
+        <fromStageValue>In Progress</fromStageValue>
+        <stepGroup>
+            <name>In Progress-Submitted</name>
+            <step>
+                <apiName>gps_Verify_Requested_Amount</apiName>
+                <assignedToUser>ar@copado.com.ido-public.omni20</assignedToUser>
+                <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+                <name>Verify Submitted Requested Amount is not $0</name>
+                <stepType>ManualTask</stepType>
+            </step>
+        </stepGroup>
+        <toStageValue>Submitted</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <fromStageValue>In Progress</fromStageValue>
+        <toStageValue>Closed</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <criteria>
+            <condition>
+                <operator>Equals</operator>
+                <sequenceNumber>1</sequenceNumber>
+                <sourceField>ApplicationReview.IsSubmitted</sourceField>
+                <value>true</value>
+            </condition>
+            <condition>
+                <operator>Equals</operator>
+                <sequenceNumber>2</sequenceNumber>
+                <sourceField>ApplicationReview.ApplicationRecommendation</sourceField>
+                <value>Award</value>
+            </condition>
+            <criteriaType>AND</criteriaType>
+            <executionType>CONDITION</executionType>
+            <isChildObject>true</isChildObject>
+            <logicalExpression>1 AND 2</logicalExpression>
+            <targetFieldName>ApplicationId</targetFieldName>
+            <targetObject>ApplicationReview</targetObject>
+        </criteria>
+        <fromStageValue>In Review</fromStageValue>
+        <stepGroup>
+            <name>In Review-Approved</name>
+            <step>
+                <apiName>gps_Verify_All_Reviews_Complete</apiName>
+                <assignedToUser>ar@copado.com.ido-public.omni20</assignedToUser>
+                <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+                <name>Verify All Reviews Complete</name>
+                <stepType>ManualTask</stepType>
+            </step>
+        </stepGroup>
+        <toStageValue>Approved</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <fromStageValue>In Review</fromStageValue>
+        <toStageValue>In Progress</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <fromStageValue>Submitted</fromStageValue>
+        <toStageValue>In Review</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <fromStageValue>Submitted</fromStageValue>
+        <toStageValue>In Progress</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <fromStageValue>Approved</fromStageValue>
+        <toStageValue>Complete</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <fromStageValue>Approved</fromStageValue>
+        <toStageValue>Interest</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <fromStageValue>Complete</fromStageValue>
+        <toStageValue>Closed</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <fromStageValue>Complete</fromStageValue>
+        <toStageValue>In Progress</toStageValue>
+    </stageTransition>
+    <stageTransition>
+        <fromStageValue>Closed</fromStageValue>
+        <toStageValue>In Progress</toStageValue>
+    </stageTransition>
+    <stageValue>
+        <value>In Progress</value>
+    </stageValue>
+    <stageValue>
+        <value>Interest</value>
+    </stageValue>
+    <stageValue>
+        <value>Closed</value>
+    </stageValue>
+    <stageValue>
+        <value>Submitted</value>
+    </stageValue>
+    <stageValue>
+        <value>Approved</value>
+    </stageValue>
+    <stageValue>
+        <stepGroup>
+            <name>In Review</name>
+            <step>
+                <apiName>If_all_Application_Reviews_say_deny</apiName>
+                <flowDefinitionName>Email_Reviewer</flowDefinitionName>
+                <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
+                <name>If all Application Reviews say deny</name>
+                <runAsUser>ar@copado.com.ido-public.omni20</runAsUser>
+                <stepType>AutoTask</stepType>
+            </step>
+        </stepGroup>
+        <value>In Review</value>
+    </stageValue>
+    <stageValue>
+        <value>Complete</value>
+    </stageValue>
+</StageDefinition>

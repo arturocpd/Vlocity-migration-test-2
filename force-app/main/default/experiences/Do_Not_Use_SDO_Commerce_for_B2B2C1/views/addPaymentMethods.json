@@ -1,0 +1,53 @@
+{
+  "appPageId" : "3a241bdb-3c0c-4a4f-b277-1b94130c2d69",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "dataProviders" : [ ],
+  "id" : "a5607cd7-1412-4ee6-b424-e0b35c7abba7",
+  "label" : "Add Payment Methods",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "componentSpacerSize" : "",
+        "layoutDirectionDesktop" : "row",
+        "layoutDirectionMobile" : "column",
+        "layoutDirectionTablet" : "column",
+        "maxContentWidth" : "",
+        "sectionColumnGutterWidth" : "",
+        "sectionConfig" : "{\"UUID\":\"c99f5e91-8fac-4428-89f8-0380cc7afa76\",\"columns\":[{\"UUID\":\"524af41e-188b-46bc-8541-32e574d9d812\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+        "sectionMinHeight" : "",
+        "sectionVerticalAlign" : "flex-start"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "c99f5e91-8fac-4428-89f8-0380cc7afa76",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "paymentMethodSetId" : ""
+          },
+          "componentName" : "commerce_builder:paymentAddPaymentMethods",
+          "id" : "314f0dd1-fde6-403e-8e62-953c6f2c7403",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "524af41e-188b-46bc-8541-32e574d9d812",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "355f1903-974a-48af-b9cc-05116e827860",
+    "regionName" : "content",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "add-payment-methods"
+}

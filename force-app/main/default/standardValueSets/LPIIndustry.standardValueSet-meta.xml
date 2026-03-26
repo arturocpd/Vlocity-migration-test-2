@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Healthcare</fullName>
+        <default>false</default>
+        <label>Healthcare</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Retail</fullName>
+        <default>false</default>
+        <label>Retail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Food and Beverages</fullName>
+        <default>false</default>
+        <label>Food and Beverages</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Law</fullName>
+        <default>false</default>
+        <label>Law</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Personal Care Services</fullName>
+        <default>false</default>
+        <label>Personal Care Services</label>
+    </standardValue>
+</StandardValueSet>

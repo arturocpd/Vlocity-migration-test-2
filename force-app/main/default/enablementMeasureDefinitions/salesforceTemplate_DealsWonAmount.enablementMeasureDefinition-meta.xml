@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EnablementMeasureDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This measure sums the amount total for  opportunities that an opportunity owner has won. To satisfy the measure, the opportunity Stage field must be set to Closed Won. Included in program templates.</description>
+    <developerName>salesforceTemplate_DealsWonAmount</developerName>
+    <masterLabel>Revenue from Deals Won</masterLabel>
+    <sourceMeasureObject>
+        <aggregateFieldApiName>Amount</aggregateFieldApiName>
+        <aggregateFunction>Sum</aggregateFunction>
+        <dateFieldApiName>CloseDate</dateFieldApiName>
+        <displayFieldApiName>Name</displayFieldApiName>
+        <filters>
+            <fieldApiName>StageName</fieldApiName>
+            <fieldValue>Closed Won</fieldValue>
+            <operator>Equals</operator>
+            <sequenceNumber>1</sequenceNumber>
+        </filters>
+        <objectApiName>Opportunity</objectApiName>
+        <userFieldApiName>OwnerId</userFieldApiName>
+    </sourceMeasureObject>
+    <status>Published</status>
+</EnablementMeasureDefinition>

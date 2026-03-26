@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "456e60d6-a466-4389-81ff-3d3d107d764b",
+  "appPageId" : "b97b5bc1-b612-4339-b95e-16ab9ce2aff7",
+  "configurationTags" : [ ],
+  "devName" : "Application_Form_Evaluation_Detail",
+  "id" : "d8327a5f-edfb-41e3-9484-f199d3ef1c79",
+  "label" : "Application Form Evaluation Detail",
+  "routeType" : "detail-16e",
+  "type" : "route",
+  "urlPrefix" : "applicationformevaluation"
+}

@@ -1,0 +1,41 @@
+<design:component label="Dynamic Banner">
+	
+    <design:attribute name="CompDisplayMode" label="Component Display Mode" datasource="All,Banner Only,App Info Only" default="All" />
+    <design:attribute name="Tag" label="Dynamic Content Tag" description="The unique tag for filtering which buttons, cards, etc. to display from the Dynamic Content object (match to the value of the Tag__c field)." default="" />
+    
+    <design:attribute name="BannerType" label="Banner: Type" datasource="User Welcome Banner,Standard Banner" default="User Welcome Banner" />
+    <design:attribute name="BannerTitle" label="Banner: Title/Greeting" default="Welcome," />
+    <design:attribute name="BannerTitleSuffix" label="Banner: Title/Greeting Suffix" default="!" description="include text after the user's name in the title, such as punctuation or additional text." />
+    <design:attribute name="BannerSubtitle" label="Banner: Subtitle" default="South Hutchinson Service Center" />
+    <design:attribute name="BannerColor" label="Banner: Background Color" description="Background color of the main banner area" default="#0b6448" />
+    <design:attribute name="BannerTextColor" label="Banner: Text Color" description="Text color of the main banner area" default="#ffffff" />
+    <design:attribute name="UserPhotoBorderColor" label="Banner: User Photo Border Color" description="Border color of the user photo" default="#ffffff" />
+    <design:attribute name="DefaultUserPhotoURL" label="Banner: User Photo Default" description="What image should display when the user doesn't have a profile photo? Default is Astro: /_slds/images/themes/lightning_lite/lightning_lite_profile_avatar_160.png (input is URL)" default="/_slds/images/themes/lightning_lite/lightning_lite_profile_avatar_160.png" />
+    <design:attribute name="ActionBarColor" label="Action Bar: Background Color" description="Background color of the action bar area" default="#064932" />
+    
+    <design:attribute name="ButtonBackgroundColor" label="Buttons: Background Color" description="Background color of the action buttons" default="#ffffff" />
+    <design:attribute name="ButtonBorderColor" label="Buttons: Border Color" description="Border color of the action buttons" default="#ffffff" />
+    <design:attribute name="ButtonTextColor" label="Buttons: Label &amp; Icon Color" description="Label and icon color of the action button labels" default="#064932" />
+    <design:attribute name="ModalWindowWidth" label="Buttons: Modal Window Minimum Width" description="How wide should the pop-up/modal window be for a flow button?  Include unit of measure, like '60vw', '50%', '400px', etc.)" default="60vw" />
+    
+    <design:attribute name="AppInfoLayout" label="App Info Mat: Layout" description="How do you want to display the component? Choose One Column Layout is better for sidebars." datasource="Two Column Layout,One Column Layout" default="Two Column Layout" />
+    <design:attribute name="AppInfoScrollOrNot" label="App Info Mat: Overflow Handling" description="When you have a lot of app info cards, do you want the box to stay the same (and force scrolling) or do you want it to expand (no scrolling)?" datasource="Scroll,No Scrolling" default="Scroll" />
+    <design:attribute name="AppInfoExpanded" label="App Info Mat: Expanded by Default?" default="false" />
+    <design:attribute name="AppInfoLogo" label="App Info Mat: Logo" description="URL to an image you wish to display as a logo.  You can replace the image stored in the DynamicBannerAppInfoLogo static resource or use your own.  The default value is /resource/DynamicBannerAppInfoLogo." default="/resource/DynamicBannerAppInfoLogo" />
+    <design:attribute name="AppInfoTitle" label="App Info Mat: Title" default="FPAC Service Center App" />
+    <design:attribute name="AppInfoDescription" label="App Info Mat: Description" default="Welcome! You're logged into the new app for FPAC Service Center staff. This console includes functions built just for you - to serve your producers, ranchers, and farmers and execute the FPAC mission! We've pulled together some key resources for you (see right) to get started quickly and support you going forward." />
+    <design:attribute name="AppInfoLeftBackgroundColor" label="App Info Mat: Background Color (Left)" default="#f2f2f2" />
+    <design:attribute name="AppInfoRightBackgroundColor" label="App Info Mat: Background Color (Right)" default="#f2f2f2" />
+    <design:attribute name="AppInfoLeftTextColorTitle" label="App Info Mat: Title Text Color" description="Color of the App Info: Title text" default="#3E3E3C" />
+    <design:attribute name="AppInfoLeftTextColorDescription" label="App Info Mat: Description Text Color" description="Color of the App Info: Description text" default="#3E3E3C" />
+    <design:attribute name="AppInfoRightCardBackgroundColor" label="App Info Mat: Card Background Color" description="Background color of the content cards" default="#ffffff" />
+    <design:attribute name="AppInfoRightIconColor" label="App Info Mat: Card Icon Color" description="Color of the info card icon" default="#706E6B" />
+    <design:attribute name="AppInfoRightTextColor" label="App Info Mat: Card Text Color" description="Color of the info card text" default="#3E3E3C" />
+    
+    <design:attribute name="ToggleOnLabel" label="Toggle: Label (On)" description="Text label when the App Info toggle is checked" default="Hide App Info" />
+    <design:attribute name="ToggleOffLabel" label="Toggle: Label (Off)" description="Text label when the App Info toggle is unchecked" default="Open App Info" />
+    <design:attribute name="ToggleTextColor" label="Toggle: Text Color" description="Text color of the App Info toggle" default="#ffffff" />
+    <design:attribute name="ToggleBorderColor" label="Toggle: Border Color" description="Border/outline color of the App Info toggle" default="#b0adab" />
+    <design:attribute name="ToggleActiveBackgroundColor" label="Toggle: Background Color" description="Background color of the App Info toggle (when it is checked/on)" default="#0b6448" />
+    
+</design:component>

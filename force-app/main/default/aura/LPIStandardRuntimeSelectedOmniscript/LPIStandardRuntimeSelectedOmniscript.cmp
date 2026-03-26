@@ -1,0 +1,5 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" controller="demoStandardOmniscriptController">
+        <aura:attribute name="Type" type="String"/>
+        <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+ {!v.body}
+</aura:component>

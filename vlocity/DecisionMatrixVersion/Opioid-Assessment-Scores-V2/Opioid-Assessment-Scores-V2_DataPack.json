@@ -1,0 +1,29 @@
+{
+    "ApiName": "Opioid_Assessment_Scores_V2",
+    "CalculationMatrix.Name": "Opioid Assessment Scores",
+    "CalculationMatrixId": {
+        "Name": "Opioid Assessment Scores",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationMatrix/Opioid Assessment Scores",
+        "VlocityRecordSObjectType": "CalculationMatrix"
+    },
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixDefinitionVerId": "9QOHu00000112K2OAI",
+    "DscnModelNoteExportStatus": "",
+    "EndDateTime": "",
+    "GroupKey": "",
+    "GroupKeyValue": "",
+    "IsLocked": false,
+    "MatrixType": "Standard",
+    "MayEdit": true,
+    "Name": "Opioid Assessment Scores V2",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2023-12-11T17:11:00.000Z",
+    "SubGroupKey": "",
+    "SubGroupKeyValue": "",
+    "VersionNumber": 2,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrixVersion",
+    "VlocityRecordSourceKey": "CalculationMatrixVersion/2/CalculationMatrix/Opioid Assessment Scores"
+}

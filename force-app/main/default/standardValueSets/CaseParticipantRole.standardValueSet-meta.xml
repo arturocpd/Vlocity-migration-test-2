@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Victim</fullName>
+        <default>false</default>
+        <label>Victim</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Observer</fullName>
+        <default>false</default>
+        <label>Observer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lawyer</fullName>
+        <default>false</default>
+        <label>Lawyer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Perpetrator</fullName>
+        <default>false</default>
+        <label>Perpetrator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inspection Officer</fullName>
+        <default>false</default>
+        <label>Inspection Officer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Beneficiary</fullName>
+        <default>false</default>
+        <label>Beneficiary</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Family Member</fullName>
+        <default>false</default>
+        <label>Family Member</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Offender</fullName>
+        <default>false</default>
+        <label>Offender</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Suspect</fullName>
+        <default>false</default>
+        <label>Suspect</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Employer</fullName>
+        <default>false</default>
+        <label>Employer</label>
+    </standardValue>
+</StandardValueSet>

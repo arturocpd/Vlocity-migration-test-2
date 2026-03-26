@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveXmd xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataset>DCDCP_Opportunities_by_Products</dataset>
+    <dimensions>
+        <field>ProductName</field>
+        <isDerived>false</isDerived>
+        <label>Product Name</label>
+        <sortIndex>0</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>AccountName</field>
+        <isDerived>false</isDerived>
+        <label>Account Name</label>
+        <sortIndex>1</sortIndex>
+    </dimensions>
+    <dimensions>
+        <field>AccountID</field>
+        <isDerived>false</isDerived>
+        <label>Account ID</label>
+        <sortIndex>2</sortIndex>
+    </dimensions>
+    <measures>
+        <field>Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>sum_Amount</field>
+        <formatCustomFormat>[&quot;$#,###&quot;,1]</formatCustomFormat>
+        <isDerived>true</isDerived>
+        <label>Total Amount</label>
+        <showInExplorer>true</showInExplorer>
+        <sortIndex>0</sortIndex>
+    </measures>
+    <measures>
+        <field>PropensitytoBuy</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>false</isDerived>
+        <label>Propensity to Buy</label>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>sum_PropensitytoBuy</field>
+        <formatCustomFormat>[&quot;#,###.##%&quot;,100]</formatCustomFormat>
+        <isDerived>true</isDerived>
+        <label>Propensity_to_Buy</label>
+        <showInExplorer>true</showInExplorer>
+        <sortIndex>1</sortIndex>
+    </measures>
+    <measures>
+        <field>ProductOwned</field>
+        <isDerived>false</isDerived>
+        <label>Product Owned</label>
+        <sortIndex>2</sortIndex>
+    </measures>
+</WaveXmd>

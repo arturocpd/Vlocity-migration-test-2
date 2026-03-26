@@ -1,0 +1,1 @@
+{"dates": [], "derivedDimensions": [], "derivedMeasures": [], "dimensions": [{"conditionalFormatting": {}, "customActions": [], "field": "Name", "label": "Violation Name", "members": [], "recordDisplayFields": ["Name", "Status", "Priority"], "salesforceActions": []}], "measures": [], "organizations": [], "showDetailsDefaultFields": []}

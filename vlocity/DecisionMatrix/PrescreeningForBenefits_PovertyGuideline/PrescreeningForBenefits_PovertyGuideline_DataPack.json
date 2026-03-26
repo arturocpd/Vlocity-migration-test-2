@@ -1,0 +1,18 @@
+{
+    "CalculationMatrixColumn": "PrescreeningForBenefits_PovertyGuideline_CalculationMatrixColumns.json",
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixType": "DecisionMatrix",
+    "Description": "",
+    "GroupKey": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "Name": "PrescreeningForBenefits_PovertyGuideline",
+    "Namespace": "",
+    "SubGroupKey": "",
+    "Type": "Standard",
+    "UniqueName": "PrescreeningForBenefits_PovertyGuideline",
+    "UsageType": "Bre",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrix",
+    "VlocityRecordSourceKey": "CalculationMatrix/PrescreeningForBenefits_PovertyGuideline"
+}

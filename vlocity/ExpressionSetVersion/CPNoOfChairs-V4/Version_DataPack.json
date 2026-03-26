@@ -1,0 +1,29 @@
+{
+    "%vlocity_namespace%__GlobalKey__c": "CPNoOfChairs V4",
+    "CalculationProcedure.Name": "CPNoOfChairs",
+    "CalculationProcedureId": {
+        "Name": "CPNoOfChairs",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationProcedure/CPNoOfChairs",
+        "VlocityRecordSObjectType": "CalculationProcedure"
+    },
+    "Constants": "",
+    "CurrencyIsoCode": "USD",
+    "Description": "",
+    "EndDateTime": "",
+    "IsLocked": false,
+    "IsLoopingEnabled": false,
+    "LastSimulatedVariablesInput": "",
+    "LoopEnd": "",
+    "LoopIncrement": "",
+    "LoopStart": "",
+    "MayEdit": true,
+    "Name": "CPNoOfChairs V4",
+    "Namespace": "",
+    "Rank": "",
+    "StartDateTime": "2015-07-29T12:33:08.000Z",
+    "VersionNumber": 4,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedureVersion",
+    "VlocityRecordSourceKey": "CalculationProcedureVersion/4/CalculationProcedure/CPNoOfChairs"
+}

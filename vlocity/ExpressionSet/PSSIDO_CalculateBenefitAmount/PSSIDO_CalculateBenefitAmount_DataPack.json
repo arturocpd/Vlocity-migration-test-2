@@ -1,0 +1,13 @@
+{
+    "CurrencyIsoCode": "USD",
+    "Description": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "MigrationStatus": "Migrated",
+    "Name": "PSSIDO_CalculateBenefitAmount",
+    "Namespace": "",
+    "UniqueName": "PSSIDO_CalculateBenefitAmount",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedure",
+    "VlocityRecordSourceKey": "CalculationProcedure/PSSIDO_CalculateBenefitAmount"
+}

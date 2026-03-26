@@ -1,0 +1,82 @@
+{
+  "appPageId" : "3a241bdb-3c0c-4a4f-b277-1b94130c2d69",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "dataProviders" : [ ],
+  "id" : "93c44ef7-1b18-409e-8737-e54505582ee3",
+  "label" : "Saved Payment Methods",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "componentSpacerSize" : "",
+        "dxpStyle" : {
+          "padding" : {
+            "bottom" : "0rem",
+            "left" : "0rem",
+            "right" : "0rem",
+            "top" : "0rem"
+          }
+        },
+        "layoutDirectionDesktop" : "row",
+        "layoutDirectionMobile" : "column",
+        "layoutDirectionTablet" : "column",
+        "maxContentWidth" : "",
+        "sectionColumnGutterWidth" : "",
+        "sectionConfig" : "{\"UUID\":\"6836744d-dea2-4dfa-b3b5-eb357ce08f90\",\"columns\":[{\"UUID\":\"3fb1ecc0-3e75-43af-a635-eaf9006da19e\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+        "sectionMinHeight" : "",
+        "sectionVerticalAlign" : "flex-start"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "6836744d-dea2-4dfa-b3b5-eb357ce08f90",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "addButtonLabel" : "Add Payment Method",
+            "cardDefaultBadgeColor" : "rgb(223,223,223)",
+            "cardDefaultBorderRadius" : "50",
+            "cardDefaultLabel" : "Default",
+            "cardExpiredBadgeColor" : "rgb(254, 147, 57)",
+            "cardExpiredBorderRadius" : "50",
+            "cardExpiredLabel" : "Expired",
+            "displayAddButton" : true,
+            "emptyMessageTitle" : "No payments saved yet. To save time during checkout, add a payment.",
+            "expiresOnLabel" : "Expiration Date",
+            "footerDefaultLabel" : "Make Default",
+            "footerDeleteLabel" : "Delete",
+            "headerLabel" : "Saved Payment Methods",
+            "itemSpacing" : "small",
+            "itemsPerPage" : "10",
+            "paymentMethodSetId" : "",
+            "previewState" : "withSavedPaymentMethods",
+            "showMoreButtonAlign" : "center",
+            "showMoreButtonLabel" : "Show More",
+            "showMoreButtonSize" : "standard",
+            "showMoreButtonStyle" : "secondary",
+            "showMoreButtonWidth" : "standard"
+          },
+          "componentName" : "commerce_builder:paymentSavedPaymentMethodsGrid",
+          "id" : "d5838d0e-eccb-4eaa-a05c-31fb517eeab3",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "3fb1ecc0-3e75-43af-a635-eaf9006da19e",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "dd2d5d07-24f7-4b08-9206-8071b9b7ce13",
+    "regionName" : "content",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "MyAccount",
+  "type" : "view",
+  "viewType" : "my-payment-methods"
+}

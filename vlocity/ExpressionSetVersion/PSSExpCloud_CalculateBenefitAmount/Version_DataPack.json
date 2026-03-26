@@ -1,0 +1,29 @@
+{
+    "%vlocity_namespace%__GlobalKey__c": "PSSExpCloud_CalculateBenefitAmount",
+    "CalculationProcedure.Name": "PSSExpCloud_CalculateBenefitAmount1",
+    "CalculationProcedureId": {
+        "Name": "PSSExpCloud_CalculateBenefitAmount1",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationProcedure/PSSExpCloud_CalculateBenefitAmount1",
+        "VlocityRecordSObjectType": "CalculationProcedure"
+    },
+    "Constants": "",
+    "CurrencyIsoCode": "USD",
+    "Description": "Calculate the eligible benefit amount for an applicant.",
+    "EndDateTime": "",
+    "IsLocked": false,
+    "IsLoopingEnabled": false,
+    "LastSimulatedVariablesInput": "",
+    "LoopEnd": "",
+    "LoopIncrement": "",
+    "LoopStart": "",
+    "MayEdit": true,
+    "Name": "PSSExpCloud_CalculateBenefitAmount",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2022-11-14T00:00:00.000Z",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedureVersion",
+    "VlocityRecordSourceKey": "CalculationProcedureVersion/1/CalculationProcedure/PSSExpCloud_CalculateBenefitAmount1"
+}

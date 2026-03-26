@@ -1,0 +1,10 @@
+{
+  "activeViewId" : "b6462b00-182d-4634-9763-b2f8f6a11861",
+  "appPageId" : "5a89a6eb-5e46-449a-bfec-8658faff2c53",
+  "configurationTags" : [ ],
+  "devName" : "Cart_Upload__c",
+  "label" : "Cart Upload",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-cart-upload",
+  "urlPrefix" : "cart-upload"
+}

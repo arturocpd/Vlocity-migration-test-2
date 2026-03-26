@@ -1,0 +1,29 @@
+{
+    "%vlocity_namespace%__GlobalKey__c": "CPBusinessDiscount V1",
+    "CalculationProcedure.Name": "CPBusinessDiscount",
+    "CalculationProcedureId": {
+        "Name": "CPBusinessDiscount",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationProcedure/CPBusinessDiscount",
+        "VlocityRecordSObjectType": "CalculationProcedure"
+    },
+    "Constants": "",
+    "CurrencyIsoCode": "USD",
+    "Description": "",
+    "EndDateTime": "",
+    "IsLocked": false,
+    "IsLoopingEnabled": false,
+    "LastSimulatedVariablesInput": "",
+    "LoopEnd": "",
+    "LoopIncrement": "",
+    "LoopStart": "",
+    "MayEdit": true,
+    "Name": "CPBusinessDiscount V1",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2023-12-04T15:02:51.000Z",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationProcedureVersion",
+    "VlocityRecordSourceKey": "CalculationProcedureVersion/1/CalculationProcedure/CPBusinessDiscount"
+}

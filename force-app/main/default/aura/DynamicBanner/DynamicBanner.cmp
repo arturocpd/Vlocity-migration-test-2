@@ -1,0 +1,378 @@
+<!--
+Name:				DynamicBanner.cmp
+Original Author:	Mitch Lynch
+Date:				13 Feb 2021
+Last Modified:		30 Jun 2021
+
+* Comments:
+	- This component, including any referenced resources including but not limited to components, Apex controllers, objects, fields, and static resources, was developed by Mitch Lynch for Salesforce.com.  Use only with permission.
+	
+  	9/3/2022 (Mitch Lynch)		-	Fixed color properties for AppInfoRightIconColor and AppInfoRightTextColor.
+	
+	6/30/2021 (Mitch Lynch)		-	Fixed the visibility of the close icon for modal windows.
+	
+ 	5/1/2021 (Mitch Lynch)		-	Added a configurable property for the banner title suffix (default is an exclamation point).
+	
+ 	2/24/2021 (Mitch Lynch)		-	Reduced Apex calls to the Dynamic_Content__c object to a single query for all content types.
+
+ 	2/23/2021 (Mitch Lynch)		-	All sections of the App Info Mat are now conditionally rendered. If any of the text or
+									record elements are left blank, that part of the mat won't show up.
+								-	Updated App Info Mat so that even when selected, the two-column layout is only used
+									when content is present in both columns, otherwise it defaults to the one-column layout.
+
+ 	2/22/2021 (Mitch Lynch)		-	Simplified/consolidated some design attributes to make it easier to configure.
+								-	Added additional configurable styling attributes; renamed others and re-wrote
+									descriptions for ease of use.
+
+	2/21/2021 (Mitch Lynch)		-	Introduced conditional expressions using ternary operators to increase the dynamic
+									styling of the component; this reduced the amount of repetitive code and made it
+									possible to offer fundamentally different formats in the same component (see URL
+									https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/expr_conditional.htm).
+								-	The banner can now be hidden, in situations where the App Info section should be
+         							displayed without it.
+								-	The App Info section can now be displayed in two-column (side-by-side) and one-column
+									(stacked) layouts. This makes it more usable in a sidebar section of a Lightning page.
+								-	The App Info section can be setup to scroll when the max-height has been exceeded, or
+									allow content to cascade down the page.
+								-	Updated the component icon.
+	
+	2/19/2021 (Mitch Lynch)		-	A new App Info section has been added. This section is meant to display information
+									about the app the user is current logged into. This section includes an app logo,
+									title, and description. It also includes a section for information cards. These cards
+									are meant to provide key resources to the user for how to use the app and receive
+									support. The App_Info__c object is the source for the information presented in these
+									cards
+								-	To populate the cards for a given instance of the Dynamic Banner component, create
+									records in the App_Info__c object and give them a Unique Group Identifier (e.g. app1,
+									service-console-home, myhomepage, etc.). Then, edit the Lightning page where the Dynamic
+									Banner component is located, select it, and update the "App Info: Unique Group
+									Identifier" property with the same exact value.
+								-	In addition to the related App_Info__c records, the component will display any record
+									that has a Unique Group Identifier of "all".  This allows you to have cards that are
+									common to all app home pages where the Dynamic Banner component is used (e.g. a system
+									announcement or other cards that should appear globally).
+								-	Added: configurable control over the information section (based on SLDS Welcome Mat)
+								-	App_Info__c object and Apex necessary to dynamically display whatever records are related to the specific instance of a component, as determined by a matching, unique identifier designated in both the component setup and related records.
+								-	Modified the getContentCards query to include App Info records that should be displayed for all apps.
+	
+ 	2/18/2021 (Mitch Lynch)		-	Added: Toggle on/off for an app information section that expands from the bottom of the component.
+	
+	2/17/2021 (Mitch Lynch)		-	Added: configurable control over styling for Lightning buttons (background, border, and text color)
+              					-	Added: configurable control over the width of the flow modal/pop-up window
+                                -	Added: enable a default profile photo and provide configurable control over user photo (border color, default photo URL)
+								-	Added: availability for community pages (tested)
+	
+	2/13/2021 (Mitch Lynch)		-	Initial dev
+
+-->
+<aura:component controller="DynamicBannerController" implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global">
+    
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    
+    <aura:attribute name="MetricRecords" type="Dynamic_Content__c" />
+    <aura:attribute name="ButtonRecords" type="Dynamic_Content__c" />
+    <aura:attribute name="ContentCardRecords" type="Dynamic_Content__c" />
+    
+    <aura:attribute name="CompDisplayMode" type="String" access="global"/>
+    <aura:attribute name="Tag" type="String" access="global"/>
+    
+    <aura:attribute name="BannerType" type="String" access="global"/>
+    <aura:attribute name="BannerTitle" type="String" access="global"/>
+    <aura:attribute name="BannerTitleSuffix" type="String" access="global"/>
+    <aura:attribute name="BannerSubtitle" type="String" access="global"/>
+    <aura:attribute name="BannerColor" type="String" access="global" default="#0b6448"/>
+    <aura:attribute name="BannerTextColor" type="String" access="global" default="#ffffff"/>
+    <aura:attribute name="ActionBarColor" type="String" access="global" default="#064932"/>
+    <aura:attribute name="ButtonBackgroundColor" type="String" access="global" default="#ffffff"/>
+    <aura:attribute name="ButtonBorderColor" type="String" access="global" default="#ffffff"/>
+    <aura:attribute name="ButtonTextColor" type="String" access="global" default="#064932"/>
+    
+    <aura:attribute name="AppInfoLayout" type="String" access="global"/>
+    <aura:attribute name="AppInfoScrollOrNot" type="String" access="global"/>
+    <aura:attribute name="AppInfoExpanded" type="Boolean" access="global"/>
+    <aura:attribute name="AppInfoLogo" type="String" access="global"/>
+    <aura:attribute name="AppInfoTitle" type="String" access="global"/>
+    <aura:attribute name="AppInfoDescription" type="String" access="global"/>
+    <aura:attribute name="AppInfoLeftBackgroundColor" type="String" access="global"/>
+    <aura:attribute name="AppInfoRightBackgroundColor" type="String" access="global"/>
+    
+    <aura:attribute name="AppInfoLeftTextColorTitle" type="String" access="global"/>
+    <aura:attribute name="AppInfoLeftTextColorDescription" type="String" access="global"/>
+    <aura:attribute name="AppInfoRightCardBackgroundColor" type="String" access="global"/>
+    <aura:attribute name="AppInfoRightTextColor" type="String" access="global"/>
+    <aura:attribute name="AppInfoRightIconColor" type="String" access="global"/>
+    
+    <aura:attribute name="ToggleOnLabel" type="String" access="global" default="Close App Info"/>
+    <aura:attribute name="ToggleOffLabel" type="String" access="global" default="Open App Info"/>
+    <aura:attribute name="ToggleTextColor" type="String" access="global" default="#ffffff"/>
+    <aura:attribute name="ToggleBorderColor" type="String" access="global" default="#b0adab"/>
+    <aura:attribute name="ToggleActiveBackgroundColor" type="String" access="global" default="#0b6448"/>
+    
+    <aura:html tag="style">
+        :root {
+        	--buttonbackgroundcolor: {!v.ButtonBackgroundColor};
+        	--buttonbordercolor: {!v.ButtonBorderColor};
+        	--buttontextcolor: {!v.ButtonTextColor};
+        	--toggletextcolor: {!v.ToggleTextColor};
+        	
+        	--sds-c-checkbox-toggle-color-border: {!v.ToggleBorderColor};
+        	--sds-c-checkbox-toggle-color-border-checked: {!v.ToggleBorderColor};
+        	--sds-c-checkbox-toggle-color-border-focus: {!v.ToggleBorderColor};
+	        --sds-c-checkbox-toggle-color-background-checked: {!v.ToggleActiveBackgroundColor};
+        	--sds-c-checkbox-toggle-color-background-checked-focus: {!v.ToggleActiveBackgroundColor};
+        	--sds-c-checkbox-toggle-color-background-checked-hover: {!v.ToggleActiveBackgroundColor};
+        	
+        	--appinfo-left-backgroundimage:none;
+        	--appinfo-left-backgroundcolor:{!v.AppInfoLeftBackgroundColor};
+        	--appinfo-right-backgroundcolor:{!v.AppInfoRightBackgroundColor};
+        	
+         	--sds-c-icon-color-foreground-default:{!v.AppInfoRightIconColor};
+        	--lwc-colorTextIconDefault:{!v.AppInfoRightTextColor};
+        	
+        	--lwc-welcomeMatMinHeight:none;
+        	
+            <aura:renderIf isTrue="{!v.AppInfoScrollOrNot == 'Scroll'}">
+                --lwc-welcomeMatMaxHeight:37.5rem;
+                
+                <aura:set attribute="else">
+                    --lwc-welcomeMatMaxHeight:none;
+                </aura:set>
+            </aura:renderIf>
+        }
+    </aura:html>
+    
+    <aura:attribute name="ModalWindowWidth" type="String" access="global" default="60vw" />
+    
+    <aura:attribute name="UserPhotoBorderColor" type="String" access="global" default="#ffffff" />
+    <aura:attribute name="DefaultUserPhotoURL" type="String" access="global" default="/_slds/images/themes/lightning_lite/lightning_lite_profile_avatar_160.png" />
+    
+    <!-- ########################################################################################### -->
+    
+    <!-- Flow Modal START -->
+    <aura:attribute name="showModal" type="Boolean" default="false"></aura:attribute>
+    <aura:attribute name="flow" type="Object"></aura:attribute>
+    
+    <div class="{! v.showModal ? 'slds-show' : 'slds-hide' }">
+        <section class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container"  style="{! 'min-width:' + v.ModalWindowWidth + ';'}">
+                <header class="slds-modal__header slds-modal__header_empty">
+                	<lightning:buttonIcon size="large" iconName="utility:close" variant="bare-inverse" onclick="{!c.closeModal}" alternativeText="Close window" class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" />
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    {! v.body }
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </div>
+    <!-- Flow Modal END -->
+    
+    <!-- ########################################################################################### -->
+    
+    <!-- Banner START -->
+    <aura:attribute name="thisuser" type="User[]"/>
+    
+    <aura:renderIf isTrue="{!v.CompDisplayMode != 'App Info Only'}">
+        <aura:iteration items="{!v.thisuser}" var="u">
+            
+            <div class="banner-container-outer">
+                
+                <!-- Main Banner START -->
+                <div class="banner-container-inner" style="{! 'background:' + v.BannerColor + ';color:' + v.BannerTextColor + ';'}">
+                    
+                    <!-- Profile section START -->
+                    <div class="banner-welcome-outer">
+                        <aura:renderIf isTrue="{!v.BannerType == 'User Welcome Banner'}">
+                            <div class="slds-media" style="float:left;">
+                                <div class="slds-media_figure">
+                                    <aura:if isTrue="{!empty(u.FullPhotoUrl)}">
+                                        <img src="{!v.DefaultUserPhotoURL}" class="customer-avatar" style="{! 'border: 1px solid ' + v.UserPhotoBorderColor + ';'}" />
+                                        
+                                        <aura:set attribute="else">
+                                            <img src="{!u.FullPhotoUrl}" class="customer-avatar" style="{! 'border: 1px solid ' + v.UserPhotoBorderColor + ';'}"/>
+                                        </aura:set>
+                                    </aura:if>
+                                </div>
+                            </div>
+                        </aura:renderIf>
+                        <div class="banner-welcome-text">
+                            <p class="slds-text-heading_large">
+                                <aura:renderIf isTrue="{!v.BannerType == 'User Welcome Banner'}">
+                                    {!v.BannerTitle}&nbsp;{!u.FirstName}&nbsp;{!u.LastName}{!v.BannerTitleSuffix}
+                                </aura:renderIf>
+                                <aura:renderIf isTrue="{!v.BannerType == 'Standard Banner'}">
+                                    {!v.BannerTitle}
+                                </aura:renderIf>
+                            </p>
+                            <aura:renderIf isTrue="{!v.BannerSubtitle.length > 0}">
+                                <p class="slds-text-heading_small">
+                                    {!v.BannerSubtitle}
+                                </p>
+                            </aura:renderIf>
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+                    <!-- Profile section END -->
+                    
+                    
+                    
+                    <!-- Metrics section START -->
+                    <aura:renderIf isTrue="{!v.MetricRecords.length > 0}">
+                        <div class="banner-metrics">
+                            
+                            <aura:iteration items="{!v.MetricRecords}" var="dbmetric">
+                                <div class="metric-container">
+                                    <p class="slds-p-horizontal_small">
+                                        <span class="slds-p metric-number">{!dbmetric.Title_Label__c}</span><br/>
+                                        <span class="slds-p metric-label">{!dbmetric.Description__c}</span>
+                                    </p>
+                                </div>    
+                            </aura:iteration>
+                            
+                        </div>
+                        
+                    </aura:renderIf>
+                    <!-- Metrics section END -->
+                    
+                    
+                    
+                    <div style="clear:both"></div>
+                </div>
+                <!-- Main Banner END -->
+                
+                <!-- ########################################################################################### -->
+                
+                <!-- Quick Actions START -->
+                <div class="banner-actions" style="{! 'background:' + v.ActionBarColor + ';'}">
+                    
+                    
+                    <!-- Toggle for App Info section START -->
+                    <aura:renderIf isTrue="{!v.CompDisplayMode != 'Banner Only'}">
+                        <div class="toggle-container">
+                            <lightning:layout verticalAlign="center" class="action-bar-min-height">
+                                <lightning:layoutitem>
+                                    <lightning:input type="toggle"
+                                                     name="value"
+                                                     checked="{!v.AppInfoExpanded}"
+                                                     messageToggleActive="{!v.ToggleOnLabel}"
+                                                     messageToggleInactive="{!v.ToggleOffLabel}"/>
+                                </lightning:layoutitem>
+                            </lightning:layout>
+                        </div>
+                    </aura:renderIf>
+                    <!-- Toggle for App Info section END -->
+                    
+                    <!-- ########################################################################################### -->
+                    
+                    <!-- Action Buttons START -->
+                    <div class="button-container">
+                        <lightning:layout verticalAlign="center" class="action-bar-min-height">
+                            <aura:renderIf isTrue="{!v.ButtonRecords.length > 0}">
+                                
+                                <aura:iteration items="{!v.ButtonRecords}" var="dbbutton">
+                                    <lightning:layoutitem>
+                                        <div class="slds-var-p-left_x-small slds-var-p-right_x-small">
+                                            <aura:renderIf isTrue="{!dbbutton.Content_Type__c == 'Button - Flow'}">
+                                                <lightning:button iconName="{!dbbutton.Icon__c}"
+                                                                  iconPosition="left"
+                                                                  variant="brand"
+                                                                  name="{!dbbutton.Flow_URL__c}"
+                                                                  label="{!dbbutton.Title_Label__c}"
+                                                                  onclick="{!c.runFlow}"/>
+                                            </aura:renderIf>
+                                            
+                                            <aura:renderIf isTrue="{!dbbutton.Content_Type__c == 'Button - Link'}">
+                                                <lightning:button iconName="{!dbbutton.Icon__c}"
+                                                                  iconPosition="left"
+                                                                  variant="brand"
+                                                                  name="{!dbbutton.Flow_URL__c}"
+                                                                  label="{!dbbutton.Title_Label__c}"
+                                                                  onclick="{!c.gotoURL}"/>
+                                            </aura:renderIf>
+                                        </div>
+                                    </lightning:layoutitem>
+                                </aura:iteration>
+                                
+                            </aura:renderIf>
+                        </lightning:layout>
+                    </div>
+                    <!-- Action Buttons END -->
+                    
+                    
+                    <div style="clear:both"></div>
+                </div>
+                <!-- Quick Actions END -->
+                
+            </div>
+            
+        </aura:iteration>
+    </aura:renderIf>
+    <!-- Banner END -->
+    
+    <!-- ########################################################################################### -->
+    
+    <!-- App Info Mat START -->
+    <aura:renderIf isTrue="{!v.CompDisplayMode != 'Banner Only'}">
+            <aura:renderIf isTrue="{!or(v.AppInfoExpanded,v.CompDisplayMode == 'App Info Only')}">
+                
+                <div class="slds-modal__content" id="welcome-mat-100-content" style="{!v.CompDisplayMode == 'App Info Only' ? 'border-radius:4px;' : 'border-radius:0 0 4px 4px;'}">
+                    <div class="slds-welcome-mat">
+                        <div class="{!v.AppInfoLayout == 'One Column Layout' ? 'slds-welcome-mat__content' : 'slds-welcome-mat__content slds-grid'}">
+                            <aura:renderIf isTrue="{!v.AppInfoTitle.length > 0}">
+                                <div class="{!and(v.AppInfoLayout == 'Two Column Layout',v.ContentCardRecords.length > 0) ? 'slds-welcome-mat__info slds-size_1-of-3' : 'slds-welcome-mat__info'}">
+                                    <div class="slds-welcome-mat__info-content">
+                                        <aura:renderIf isTrue="{!v.AppInfoDescription.length > 0}">
+                                            <div class="slds-welcome-mat__info-description" style="text-align:left;margin-top:10px;margin-bottom:10px;">
+                                                <img src="{!v.AppInfoLogo}" style="height:50px;" /><br/>
+                                            </div>
+                                        </aura:renderIf>
+                                        
+                                        <h2 class="slds-welcome-mat__info-title" id="welcome-mat-100-label" style="{!'font-size:30px;text-align:left;margin-bottom:10px;color:' + v.AppInfoLeftTextColorTitle + ';'}">{!v.AppInfoTitle}</h2>
+                                        
+                                        <aura:renderIf isTrue="{!v.AppInfoDescription.length > 0}">
+                                            <div class="slds-welcome-mat__info-description slds-text-longform" style="{!'margin-bottom:0;text-align:left;color:' + v.AppInfoLeftTextColorDescription + ';'}">
+                                                <p>{!v.AppInfoDescription}</p>
+                                            </div>
+                                        </aura:renderIf>
+                                    </div>
+                                </div>
+                            </aura:renderIf>
+                            
+                            <aura:renderIf isTrue="{!v.ContentCardRecords.length > 0}">
+                                <ul class="{!and(v.AppInfoLayout == 'Two Column Layout',v.AppInfoTitle.length > 0) ? 'slds-welcome-mat__tiles slds-size_2-of-3' : 'slds-welcome-mat__tiles'}">
+                                    
+                                    <aura:iteration items="{!v.ContentCardRecords}" var="dbcard">
+                                        <li class="slds-welcome-mat__tile">
+                                            <a href="{!dbcard.Flow_URL__c}" target="{!dbcard.URL_Behavior__c}" class="slds-box slds-box_link slds-media" style="{!'background-color:' + v.AppInfoRightCardBackgroundColor + ';'}">
+                                                <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
+                                                    <div class="slds-welcome-mat__tile-figure">
+                                                        <div class="slds-welcome-mat__tile-icon-container">
+                                                            <span class="slds-icon_container" title="">
+                                                                <lightning:icon iconName="{!dbcard.Icon__c}" size="medium" />
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-media__body">
+                                                    <div class="slds-welcome-mat__tile-body">
+                                                        <h3 class="slds-welcome-mat__tile-title" style="{!'color:' + v.AppInfoRightTextColor + ';'}">{!dbcard.Title_Label__c}</h3>
+                                                        <p class="slds-welcome-mat__tile-description" style="{!'color:' + v.AppInfoRightTextColor + ';'}">{!dbcard.Description__c}</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </aura:iteration>
+                                    
+                                </ul>
+                            </aura:renderIf>
+                        </div>
+                    </div>
+                </div>
+                
+            </aura:renderIf>
+    </aura:renderIf>
+    <!-- App Info Mat END -->
+    
+    <!-- ########################################################################################### -->
+    
+</aura:component>

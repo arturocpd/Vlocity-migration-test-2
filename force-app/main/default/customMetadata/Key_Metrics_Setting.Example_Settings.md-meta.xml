@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Example Settings</label>
+    <protected>false</protected>
+    <values>
+        <field>Card_Format__c</field>
+        <value xsi:type="xsd:string">3</value>
+    </values>
+    <values>
+        <field>Currency_Format__c</field>
+        <value xsi:type="xsd:string">symbol</value>
+    </values>
+    <values>
+        <field>Currency_Notation__c</field>
+        <value xsi:type="xsd:string">compact</value>
+    </values>
+    <values>
+        <field>Date_Day_Format__c</field>
+        <value xsi:type="xsd:string">2-digit</value>
+    </values>
+    <values>
+        <field>Date_Month_Format__c</field>
+        <value xsi:type="xsd:string">2-digit</value>
+    </values>
+    <values>
+        <field>Date_Weekday_Format__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Date_Year_Format__c</field>
+        <value xsi:type="xsd:string">numeric</value>
+    </values>
+    <values>
+        <field>Metric_1_API_Name__c</field>
+        <value xsi:type="xsd:string">AnnualRevenue</value>
+    </values>
+    <values>
+        <field>Metric_1_Format__c</field>
+        <value xsi:type="xsd:string">currency</value>
+    </values>
+    <values>
+        <field>Metric_1_Label__c</field>
+        <value xsi:type="xsd:string">Annual Revenue</value>
+    </values>
+    <values>
+        <field>Metric_2_API_Name__c</field>
+        <value xsi:type="xsd:string">Rating</value>
+    </values>
+    <values>
+        <field>Metric_2_Format__c</field>
+        <value xsi:type="xsd:string">text</value>
+    </values>
+    <values>
+        <field>Metric_2_Label__c</field>
+        <value xsi:type="xsd:string">Rating</value>
+    </values>
+    <values>
+        <field>Metric_3_API_Name__c</field>
+        <value xsi:type="xsd:string">NumberOfEmployees</value>
+    </values>
+    <values>
+        <field>Metric_3_Format__c</field>
+        <value xsi:type="xsd:string">decimal</value>
+    </values>
+    <values>
+        <field>Metric_3_Label__c</field>
+        <value xsi:type="xsd:string">Employees</value>
+    </values>
+    <values>
+        <field>Metric_4_API_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Metric_4_Format__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Metric_4_Label__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Number_Notation__c</field>
+        <value xsi:type="xsd:string">standard</value>
+    </values>
+    <values>
+        <field>Object_API_Name__c</field>
+        <value xsi:type="xsd:string">Account</value>
+    </values>
+</CustomMetadata>

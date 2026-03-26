@@ -1,0 +1,17 @@
+{
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixType": "DecisionTable",
+    "Description": "A table that stores changes in the cost of products or services based on factors like the Consumer Price Index (CPI), with effective dates and magnitude of change.",
+    "GroupKey": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "Name": "Index Rate",
+    "Namespace": "",
+    "SubGroupKey": "",
+    "Type": "",
+    "UniqueName": "Index Rate",
+    "UsageType": "DefaultPricing",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrix",
+    "VlocityRecordSourceKey": "CalculationMatrix/Index Rate"
+}

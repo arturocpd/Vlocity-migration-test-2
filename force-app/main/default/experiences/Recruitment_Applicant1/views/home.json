@@ -1,0 +1,81 @@
+{
+  "appPageId" : "c1857bfa-5ce6-40d8-a9ca-f1a64d399d34",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "0d59e7dc-d6ee-43c9-b510-a7bfff2d5bf0",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "flexcardName" : "GPSLaunchResumeSearch",
+        "objectApiName" : "{!objectApiName}",
+        "recordId" : "{!CurrentUser.accountId}"
+      },
+      "componentName" : "runtime_omnistudio:flexcard",
+      "id" : "96b0d249-1867-4f7a-bc47-80607aae85f9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2aed08ab-9376-4075-987e-4e8e8ad1c5b7",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "searchConfigs" : "[gps_Job_Posting_Search]"
+      },
+      "componentName" : "industries_common:criteriaBasedSearchAndFilterCommunity",
+      "id" : "b4f150d7-130f-4b02-bf81-89453f31c6e6",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3f88b8b1-4049-4057-92c7-4ce7b608efe5",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "maxWidth" : 100,
+        "overlayColor" : "rgba(0,0,0,0.6)",
+        "overlayHoverColor" : "",
+        "radius" : 0,
+        "showTitle" : false,
+        "textAlignment" : "center",
+        "textBgColor" : "rgba(0,0,0,0)",
+        "textBgHoverColor" : "rgba(0,0,0,0)",
+        "textColor" : "",
+        "textHoverColor" : "",
+        "textPosition" : "center center",
+        "title" : "Featured Topics"
+      },
+      "componentName" : "forceTopic:featuredTopics",
+      "id" : "bd525fbf-006c-408d-99e5-a1e52e4f10c7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9d1dfbed-f6de-442b-91c3-0a59f81add75",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "c88a9277-9ebe-4b88-b126-b3e177dd2650",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "cf5cb241-1c67-497c-8bcf-04da87f299a4",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}

@@ -1,0 +1,38 @@
+{
+  "appPageId" : "5a281a09-63a1-4755-befc-2f68e2516654",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "5de1452a-14f2-473c-a99b-9be472e8b34b",
+  "label" : "Contract Detail View",
+  "regions" : [ {
+    "id" : "336b55ef-4186-47fa-8616-df256dd6fea7",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "runtime_industries_clm_community:contractDetailHeader",
+      "id" : "9865c7fe-e23b-4dc0-810d-1139234c4370",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "runtime_industries_clm_community:contractDocument",
+      "id" : "717d6f1f-fa68-4014-ac1e-c7f34df950ed",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e271706d-e79d-4b01-a10b-be50c2e5c258",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "1e2b0333-e6fa-457f-8dce-3b66ffb22cca",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "contract-detail-view"
+}

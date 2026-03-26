@@ -1,0 +1,29 @@
+{
+    "ApiName": "Environmental_Health_Code_Fees_V1",
+    "CalculationMatrix.Name": "Environmental Health Code Fees",
+    "CalculationMatrixId": {
+        "Name": "Environmental Health Code Fees",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "CalculationMatrix/Environmental Health Code Fees",
+        "VlocityRecordSObjectType": "CalculationMatrix"
+    },
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixDefinitionVerId": "9QOHu00000112JsOAI",
+    "DscnModelNoteExportStatus": "",
+    "EndDateTime": "",
+    "GroupKey": "",
+    "GroupKeyValue": "",
+    "IsLocked": false,
+    "MatrixType": "Standard",
+    "MayEdit": true,
+    "Name": "Environmental Health Code Fees V1",
+    "Namespace": "",
+    "Rank": 1,
+    "StartDateTime": "2023-12-05T16:54:26.000Z",
+    "SubGroupKey": "",
+    "SubGroupKeyValue": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrixVersion",
+    "VlocityRecordSourceKey": "CalculationMatrixVersion/1/CalculationMatrix/Environmental Health Code Fees"
+}

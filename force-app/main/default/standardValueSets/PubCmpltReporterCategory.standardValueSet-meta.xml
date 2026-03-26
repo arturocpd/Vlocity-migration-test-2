@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Social Worker</fullName>
+        <default>false</default>
+        <label>Social Worker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>School Personnel</fullName>
+        <default>false</default>
+        <label>School Personnel</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Healthcare worker</fullName>
+        <default>false</default>
+        <label>Healthcare worker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mental Health Professionals</fullName>
+        <default>false</default>
+        <label>Mental Health Professionals</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Childcare Providers</fullName>
+        <default>false</default>
+        <label>Childcare Providers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Medical Examiners</fullName>
+        <default>false</default>
+        <label>Medical Examiners</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Law Enforcement</fullName>
+        <default>false</default>
+        <label>Law Enforcement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Neighbor</fullName>
+        <default>false</default>
+        <label>Neighbor</label>
+    </standardValue>
+</StandardValueSet>

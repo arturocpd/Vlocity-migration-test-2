@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Corrected During Inspection</fullName>
+        <default>false</default>
+        <label>Corrected During Inspection</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Notice of Violation</fullName>
+        <default>false</default>
+        <label>Notice of Violation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Citation warning</fullName>
+        <default>false</default>
+        <label>Citation warning</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Citation</fullName>
+        <default>false</default>
+        <label>Citation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Civil Penalty</fullName>
+        <default>false</default>
+        <label>Civil Penalty</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,39 @@
+{
+  "appPageId" : "24923cbc-be10-456f-8993-822c2e3bdbe5",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "2a364f0f-84ad-4221-a1fc-ec3b03d8354a",
+  "label" : "Action Plan Template Related List",
+  "regions" : [ {
+    "id" : "9a3bb666-4b4a-4728-8458-c26784d15f5c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customTitle" : "",
+        "parentRecordId" : "{!recordId}",
+        "relatedListName" : "{!relationshipApiName}",
+        "showBreadCrumbs" : true,
+        "showCustomTitle" : false,
+        "showManualRefreshButton" : true,
+        "showRowNumbers" : true
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "ed610025-a8f3-4efa-9416-100689f714c9",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8fa85ad6-5e32-494c-9a0e-b5f2ed2127d5",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "8512ab3d-1092-42c3-8fce-e5d44c436374",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-0PR"
+}

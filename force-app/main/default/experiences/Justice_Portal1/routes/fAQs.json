@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "133cfc16-6b5f-476f-8c8b-00601f45d176",
+  "appPageId" : "cb61e488-b558-462b-8399-d2034d023e47",
+  "configurationTags" : [ ],
+  "devName" : "FAQs__c",
+  "id" : "54d59ff3-0d24-4212-92f0-94d5638d381a",
+  "label" : "FAQs",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-faqs",
+  "type" : "route",
+  "urlPrefix" : "faqs"
+}

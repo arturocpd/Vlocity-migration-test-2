@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ManagedTopics xmlns="http://soap.sforce.com/2006/04/metadata">
+    <managedTopic>
+        <fullName>Emergency Response Management.Featured:Earthquakes</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Earthquakes</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Emergency Response Management.Featured:Fires</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Fires</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Emergency Response Management.Featured:Floods</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Floods</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Emergency Response Management.Featured:General Preparedness</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>General Preparedness</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Emergency Response Management.Featured:Severe Winter Weather</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Severe Winter Weather</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Emergency Response Management.Featured:Tornados / Hurricanes</fullName>
+        <managedTopicType>Featured</managedTopicType>
+        <name>Tornados / Hurricanes</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Emergency Response Management.Navigational:Earthquakes</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Earthquakes</name>
+        <parentName></parentName>
+        <position>3</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Emergency Response Management.Navigational:Fires</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Fires</name>
+        <parentName></parentName>
+        <position>1</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Emergency Response Management.Navigational:Floods</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Floods</name>
+        <parentName></parentName>
+        <position>2</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Emergency Response Management.Navigational:General Preparedness</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>General Preparedness</name>
+        <parentName></parentName>
+        <position>0</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Emergency Response Management.Navigational:Severe Winter Weather</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Severe Winter Weather</name>
+        <parentName></parentName>
+        <position>5</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+    <managedTopic>
+        <fullName>Emergency Response Management.Navigational:Tornados / Hurricanes</fullName>
+        <managedTopicType>Navigational</managedTopicType>
+        <name>Tornados / Hurricanes</name>
+        <parentName></parentName>
+        <position>4</position>
+        <topicDescription> </topicDescription>
+    </managedTopic>
+</ManagedTopics>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDataset xmlns="http://soap.sforce.com/2006/04/metadata">
+    <application>Emergency_Response_Analytics_YYR</application>
+    <masterLabel>ERM_EmergencyRequest</masterLabel>
+    <templateAssetSourceName>ERM_EmergencyRequest_YYR</templateAssetSourceName>
+    <type>default</type>
+</WaveDataset>

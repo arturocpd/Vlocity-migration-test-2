@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "9616bce3-9c95-4445-93aa-39be4b2d905b",
+  "appPageId" : "24923cbc-be10-456f-8993-822c2e3bdbe5",
+  "configurationTags" : [ ],
+  "devName" : "Enablement_Program_Video",
+  "id" : "b034b8e4-a482-4a3d-851d-f258842ad43f",
+  "label" : "Enablement Program Video",
+  "routeType" : "enablement-program-video",
+  "type" : "route",
+  "urlPrefix" : "enablement-program-video"
+}

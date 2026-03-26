@@ -1,0 +1,18 @@
+{
+    "CalculationMatrixColumn": "CalculateBenefitAmount_NetIncomePointsTable_CalculationMatrixColumns.json",
+    "CurrencyIsoCode": "USD",
+    "DecisionMatrixType": "DecisionMatrix",
+    "Description": "",
+    "GroupKey": "",
+    "IsLocked": false,
+    "MayEdit": true,
+    "Name": "CalculateBenefitAmount_NetIncomePointsTable",
+    "Namespace": "",
+    "SubGroupKey": "",
+    "Type": "Standard",
+    "UniqueName": "CalculateBenefitAmount_NetIncomePointsTable",
+    "UsageType": "Bre",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "CalculationMatrix",
+    "VlocityRecordSourceKey": "CalculationMatrix/CalculateBenefitAmount_NetIncomePointsTable"
+}

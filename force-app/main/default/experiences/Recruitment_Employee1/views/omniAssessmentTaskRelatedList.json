@@ -1,0 +1,39 @@
+{
+  "appPageId" : "b97b5bc1-b612-4339-b95e-16ab9ce2aff7",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "344b3ab5-16a7-4c05-90aa-e0ea0d2b9a33",
+  "label" : "Omni Assessment Task Related List",
+  "regions" : [ {
+    "id" : "f1ae0985-5a42-4744-8778-c9d904877757",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customTitle" : "",
+        "parentRecordId" : "{!recordId}",
+        "relatedListName" : "{!relationshipApiName}",
+        "showBreadCrumbs" : true,
+        "showCustomTitle" : false,
+        "showManualRefreshButton" : true,
+        "showRowNumbers" : true
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "f31833f5-7686-4ecc-b284-ca2d1d360625",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b7becc03-b111-4fd4-b4cc-f0b678659598",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "e589bed9-7862-480b-ada8-1f77a977770e",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-0os"
+}

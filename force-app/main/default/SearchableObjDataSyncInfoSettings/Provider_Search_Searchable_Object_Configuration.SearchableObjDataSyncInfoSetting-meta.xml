@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchableObjDataSyncInfo xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataSyncActive>false</dataSyncActive>
+    <description>Configuration to create and update the searchable object&apos;s records using a Data Processing Engine definition.</description>
+    <lookupMappings>
+        <inputObject>BenefitPrvdSearchableFld</inputObject>
+        <mappingFields>
+            <inputField>ProviderId</inputField>
+            <outputField>ProviderName</outputField>
+        </mappingFields>
+        <outputObject>BenefitPrvdSearchableFld</outputObject>
+    </lookupMappings>
+    <masterLabel>Provider Search Searchable Object Configuration</masterLabel>
+    <picklistMappings>
+        <inputObject>BusinessLicense</inputObject>
+        <mappingFields>
+            <inputField>Status</inputField>
+            <outputField>LicenseStatus</outputField>
+        </mappingFields>
+        <outputObject>BenefitPrvdSearchableFld</outputObject>
+    </picklistMappings>
+    <picklistMappings>
+        <inputObject>HealthcareProvider</inputObject>
+        <mappingFields>
+            <inputField>ProviderType</inputField>
+            <outputField>ProviderType</outputField>
+        </mappingFields>
+        <outputObject>BenefitPrvdSearchableFld</outputObject>
+    </picklistMappings>
+    <picklistMappings>
+        <inputObject>PersonEducation</inputObject>
+        <mappingFields>
+            <inputField>EducationLevel</inputField>
+            <outputField>ProviderEducationLevel</outputField>
+        </mappingFields>
+        <outputObject>BenefitPrvdSearchableFld</outputObject>
+    </picklistMappings>
+    <picklistMappings>
+        <inputObject>TimeSlot</inputObject>
+        <mappingFields>
+            <inputField>DayOfWeek</inputField>
+            <outputField>OperatingDaysList</outputField>
+        </mappingFields>
+        <outputObject>BenefitPrvdSearchableFld</outputObject>
+    </picklistMappings>
+    <searchableObject>BenefitPrvdSearchableFld</searchableObject>
+</SearchableObjDataSyncInfo>
